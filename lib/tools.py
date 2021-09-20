@@ -11,6 +11,7 @@ except (ImportError, ModuleNotFoundError):
     consoledb("Global/tools.py", "Pyperclip was requested but it was not found.",
               tp=1, verifydebug=False)
 try:
+    import tkinter as tk
     from tkinter import messagebox
 except (ImportError, ModuleNotFoundError):
     messagebox = None
@@ -33,14 +34,16 @@ def readconfig():
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 5:
+    if option == 6:
         yn = messagebox.askyesno("Exit", "Do you really want to exit? Unsaved changes may be "
                                          "lost forever!")
         if yn == 1:
             exit()
-    elif option == 4:
+    elif option == 5:
         consoledb("Opt", "About")
         menus.about()
+    elif option == 4:
+        text.delete("1.0", tk.END)
     elif option == 3:
         menus.copypaste("p", text)
     elif option == 2:
@@ -52,7 +55,7 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as",  "Copy",  "Paste", "About", "Exit"]
+    opts = ["Open", "Save as",  "Copy",  "Paste", "Clear", "About", "Exit"]
 
     for i in range(len(opts)):
         menu.add_command(label=opts[i],
