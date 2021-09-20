@@ -12,17 +12,13 @@ except (ImportError, ModuleNotFoundError):
     consoledb("Global", "ImportError: tkinter not found.", verifydebug=False, tp=2)
     consoledb("Global", "Verify how to install it in your OS.", verifydebug=False, tp=2)
     input()
-try:
-    import quotes
-except ImportError:
-    quotes = [""]
-    consoledb("Global", "Sem frases :(")
 
 scriptpath = tools.scriptpath()
 argv.append('')
 systema = platform.system()
 configs = tools.readconfig()
 font = configs["font"]
+frases = open(f"{scriptpath}/quotes.txt", "r").readlines()
 
 
 def main(args):
@@ -78,7 +74,8 @@ def main(args):
         text.config(yscrollcommand=scrollbar.set)
 
         # Label
-        phr = tk.Label(root, bg="#cccccc", font=("Segoe", 10), text="Placeholder", fg="#000000")
+        phr = tk.Label(root, bg="#cccccc", font=("Segoe", 10),
+                       text=f"{choice(frases)}", fg="#000000")
         phr.grid(row=2, column=0, sticky="n")
 
         tools.configmenu(menu, text, root)

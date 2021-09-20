@@ -136,7 +136,7 @@ def about(mode="g"):
 
         ix = -1
 
-        for i in [f"Universal Text Editor v{cfg['version']}",
+        for i in [f"Universal Text Editor v{cfg['version']} ({cfg['build']})",
                   "Made by Breno Martins",
                   "This software is distribuited under the GPLv2 license."]:
             ix += 1
@@ -148,7 +148,7 @@ def about(mode="g"):
         abt.mainloop()
     elif mode == "c":
         print(f"""
-Universal Text Editor v{cfg["version"]}
+Universal Text Editor v{cfg["version"]} ({cfg['build']})
 Made by Breno Martins
 This software is distribuited under the GPLv2 license
 
