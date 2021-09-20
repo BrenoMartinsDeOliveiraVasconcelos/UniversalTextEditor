@@ -3,17 +3,7 @@ from lib.consoledb import consoledb
 from sys import argv
 import platform
 from random import choice
-try:
-    import tkinter as tk
-    import tkinter.messagebox as msg
-except (ImportError, ModuleNotFoundError):
-    tk = None
-    argv.append("-c")
-    consoledb("Global", "ImportError: tkinter not found.", verifydebug=False,
-              tp=2)
-    consoledb("Global", "Verify how to install it in your OS.", verifydebug=False,
-              tp=2)
-    input()
+import tkinter as tk
 
 scriptpath = tools.scriptpath()
 argv.append('')

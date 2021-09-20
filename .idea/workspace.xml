@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Sistema de macros melhorado&#10;Correções de bug">
-      <change afterPath="$PROJECT_DIR$/cool.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/macros/github.json" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632152478439</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente.">
+      <created>1632153724076</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1632153724076</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,6 +216,7 @@
     <MESSAGE value="Macros&#10;adicionado macros parcialmente" />
     <MESSAGE value="Macros&#10;Macros na mesma linha agora funcionam" />
     <MESSAGE value="Sistema de macros melhorado&#10;Correções de bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sistema de macros melhorado&#10;Correções de bug" />
+    <MESSAGE value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
   </component>
 </project>

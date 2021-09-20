@@ -2,21 +2,11 @@ import os
 import json
 from lib.consoledb import consoledb
 from lib import menus
-try:
-    import pyperclip
-    pc = True
-except (ImportError, ModuleNotFoundError):
-    pyperclip = None
-    pc = False
-    consoledb("Global/tools.py", "Pyperclip was requested but it was not found.",
-              tp=1, verifydebug=False)
-try:
-    import tkinter as tk
-    from tkinter import messagebox
-except (ImportError, ModuleNotFoundError):
-    messagebox = None
-    consoledb("Global/tools.py", "Install tkinter in your system to use GUI!",
-              tp=2)
+import pyperclip
+import tkinter as tk
+from tkinter import messagebox
+
+pc = True
 
 
 def copypaste(mode, text):
@@ -53,7 +43,6 @@ def macro(text):
     macrof = f"{scriptpath()}/macros"
     macros = os.listdir(macrof)
     consoledb("Macro", macros)
-    txt = ""
 
     for i in macros:
         index = -1

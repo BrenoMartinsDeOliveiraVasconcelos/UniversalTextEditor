@@ -1,23 +1,11 @@
 from lib.consoledb import consoledb, errorprint
 from lib import tools
-try:
-    import tkinter as tk
-    from tkinter import filedialog
-    from tkinter import messagebox
-except (ImportError, ModuleNotFoundError):
-    tk = None
-    filedialog = None
-    messagebox = None
-    consoledb(
-        "Global/menus.py", "Please install Tkinter in your operating system!",
-        tp=2)
-try:
-    import pyperclip
-    pc = True
-except (ImportError, ModuleNotFoundError):
-    pyperclip = None
-    pc = False
-    consoledb("Global/menus.py", "Pyperclip requested but not found", tp=1)
+import tkinter as tk
+from tkinter import filedialog
+from tkinter import messagebox
+import pyperclip
+
+pc = True
 
 
 def saveas(text, root=None, mode="g"):
