@@ -49,6 +49,26 @@ def scriptpath():
     return '/'.join(script.replace("\\", "/").split("/")[:-1])
 
 
+def macro(text):
+    macrof = f"{scriptpath()}/macros"
+    macros = os.listdir(macrof)
+    consoledb("Macro", macros)
+    txt = ""
+
+    for i in macros:
+        if i.endswith(".json"):
+            minfo = json.load(open(f"{macrof}/{i}"))
+            txt = text.get("1.0", tk.END).split(" ")
+            index = -1
+            for loop in txt:
+                index += 1
+                if loop == minfo["shortcut"] or loop == minfo["shortcut"] + "\n":
+                    txt[index] = minfo["text"]
+
+    text.delete("1.0", tk.END)
+    text.insert("1.0", " ".join(txt))
+
+
 def readconfig():
     path = scriptpath() + "/config.json"
 
@@ -59,16 +79,18 @@ def readconfig():
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 6:
+    if option == 7:
         yn = messagebox.askyesno("Exit", "Do you really want to exit? Unsaved changes may be "
                                          "lost forever!")
         if yn == 1:
             exit()
-    elif option == 5:
+    elif option == 6:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 4:
+    elif option == 5:
         text.delete("1.0", tk.END)
+    elif option == 4:
+        macro(text)
     elif option == 3:
         copypaste("p", text)
     elif option == 2:
@@ -80,7 +102,8 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as",  "Copy",  "Paste", "Clear", "About", "Exit"]
+    opts = ["Open", "Save as",  "Copy",  "Paste",  "Macro",
+            "Clear", "About", "Exit"]
 
     for i in range(len(opts)):
         menu.add_command(label=opts[i],
