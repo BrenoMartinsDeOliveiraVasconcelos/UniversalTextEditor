@@ -111,4 +111,4 @@ if __name__ == "__main__":
         main(argv)
         consoledb("Global/main.py", "Fechada inesperada")
     except KeyboardInterrupt:
-        consoledb("Global/main.py", "Abortado", tp=3)
+        consoledb("Global/main.py", "Abortado.", tp=3)
