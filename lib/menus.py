@@ -29,7 +29,7 @@ def saveas(text, root=None, mode="g"):
         consoledb("SaveAs", fn)
 
         try:
-            open(fn, "w+").write(text)
+            open(fn, "w+").write(text.strip('\n'))
             root.title(f"Universal Text Editor - {fn}")
         except PermissionError:
             consoledb("SaveAs", "Permissão negada!", tp=1)
@@ -41,7 +41,7 @@ def saveas(text, root=None, mode="g"):
             try:
                 fn = input("Path: ")
                 if fn != ":cancel:":
-                    open(fn, "w+").write(text)
+                    open(fn, "w+").write(text.strip('\n'))
                     break
                 else:
                     break

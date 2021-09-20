@@ -20,9 +20,10 @@ argv.append('')
 systema = platform.system()
 configs = tools.readconfig()
 if configs["wholesome"]:
-    frases = ["Ok"]
+    txtfile = "cool.txt"
 else:
-    frases = open(f"{scriptpath}/rude.txt", "r").readlines()
+    txtfile = "rude.txt"
+frases = open(f"{scriptpath}/{txtfile}", "r").readlines()
 
 
 def main(args):
