@@ -60,16 +60,17 @@ def macro(text):
         if i.endswith(".json"):
             minfo = json.load(open(f"{macrof}/{i}"))
             txt = text.get("1.0", tk.END).split(" ")
+            consoledb("Macro", ' '.join(txt).replace("\n", "+"))
             for loop in txt:
                 index += 1
                 loop = loop.strip("\n")
                 if loop == minfo["shortcut"] or loop == minfo["shortcut"] + "\n":
                     txt[index] = minfo["text"]
-                    txt[index] = txt[index].strip("\n")
                     consoledb("Macro", txt[index])
-
-    text.delete("1.0", tk.END)
-    text.insert("1.0", " ".join(txt))
+                txt[index] = txt[index].strip("\n")
+            consoledb("Macro", txt[index])
+            text.delete("1.0", tk.END)
+            text.insert("1.0", " ".join(txt))
 
 
 def readconfig():

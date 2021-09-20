@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Macros&#10;adicionado macros parcialmente">
-      <change afterPath="$PROJECT_DIR$/macros/email.json" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Macros&#10;Macros na mesma linha agora funcionam">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
     </list>
@@ -160,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632146545036</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Macros&#10;Macros na mesma linha agora funcionam">
+      <created>1632149078497</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632149078497</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +194,7 @@
     <MESSAGE value="adicionado comando :cp: na linha de comando" />
     <MESSAGE value="Mudanças pequenas&#10;.lower() em main.py&#10;Ajuste de linhas na função principal" />
     <MESSAGE value="Macros&#10;adicionado macros parcialmente" />
-    <option name="LAST_COMMIT_MESSAGE" value="Macros&#10;adicionado macros parcialmente" />
+    <MESSAGE value="Macros&#10;Macros na mesma linha agora funcionam" />
+    <option name="LAST_COMMIT_MESSAGE" value="Macros&#10;Macros na mesma linha agora funcionam" />
   </component>
 </project>
