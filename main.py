@@ -1,0 +1,111 @@
+from lib import tools, menus
+from lib.consoledb import consoledb
+from sys import argv
+import platform
+try:
+    import tkinter as tk
+    import tkinter.messagebox as msg
+except (ImportError, ModuleNotFoundError):
+    tk = None
+    argv.append("-c")
+    consoledb("Global", "ImportError: tkinter not found.", verifydebug=False, tp=2)
+    consoledb("Global", "Verify how to install it in your OS.", verifydebug=False, tp=2)
+    input()
+
+scriptpath = tools.scriptpath()
+argv.append('')
+systema = platform.system()
+configs = tools.readconfig()
+font = configs["font"]
+
+
+def main(args):
+    guimode = False
+
+    if args[1] == "-c":
+        print("Loading command line...")
+    elif args[1] == "-g":
+        consoledb("Main", "Iniciando GUI...")
+        guimode = True
+    else:
+        print("It was not specified if you want to run on Command Line or GUI, "
+              "please select: ")
+        opt = ""
+        while opt not in ["c", "g"]:
+            opt = input("[c]ommand or [g]ui: ")
+
+        if opt == "g":
+            guimode = True
+            consoledb("Main", "GUI")
+        else:
+            consoledb("Main", "CL")
+
+    if guimode:
+        root = tk.Tk()
+        root.title("Universal Text Editor")
+        # Por algum motivo, eu tenho que alterar o geometry de acordo com o sistema...
+        if systema == "Linux":
+            root.geometry("782x630")
+        else:
+            root.geometry("686x595")
+        root.resizable(False, False)
+        root["bg"] = "#cccccc"
+
+        # Menu
+        menu = tk.Menu(root, bg="#ffffff", fg="#000000",
+                       activebackground="#5156db", activeforeground="#ffffff",
+                       disabledforeground="#a1a1a1", relief="flat", border=0)
+
+        root.config(menu=menu)
+
+        # Text
+        text = tk.Text(root, bg="#ffffff", fg="#000000",
+                       font=(font, 10), wrap="word", undo=True,
+                       insertbackground="#000000", selectbackground="#5156db",
+                       width=95, height=35)
+        text.grid(row=1, column=0, sticky="nsew")
+
+        # Scrollbar
+        scrollbar = tk.Scrollbar(root, command=text.yview,
+                                 bg="#ffffff", activebackground="#5156db", activerelief="flat")
+        scrollbar.grid(row=1, column=1, sticky="nsew")
+        text.config(yscrollcommand=scrollbar.set)
+
+        tools.configmenu(menu, text, root)
+
+        root.mainloop()
+    else:
+        text = []
+        line = 0
+        tools.clear(systema)
+        endl = "\n"
+        while True:
+            line += 1
+            tinput = input(f"[{line}] ")
+            if tinput not in [":exit:", ":save:", ":delete:", ":open:",
+                              ":help:", ":about:"]:
+                text.append(tinput)
+            else:
+                if tinput == ":exit:":
+                    exit()
+                elif tinput == ":save:":
+                    menus.saveas('\n'.join(text), mode="c")
+                elif tinput == ":delete:":
+                    text = menus.delete(text)
+                elif tinput == ":open:":
+                    text = menus.cmdopn()
+                    endl = ""
+                elif tinput == ":help:":
+                    menus.documentation()
+                elif tinput == ":about:":
+                    menus.about(mode="c")
+                line = 0
+                tools.clear(systema)
+                for line in range(len(text)):
+                    line += 1
+                    print(f"[{line}] {text[line-1]}", end=endl)
+
+
+if __name__ == "__main__":
+    main(argv)
+    consoledb("Global/main.py", "Fechada inesperada")
