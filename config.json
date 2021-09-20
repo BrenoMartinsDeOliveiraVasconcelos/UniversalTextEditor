@@ -1,6 +1,6 @@
 {
     "debug": true,
-    "font": "Segoe",
+    "wholesome": true,
     "version": "1.0.0",
     "build": "beta2"
 }

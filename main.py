@@ -17,8 +17,10 @@ scriptpath = tools.scriptpath()
 argv.append('')
 systema = platform.system()
 configs = tools.readconfig()
-font = configs["font"]
-frases = open(f"{scriptpath}/quotes.txt", "r").readlines()
+if configs["wholesome"]:
+    frases = ["Ok"]
+else:
+    frases = open(f"{scriptpath}/rude.txt", "r").readlines()
 
 
 def main(args):
