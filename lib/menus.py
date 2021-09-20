@@ -122,7 +122,7 @@ def cmdopn():
         except IsADirectoryError:
             errorprint("It is a directory!", tp=0)
         except FileNotFoundError:
-            errorprint("FIle not found", tp=0)
+            errorprint("File not found", tp=0)
 
 
 def about(mode="g"):
@@ -175,21 +175,3 @@ Universal Text Editor - Command Line mode
 
     """)
     input("Enter when done: ")
-
-
-def copypaste(mode, text):
-    string = text.get("1.0", tk.END)
-
-    if mode == "c":
-        pyperclip.copy(string)
-        messagebox.showinfo("Ok", "Copied")
-    elif mode == "p":
-        consoledb("Copypaste", pyperclip.paste())
-        if "\n" in pyperclip.paste():
-            string = pyperclip.paste().split("\n")
-            string = '\n'.join((string[:-1]))
-            consoledb("Copypaste", f"{string}")
-        else:
-            string = pyperclip.paste()
-            consoledb("Copypaste", "Ok")
-        text.insert("-1.0", string)

@@ -19,6 +19,24 @@ except (ImportError, ModuleNotFoundError):
               tp=2)
 
 
+def copypaste(mode, text):
+    string = text.get("1.0", tk.END)
+
+    if mode == "c":
+        pyperclip.copy(string)
+        messagebox.showinfo("Ok", "Copied")
+    elif mode == "p":
+        consoledb("Copypaste", pyperclip.paste())
+        if "\n" in pyperclip.paste():
+            string = pyperclip.paste().split("\n")
+            string = '\n'.join((string[:-1]))
+            consoledb("Copypaste", f"{string}")
+        else:
+            string = pyperclip.paste()
+            consoledb("Copypaste", "Ok")
+        text.insert("-1.0", string)
+
+
 def scriptpath():
     script = os.path.dirname(os.path.realpath(__file__))
     return '/'.join(script.replace("\\", "/").split("/")[:-1])
@@ -45,9 +63,9 @@ def opt(option, text, root):
     elif option == 4:
         text.delete("1.0", tk.END)
     elif option == 3:
-        menus.copypaste("p", text)
+        copypaste("p", text)
     elif option == 2:
-        menus.copypaste("c", text)
+        copypaste("c", text)
     elif option == 1:
         menus.saveas(text, root=root)
     elif option == 0:
