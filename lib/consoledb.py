@@ -10,6 +10,7 @@ def consoledb(info, text, tp=0, verifydebug=True):
         symb = "[!]"
     elif tp == 3:
         symb = "(!)"
+        verifydebug = False
     else:
         symb = "?"
 
@@ -19,7 +20,7 @@ def consoledb(info, text, tp=0, verifydebug=True):
         print(f"{info} {symb} {text}")
 
     if tp == 3:
-        exit()
+        exit(3)
 
 
 def errorprint(text, tp):

@@ -107,5 +107,8 @@ def main(args):
 
 
 if __name__ == "__main__":
-    main(argv)
-    consoledb("Global/main.py", "Fechada inesperada")
+    try:
+        main(argv)
+        consoledb("Global/main.py", "Fechada inesperada")
+    except KeyboardInterrupt:
+        consoledb("Global/main.py", "Abortado", tp=3)
