@@ -13,8 +13,10 @@ except (ImportError, ModuleNotFoundError):
         tp=2)
 try:
     import pyperclip
+    pc = True
 except (ImportError, ModuleNotFoundError):
     pyperclip = None
+    pc = False
     consoledb("Global/menus.py", "Pyperclip requested but not found", tp=1)
 
 
@@ -172,6 +174,40 @@ Universal Text Editor - Command Line mode
     :cancel: - Cancel it.
 :help: - This "menu"
 :about: - About Universal Editor
+:cp: Copy or paste a text
+    :cancel: - Cancel it
 
     """)
     input("Enter when done: ")
+
+
+def cp(tezto):
+    if not cp:
+        print("Library pyperclip is not avaliable, install it.")
+        input()
+        return tezto
+    else:
+        copyorpaste = input("[C]opy or [p]aste? ").lower()
+        if copyorpaste in ["c", "p"]:
+            if copyorpaste == "c":
+                line = input("Copy line number: ")
+                if line == ":all:":
+                    pyperclip.copy('\n'.join(tezto))
+                    return tezto
+                elif line == ":cancel:":
+                    return tezto
+                else:
+                    try:
+                        pyperclip.copy((tezto[int(line)]))
+                    except (ValueError, TypeError, IndexError):
+                        return tezto
+            elif copyorpaste == "p":
+                pas = pyperclip.paste().split("\n")
+                for i in pas:
+                    tezto.append(i)
+
+                return tezto
+            elif copyorpaste == ":cancel:":
+                return tezto
+
+    return tezto

@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Frases">
-      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Frases babacas&#10;Not wholesome :(">
+      <change afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rude.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +52,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="-g" />
+      <option name="PARAMETERS" value="-c" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -131,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632151626076</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Frases babacas&#10;Not wholesome :(">
+      <created>1632152013131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632152013131</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +162,7 @@
     <MESSAGE value="Função About agora exibe a licensa correta&#10;Agora é exibido um erro caso a biblioteca pyperclip não seja encontrada." />
     <MESSAGE value="Texto adicionado abaixo do widget de texto" />
     <MESSAGE value="Frases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frases" />
+    <MESSAGE value="Frases babacas&#10;Not wholesome :(" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frases babacas&#10;Not wholesome :(" />
   </component>
 </project>

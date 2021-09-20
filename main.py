@@ -92,7 +92,7 @@ def main(args):
             line += 1
             tinput = input(f"[{line}] ")
             if tinput not in [":exit:", ":save:", ":delete:", ":open:",
-                              ":help:", ":about:"]:
+                              ":help:", ":about:", ":cp:"]:
                 text.append(tinput)
             else:
                 if tinput == ":exit:":
@@ -108,6 +108,8 @@ def main(args):
                     menus.documentation()
                 elif tinput == ":about:":
                     menus.about(mode="c")
+                elif tinput == ":cp:":
+                    text = menus.cp(text)
                 line = 0
                 tools.clear(systema)
                 for line in range(len(text)):
