@@ -138,7 +138,7 @@ def about(mode="g"):
 
         for i in [f"Universal Text Editor v{cfg['version']}",
                   "Made by Breno Martins",
-                  "This software is distribuited under the GNU license."]:
+                  "This software is distribuited under the GPLv2 license."]:
             ix += 1
             tk.Label(abt, bg="#ffffff", text=i, fg="#000000").grid(row=ix, column=0)
 
@@ -150,7 +150,7 @@ def about(mode="g"):
         print(f"""
 Universal Text Editor v{cfg["version"]}
 Made by Breno Martins
-This software is distribuited under the GNU license
+This software is distribuited under the GPLv2 license
 
         """)
         input("Enter when done: ")

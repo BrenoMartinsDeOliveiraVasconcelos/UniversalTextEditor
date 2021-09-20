@@ -2,6 +2,7 @@ from lib import tools, menus
 from lib.consoledb import consoledb
 from sys import argv
 import platform
+from random import choice
 try:
     import tkinter as tk
     import tkinter.messagebox as msg
@@ -11,6 +12,11 @@ except (ImportError, ModuleNotFoundError):
     consoledb("Global", "ImportError: tkinter not found.", verifydebug=False, tp=2)
     consoledb("Global", "Verify how to install it in your OS.", verifydebug=False, tp=2)
     input()
+try:
+    import quotes
+except ImportError:
+    quotes = [""]
+    consoledb("Global", "Sem frases :(")
 
 scriptpath = tools.scriptpath()
 argv.append('')
@@ -60,16 +66,20 @@ def main(args):
 
         # Text
         text = tk.Text(root, bg="#ffffff", fg="#000000",
-                       font=(font, 10), wrap="word", undo=True,
+                       font=("Segoe", 10), wrap="word", undo=True,
                        insertbackground="#000000", selectbackground="#5156db",
                        width=95, height=35)
-        text.grid(row=1, column=0, sticky="nsew")
+        text.grid(row=1, column=0, rowspan=1)
 
         # Scrollbar
         scrollbar = tk.Scrollbar(root, command=text.yview,
                                  bg="#ffffff", activebackground="#5156db", activerelief="flat")
         scrollbar.grid(row=1, column=1, sticky="nsew")
         text.config(yscrollcommand=scrollbar.set)
+
+        # Label
+        phr = tk.Label(root, bg="#cccccc", font=("Segoe", 10), text="Placeholder", fg="#000000")
+        phr.grid(row=2, column=0, sticky="n")
 
         tools.configmenu(menu, text, root)
 
