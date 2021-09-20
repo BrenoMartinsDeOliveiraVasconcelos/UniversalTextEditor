@@ -9,8 +9,10 @@ try:
 except (ImportError, ModuleNotFoundError):
     tk = None
     argv.append("-c")
-    consoledb("Global", "ImportError: tkinter not found.", verifydebug=False, tp=2)
-    consoledb("Global", "Verify how to install it in your OS.", verifydebug=False, tp=2)
+    consoledb("Global", "ImportError: tkinter not found.", verifydebug=False,
+              tp=2)
+    consoledb("Global", "Verify how to install it in your OS.", verifydebug=False,
+              tp=2)
     input()
 
 scriptpath = tools.scriptpath()
@@ -36,7 +38,7 @@ def main(args):
               "please select: ")
         opt = ""
         while opt not in ["c", "g"]:
-            opt = input("[c]ommand or [g]ui: ")
+            opt = input("[c]ommand or [g]ui: ").lower()
 
         if opt == "g":
             guimode = True
@@ -47,7 +49,8 @@ def main(args):
     if guimode:
         root = tk.Tk()
         root.title("Universal Text Editor")
-        # Por algum motivo, eu tenho que alterar o geometry de acordo com o sistema...
+        # Por algum motivo, eu tenho que alterar o geometry de acordo com
+        # o sistema...
         if systema == "Linux":
             root.geometry("782x630")
         else:
@@ -71,7 +74,8 @@ def main(args):
 
         # Scrollbar
         scrollbar = tk.Scrollbar(root, command=text.yview,
-                                 bg="#ffffff", activebackground="#5156db", activerelief="flat")
+                                 bg="#ffffff", activebackground="#5156db",
+                                 activerelief="flat")
         scrollbar.grid(row=1, column=1, sticky="nsew")
         text.config(yscrollcommand=scrollbar.set)
 

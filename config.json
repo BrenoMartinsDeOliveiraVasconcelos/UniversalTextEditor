@@ -2,5 +2,6 @@
     "debug": true,
     "wholesome": true,
     "version": "1.0.0",
-    "build": "beta2"
+    "build": "beta2",
+    "releasebuild": "1"
 }
