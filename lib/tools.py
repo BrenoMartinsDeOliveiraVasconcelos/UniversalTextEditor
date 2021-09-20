@@ -22,6 +22,13 @@ except (ImportError, ModuleNotFoundError):
 def copypaste(mode, text):
     string = text.get("1.0", tk.END)
 
+    if not pc:
+        messagebox.showerror("Error", "Pyperclip is needed but not avaliable."
+                                      "\nPlease install using python3 -m pip install pyperclip or the"
+                                      " erquivalent in your system.")
+
+        return
+
     if mode == "c":
         pyperclip.copy(string)
         messagebox.showinfo("Ok", "Copied")
