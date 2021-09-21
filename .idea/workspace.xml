@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Criador de macros funcional&#10;[Ainda não finalizado]">
+      <change afterPath="$PROJECT_DIR$/macros/2725.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +34,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1yKszY3nAxyODShCDibSVtlPF8m" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -210,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632224984578</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Criador de macros funcional&#10;[Ainda não finalizado]">
+      <created>1632227560762</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1632227560762</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +236,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Mudanças pequenas" />
     <MESSAGE value="Opção para apagar todo o texto inputado" />
     <MESSAGE value="Copypaste movido para tools.py" />
@@ -244,6 +255,7 @@
     <MESSAGE value="Temporariamente removendo checagem de modulo inexistente" />
     <MESSAGE value="beta3&#10;Nova build" />
     <MESSAGE value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
+    <MESSAGE value="Criador de macros funcional&#10;[Ainda não finalizado]" />
+    <option name="LAST_COMMIT_MESSAGE" value="Criador de macros funcional&#10;[Ainda não finalizado]" />
   </component>
 </project>

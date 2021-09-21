@@ -5,7 +5,6 @@ from lib import menus
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
-import random
 
 pc = True
 
@@ -134,5 +133,5 @@ def createmacro(entries):
         "shortcut": args[0],
         "text": args[1]
     }
-    open(f"{path}/{random.randint(0, 9999)}.json",
+    open(f"{path}/{args[2]}.json",
          "w+").write(json.dumps(macrodict, indent=2))
