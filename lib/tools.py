@@ -135,3 +135,5 @@ def createmacro(entries):
     }
     open(f"{path}/{args[2]}.json",
          "w+").write(json.dumps(macrodict, indent=2))
+
+    messagebox.showinfo("Done", f"Created {args[2]}")

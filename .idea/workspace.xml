@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Criador de macros funcional&#10;[Ainda não finalizado]">
-      <change afterPath="$PROJECT_DIR$/macros/2725.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Label de nome do macro para o criador de macros">
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -220,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632227560762</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Label de nome do macro para o criador de macros">
+      <created>1632230646877</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1632230646877</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,6 +260,7 @@
     <MESSAGE value="beta3&#10;Nova build" />
     <MESSAGE value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
     <MESSAGE value="Criador de macros funcional&#10;[Ainda não finalizado]" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criador de macros funcional&#10;[Ainda não finalizado]" />
+    <MESSAGE value="Label de nome do macro para o criador de macros" />
+    <option name="LAST_COMMIT_MESSAGE" value="Label de nome do macro para o criador de macros" />
   </component>
 </project>
