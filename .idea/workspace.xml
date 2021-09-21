@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Temporariamente removendo checagem de modulo inexistente" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -186,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632153724076</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Temporariamente removendo checagem de modulo inexistente">
+      <created>1632158825142</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1632158825142</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +222,7 @@
     <MESSAGE value="Macros&#10;Macros na mesma linha agora funcionam" />
     <MESSAGE value="Sistema de macros melhorado&#10;Correções de bug" />
     <MESSAGE value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
+    <MESSAGE value="Temporariamente removendo checagem de modulo inexistente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Temporariamente removendo checagem de modulo inexistente" />
   </component>
 </project>
