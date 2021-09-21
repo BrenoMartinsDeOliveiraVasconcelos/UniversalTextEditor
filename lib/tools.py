@@ -39,27 +39,45 @@ def scriptpath():
     return '/'.join(script.replace("\\", "/").split("/")[:-1])
 
 
-def macro(text):
+def macro(text, mode="g"):
     macrof = f"{scriptpath()}/macros"
     macros = os.listdir(macrof)
-    consoledb("Macro", macros)
 
-    for i in macros:
+    if mode == "g":
+        consoledb("Macro", macros)
+
+        for i in macros:
+            index = -1
+            if i.endswith(".json"):
+                minfo = json.load(open(f"{macrof}/{i}"))
+                txt = text.get("1.0", tk.END).split(" ")
+                consoledb("Macro", ' '.join(txt).replace("\n", "+"))
+                for loop in txt:
+                    index += 1
+                    loop = loop.strip("\n")
+                    if loop == minfo["shortcut"] or loop == minfo["shortcut"] + "\n":
+                        txt[index] = minfo["text"]
+                        consoledb("Macro", txt[index])
+                    txt[index] = txt[index].strip("\n")
+                consoledb("Macro", txt[index])
+                text.delete("1.0", tk.END)
+                text.insert("1.0", " ".join(txt))
+    elif mode == "c":
+        txt = []
         index = -1
-        if i.endswith(".json"):
-            minfo = json.load(open(f"{macrof}/{i}"))
-            txt = text.get("1.0", tk.END).split(" ")
-            consoledb("Macro", ' '.join(txt).replace("\n", "+"))
-            for loop in txt:
+        for i in text:
+            line = i.split(" ")
+            for n in line:
                 index += 1
-                loop = loop.strip("\n")
-                if loop == minfo["shortcut"] or loop == minfo["shortcut"] + "\n":
-                    txt[index] = minfo["text"]
-                    consoledb("Macro", txt[index])
-                txt[index] = txt[index].strip("\n")
-            consoledb("Macro", txt[index])
-            text.delete("1.0", tk.END)
-            text.insert("1.0", " ".join(txt))
+                for d in macros:
+                    if d.endswith(".json"):
+                        minfo = json.load(open(f"{macrof}/{d}"))
+                        if n == minfo["shortcut"] or n == minfo["shortcut"] + "\n":
+                            line[index] = minfo["text"]
+            txt.append(" ".join(line))
+            index = -1
+
+        return txt
 
 
 def readconfig():
