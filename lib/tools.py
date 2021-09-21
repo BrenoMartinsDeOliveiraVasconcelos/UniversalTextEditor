@@ -5,6 +5,7 @@ from lib import menus
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
+import random
 
 pc = True
 
@@ -72,22 +73,24 @@ def readconfig():
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 7:
+    if option == 8:
         yn = messagebox.askyesno("Exit", "Do you really want to exit? Unsaved changes may be "
                                          "lost forever!")
         if yn == 1:
             exit()
-    elif option == 6:
+    elif option == 7:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 5:
+    elif option == 6:
         text.delete("1.0", tk.END)
-    elif option == 4:
+    elif option == 5:
         macro(text)
-    elif option == 3:
+    elif option == 4:
         copypaste("p", text)
-    elif option == 2:
+    elif option == 3:
         copypaste("c", text)
+    elif option == 2:
+        menus.macromaker()
     elif option == 1:
         menus.saveas(text, root=root)
     elif option == 0:
@@ -95,7 +98,7 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as"]
+    opts = ["Open", "Save as", "Create a Macro"]
 
     emenu = tk.Menu(root)
     menu.add_cascade(label="Edit", menu=emenu)
@@ -118,3 +121,18 @@ def clear(sys):
         os.system("export TERM=xterm && clear")
     else:
         os.system("clear")
+
+
+def createmacro(entries):
+    args = []
+    path = scriptpath() + "/macros"
+    for i in entries:
+        consoledb("Createmacro", i.get())
+        args.append(str(i.get()))
+
+    macrodict = {
+        "shortcut": args[0],
+        "text": args[1]
+    }
+    open(f"{path}/{random.randint(0, 9999)}.json",
+         "w+").write(json.dumps(macrodict, indent=2))

@@ -24,6 +24,9 @@ def main(args):
     elif args[1] == "-g":
         consoledb("Main", "Iniciando GUI...")
         guimode = True
+    elif args[1] == "-macromaker":
+        menus.macromaker()
+        exit()
     else:
         print("It was not specified if you want to run on Command Line or GUI, "
               "please select: ")

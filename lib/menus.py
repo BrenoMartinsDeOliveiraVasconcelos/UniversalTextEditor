@@ -199,3 +199,31 @@ def cp(tezto):
                 return tezto
 
     return tezto
+
+
+def macromaker():
+    mk = tk.Tk()
+
+    mk.title("Macro maker")
+    mk.geometry("200x75")
+    mk.resizable(False, False)
+    mk["bg"] = "#ffffff"
+
+    indx = -1
+    labels = ["Shortcut", "Text"]
+    for i in labels:
+        indx += 1
+        tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
+                                                              column=0, sticky="w")
+
+    shentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+    tentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+
+    shentry.grid(row=0, column=1)
+    tentry.grid(row=1, column=1)
+
+    tk.Button(mk, text="Create",
+              command=lambda: tools.createmacro([shentry, tentry]),
+              bg="#ffffff", fg="#000000", width=10).grid(row=2, column=1)
+
+    mk.mainloop()

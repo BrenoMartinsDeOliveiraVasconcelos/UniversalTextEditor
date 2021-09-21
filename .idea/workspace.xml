@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="beta3&#10;Nova build">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632223443268</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como">
+      <created>1632224984578</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1632224984578</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -234,6 +243,7 @@
     <MESSAGE value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
     <MESSAGE value="Temporariamente removendo checagem de modulo inexistente" />
     <MESSAGE value="beta3&#10;Nova build" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta3&#10;Nova build" />
+    <MESSAGE value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
   </component>
 </project>
