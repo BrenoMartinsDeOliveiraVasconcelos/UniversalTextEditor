@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Macros em command line funcionando&#10;:macro:">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Editor e criador de macros feito pra linha de comando">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macros/teste.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +62,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="-c" />
+      <option name="PARAMETERS" value="-g" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632253275162</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Editor e criador de macros feito pra linha de comando">
+      <created>1632254873946</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1632254873946</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +285,7 @@
     <MESSAGE value="Label de nome do macro para o criador de macros" />
     <MESSAGE value="Messagebox" />
     <MESSAGE value="Macros em command line funcionando&#10;:macro:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Macros em command line funcionando&#10;:macro:" />
+    <MESSAGE value="Editor e criador de macros feito pra linha de comando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editor e criador de macros feito pra linha de comando" />
   </component>
 </project>

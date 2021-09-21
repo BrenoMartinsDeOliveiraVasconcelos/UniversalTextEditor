@@ -129,9 +129,12 @@ def about(mode="g"):
 
         ix = -1
 
-        for i in [f"Universal Text Editor v{cfg['version']} ({cfg['build']})",
+        for i in [f"Universal Text Editor",
                   "Made by Breno Martins",
-                  "This software is distribuited under the GPLv2 license."]:
+                  "This software is distribuited under the GPLv2 license.",
+                  f"Version: {cfg['version']}",
+                  f"Build: {cfg['build']}",
+                  f"Release: {cfg['releasebuild']}"]:
             ix += 1
             tk.Label(abt, bg="#ffffff", text=i, fg="#000000").grid(row=ix, column=0)
 
