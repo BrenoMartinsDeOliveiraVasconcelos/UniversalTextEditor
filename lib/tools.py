@@ -90,14 +90,16 @@ def readconfig():
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 8:
+    if option == 9:
         yn = messagebox.askyesno("Exit", "Do you really want to exit? Unsaved changes may be "
                                          "lost forever!")
         if yn == 1:
             exit()
-    elif option == 7:
+    elif option == 8:
         consoledb("Opt", "About")
         menus.about()
+    elif option == 7:
+        menus.replacetxt(text)
     elif option == 6:
         text.delete("1.0", tk.END)
     elif option == 5:
@@ -124,7 +126,7 @@ def configmenu(menu, text, root):
         emenu.add_command(label=opts[i],
                           command=lambda x=i: opt(x, text, root))
 
-    spopt = ["Copy", "Paste", "Macro", "Clear", "About", "Exit"]
+    spopt = ["Copy", "Paste", "Macro", "Clear", "Replace", "About", "Exit"]
     for o in range(len(spopt)):
         i += 1
         menu.add_command(label=spopt[o],

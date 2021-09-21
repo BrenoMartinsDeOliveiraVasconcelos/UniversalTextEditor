@@ -258,3 +258,14 @@ def macromaker(mode="g"):
 
         elif ce == ":cancel:":
             pass
+
+
+def replacetxt(text):
+    consoledb("Replacetxt", "Bruh")
+
+    rep = tk.Tk()
+    rep["bg"] = "#ffffff"
+
+    rep.resizable(False, False)
+
+    rep.mainloop()
