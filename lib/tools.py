@@ -95,11 +95,19 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as",  "Copy",  "Paste",  "Macro",
-            "Clear", "About", "Exit"]
+    opts = ["Open", "Save as"]
 
+    emenu = tk.Menu(root)
+    menu.add_cascade(label="Edit", menu=emenu)
+    i = 0
     for i in range(len(opts)):
-        menu.add_command(label=opts[i],
+        emenu.add_command(label=opts[i],
+                          command=lambda x=i: opt(x, text, root))
+
+    spopt = ["Copy", "Paste", "Macro", "Clear", "About", "Exit"]
+    for o in range(len(spopt)):
+        i += 1
+        menu.add_command(label=spopt[o],
                          command=lambda x=i: opt(x, text, root))
 
 
