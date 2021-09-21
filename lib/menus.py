@@ -1,3 +1,6 @@
+import json
+import os
+
 from lib.consoledb import consoledb, errorprint
 from lib import tools
 import tkinter as tk
@@ -164,7 +167,7 @@ Universal Text Editor - Command Line mode
 :about: - About Universal Editor
 :cp: Copy or paste a text
     :cancel: - Cancel it
-
+:macro: - Replace a specific string by a text
     """)
     input("Enter when done: ")
 
@@ -201,31 +204,54 @@ def cp(tezto):
     return tezto
 
 
-def macromaker():
-    mk = tk.Tk()
+def macromaker(mode="g"):
+    macros = f"{tools.scriptpath()}/macros/"
+    if mode == "g":
+        mk = tk.Tk()
 
-    mk.title("Macro maker")
-    mk.geometry("200x90")
-    mk.resizable(False, False)
-    mk["bg"] = "#ffffff"
+        mk.title("Macro maker")
+        mk.geometry("200x90")
+        mk.resizable(False, False)
+        mk["bg"] = "#ffffff"
 
-    indx = -1
-    labels = ["Name", "Shortcut", "Text"]
-    for i in labels:
-        indx += 1
-        tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
-                                                              column=0, sticky="w")
+        indx = -1
+        labels = ["Name", "Shortcut", "Text"]
+        for i in labels:
+            indx += 1
+            tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
+                                                                  column=0, sticky="w")
 
-    nentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
-    shentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
-    tentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+        nentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+        shentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+        tentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
 
-    nentry.grid(row=0, column=1)
-    shentry.grid(row=1, column=1)
-    tentry.grid(row=2, column=1)
+        nentry.grid(row=0, column=1)
+        shentry.grid(row=1, column=1)
+        tentry.grid(row=2, column=1)
 
-    tk.Button(mk, text="Create",
-              command=lambda: tools.createmacro([shentry, tentry, nentry]),
-              bg="#ffffff", fg="#000000", width=10).grid(row=3, column=1)
+        tk.Button(mk, text="Create",
+                  command=lambda: tools.createmacro([shentry, tentry, nentry]),
+                  bg="#ffffff", fg="#000000", width=10).grid(row=3, column=1)
 
-    mk.mainloop()
+        mk.mainloop()
+    elif mode == "c":
+        ce = input("[C]reate or [e]dit a macro? ")
+        if ce.lower() == "c":
+            name = input("Name: ")
+            macrodict = {
+                "shortcut": input("Shortcut: "),
+                "text": input("Text: ")
+            }
+            open(f"{tools.scriptpath()}/macros/{name}.json", "w+").write(json.dumps(macrodict, indent=2))
+        elif ce.lower() == "e":
+            macrolist = os.listdir(macros)
+            which = input("Macro name: ") + ".json"
+            if which in macrolist:
+                macrodict = json.load(open(f"{macros}/{which}"))
+                for k in macrodict.keys():
+                    macrodict[k] = input(f"{k.capitalize()}: ")
+
+                    open(f"{macros}/{which}", "w+").write(json.dumps(macrodict, indent=2))
+
+        elif ce == ":cancel:":
+            pass

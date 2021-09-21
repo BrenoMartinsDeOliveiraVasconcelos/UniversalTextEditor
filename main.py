@@ -90,7 +90,7 @@ def main(args):
             line += 1
             tinput = input(f"[{line}] ")
             if tinput not in [":exit:", ":save:", ":delete:", ":open:",
-                              ":help:", ":about:", ":cp:", ":macro:"]:
+                              ":help:", ":about:", ":cp:", ":macro:", ":macromaker:"]:
                 text.append(tinput)
             else:
                 if tinput == ":exit:":
@@ -110,6 +110,8 @@ def main(args):
                     text = menus.cp(text)
                 elif tinput == ":macro:":
                     text = tools.macro(text, "c")
+                elif tinput == ":macromaker:":
+                    menus.macromaker("c")
                 line = 0
                 tools.clear(systema)
                 for line in range(len(text)):
