@@ -32,7 +32,8 @@ def main(args):
               "please select: ")
         opt = ""
         while opt not in ["c", "g"]:
-            opt = input("[c]ommand or [g]ui: ").lower()
+            # opt = input("[c]ommand or [g]ui: ").lower()
+            opt = "g"
 
         if opt == "g":
             guimode = True
@@ -76,7 +77,7 @@ def main(args):
         # Label
         phr = tk.Label(root, bg="#cccccc", font=("Segoe", 10),
                        text=f"{choice(frases)}", fg="#000000")
-        phr.grid(row=2, column=0, sticky="n")
+        phr.grid(row=2, column=0, sticky="nsew")
 
         tools.configmenu(menu, text, root)
 
