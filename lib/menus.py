@@ -245,7 +245,8 @@ def macromaker(mode="g"):
                 "shortcut": input("Shortcut: "),
                 "text": input("Text: ")
             }
-            open(f"{tools.scriptpath()}/macros/{name}.json", "w+").write(json.dumps(macrodict, indent=2))
+            open(f"{tools.scriptpath()}/macros/{name}.json", "w+").write(
+                json.dumps(macrodict, indent=2))
         elif ce.lower() == "e":
             macrolist = os.listdir(macros)
             which = input("Macro name: ") + ".json"
@@ -254,7 +255,8 @@ def macromaker(mode="g"):
                 for k in macrodict.keys():
                     macrodict[k] = input(f"{k.capitalize()}: ")
 
-                    open(f"{macros}/{which}", "w+").write(json.dumps(macrodict, indent=2))
+                    open(f"{macros}/{which}", "w+").write(json.dumps(macrodict,
+                                                                     indent=2))
 
         elif ce == ":cancel:":
             pass
@@ -264,8 +266,7 @@ def replacetxt(text):
     consoledb("Replacetxt", "Bruh")
 
     rep = tk.Tk()
-    rep["bg"] = "#ffffff"
-    rep.title("Replace")
+    tools.windowmaker(rep, "Replace", "300x300")
 
     labels = ["Target", "Result"]
     index = -1

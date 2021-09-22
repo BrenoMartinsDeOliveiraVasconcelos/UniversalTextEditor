@@ -157,3 +157,10 @@ def createmacro(entries):
          "w+").write(json.dumps(macrodict, indent=2))
 
     messagebox.showinfo("Done", f"Created {args[2]}")
+
+
+def windowmaker(root, title, size, bg="#ffffff", resizable=(False, False)):
+    root.title(title)
+    root.geometry(size)
+    root["bg"] = bg
+    root.resizable(resizable[0], resizable[1])
