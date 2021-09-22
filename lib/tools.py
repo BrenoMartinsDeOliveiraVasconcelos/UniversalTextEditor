@@ -51,14 +51,22 @@ def macro(text, mode="g"):
             if i.endswith(".json"):
                 minfo = json.load(open(f"{macrof}/{i}"))
                 txt = text.get("1.0", tk.END).split(" ")
+                for i in txt:
+                    index += 1
+                    if "\n" in i:
+                        a = i.split("\n")
+                        txt[index] = a[0] + "\n"
+                        txt.insert(index + 1, a[1])
+                index = -1
                 consoledb("Macro", ' '.join(txt).replace("\n", "+"))
                 for loop in txt:
                     index += 1
-                    loop = loop.strip("\n")
-                    if loop == minfo["shortcut"] or loop == minfo["shortcut"] + "\n":
-                        txt[index] = minfo["text"]
+                    if loop.replace("\n", "") == minfo["shortcut"]:
+                        if "\n" not in loop:
+                            txt[index] = minfo["text"]
+                        else:
+                            txt[index] = minfo["text"] + "\n"
                         consoledb("Macro", txt[index])
-                    txt[index] = txt[index].strip("\n")
                 consoledb("Macro", txt[index])
                 text.delete("1.0", tk.END)
                 text.insert("1.0", " ".join(txt))
@@ -165,3 +173,31 @@ def windowmaker(root, title, size="", bg="#ffffff", resizable=(False, False)):
         root.geometry(size)
     root["bg"] = bg
     root.resizable(resizable[0], resizable[1])
+
+
+def subs(text, entries):
+    string = text.get("1.0", tk.END).split(" ")
+    index = -1
+    for i in string:
+        index += 1
+        if "\n" in i:
+            a = i.split("\n")
+            string[index] = a[0] + "\n"
+            string.insert(index+1, a[1])
+
+
+    wrep = entries[0].get()
+    repwith = entries[1].get()
+
+    index = -1
+    for i in string:
+        index += 1
+        if i.replace("\n", "") == wrep:
+            consoledb("Subs", f"{string[index]}")
+            if "\n" not in i:
+                string[index] = repwith
+            else:
+                string[index] = repwith + "\n"
+
+    text.delete("1.0", tk.END)
+    text.insert("1.0", " ".join(string))

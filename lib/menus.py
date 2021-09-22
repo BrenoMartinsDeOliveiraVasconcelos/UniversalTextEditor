@@ -278,7 +278,8 @@ def replacetxt(text):
         rentry.grid(row=1, column=1)
 
         tk.Button(rep, text="Replace", font=("Segoe", 10), bg="#ffffff",
-                  fg="#000000", command=lambda: print("Placeholder"),
+                  fg="#000000", command=lambda: tools.subs(text,
+                                                           [tentry, rentry]),
                   width=10).grid(
             row=2, column=1)
 
