@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Macro para GPLv2" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632315576173</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela">
+      <created>1632319974426</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1632319974426</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,7 +354,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Frases babacas&#10;Not wholesome :(" />
     <MESSAGE value="adicionado comando :cp: na linha de comando" />
     <MESSAGE value="Mudanças pequenas&#10;.lower() em main.py&#10;Ajuste de linhas na função principal" />
     <MESSAGE value="Macros&#10;adicionado macros parcialmente" />
@@ -369,6 +378,7 @@
     <MESSAGE value="Correções de bugs&#10;Macros em final de linha agora são substiuidos" />
     <MESSAGE value="u&#10;COMMIT" />
     <MESSAGE value="Macro para GPLv2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Macro para GPLv2" />
+    <MESSAGE value="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela" />
   </component>
 </project>

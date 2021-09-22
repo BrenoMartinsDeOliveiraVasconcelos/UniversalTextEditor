@@ -49,7 +49,7 @@ def main(args):
 
         # Menu
         menu = tk.Menu(root, bg="#ffffff", fg="#000000",
-                       activebackground="#5156db", activeforeground="#ffffff",
+                       activebackground="#e0e0e0", activeforeground="#000000",
                        disabledforeground="#a1a1a1", relief="flat", border=0)
 
         root.config(menu=menu)
@@ -57,13 +57,14 @@ def main(args):
         # Text
         text = tk.Text(root, bg="#ffffff", fg="#000000",
                        font=("Segoe", 10), wrap="word", undo=True,
-                       insertbackground="#000000", selectbackground="#5156db",
+                       insertbackground="#000000", selectbackground="#e0e0e0",
+                       selectforeground="#000000",
                        width=95, height=35)
         text.grid(row=1, column=0, rowspan=1)
 
         # Scrollbar
         scrollbar = tk.Scrollbar(root, command=text.yview,
-                                 bg="#ffffff", activebackground="#5156db",
+                                 bg="#ffffff", activebackground="#e0e0e0",
                                  activerelief="flat")
         scrollbar.grid(row=1, column=1, sticky="nsew")
         text.config(yscrollcommand=scrollbar.set)
