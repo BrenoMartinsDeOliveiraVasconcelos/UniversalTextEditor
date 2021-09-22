@@ -46,7 +46,7 @@ def main(args):
         else:
             root.geometry("686x595")
         root.resizable(False, False)
-        root["bg"] = "#cccccc"
+        root["bg"] = "#d6d6d6"
 
         # Menu
         menu = tk.Menu(root, bg="#ffffff", fg="#000000",
@@ -78,7 +78,7 @@ def main(args):
                      f"OS: {platform.system()} - Python: {ver}"
         else:
             string = f"v{configs['version']}"
-        tk.Label(root, bg="#cccccc", text=string, fg="#000000").grid(
+        tk.Label(root, bg="#d6d6d6", text=string, fg="#000000").grid(
                 row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
         tools.configmenu(menu, text, root)
