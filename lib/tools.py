@@ -39,57 +39,40 @@ def scriptpath():
     return '/'.join(script.replace("\\", "/").split("/")[:-1])
 
 
-def macro(text, mode="g"):
+def macro(text):
     macrof = f"{scriptpath()}/macros"
     macros = os.listdir(macrof)
 
-    if mode == "g":
-        consoledb("Macro", macros)
+    consoledb("Macro", macros)
 
-        for n in macros:
-            index = -1
-            if n.endswith(".json"):
-                minfo = json.load(open(f"{macrof}/{n}"))
-                txt = text.get("1.0", tk.END).split(" ")
-                for k in txt:
-                    index += 1
-                    if "\n" in k:
-                        a = k.split("\n")
-                        txt[index] = a[0] + "\n"
-                        txt.insert(index + 1, a[1])
-                        if a[1] == "":
-                            del txt[index+1]
-                            txt[index] = a[0] + "\n"
-                index = -1
-                consoledb("Macro", ' '.join(txt).replace("\n", "+"))
-                for loop in txt:
-                    index += 1
-                    if loop.replace("\n", "") == minfo["shortcut"]:
-                        if "\n" not in loop:
-                            txt[index] = minfo["text"]
-                        else:
-                            txt[index] = minfo["text"] + "\n"
-                        consoledb("Macro", txt[index])
-                consoledb("Macro", txt[index])
-                text.delete("1.0", tk.END)
-
-                text.insert("1.0", " ".join(txt))
-    elif mode == "c":
-        txt = []
+    for n in macros:
         index = -1
-        for i in text:
-            line = i.split(" ")
-            for n in line:
+        if n.endswith(".json"):
+            minfo = json.load(open(f"{macrof}/{n}"))
+            txt = text.get("1.0", tk.END).split(" ")
+            for k in txt:
                 index += 1
-                for d in macros:
-                    if d.endswith(".json"):
-                        minfo = json.load(open(f"{macrof}/{d}"))
-                        if n == minfo["shortcut"] or n == minfo["shortcut"] + "\n":
-                            line[index] = minfo["text"]
-            txt.append(" ".join(line))
+                if "\n" in k:
+                    a = k.split("\n")
+                    txt[index] = a[0] + "\n"
+                    txt.insert(index + 1, a[1])
+                    if a[1] == "":
+                        del txt[index+1]
+                        txt[index] = a[0] + "\n"
             index = -1
+            consoledb("Macro", ' '.join(txt).replace("\n", "+"))
+            for loop in txt:
+                index += 1
+                if loop.replace("\n", "") == minfo["shortcut"]:
+                    if "\n" not in loop:
+                        txt[index] = minfo["text"]
+                    else:
+                        txt[index] = minfo["text"] + "\n"
+                    consoledb("Macro", txt[index])
+            consoledb("Macro", txt[index])
+            text.delete("1.0", tk.END)
 
-        return txt
+            text.insert("1.0", " ".join(txt))
 
 
 def readconfig():
