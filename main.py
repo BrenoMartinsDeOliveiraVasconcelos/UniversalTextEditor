@@ -1,6 +1,7 @@
 from lib import tools, menus
 from lib.consoledb import consoledb
 from sys import argv
+from sys import version
 import platform
 import tkinter as tk
 
@@ -69,6 +70,16 @@ def main(args):
         scrollbar.grid(row=1, column=1, sticky="nsew")
         text.config(yscrollcommand=scrollbar.set)
 
+        # Label
+        ver = version.split("\n")[0]
+        if configs["debug"]:
+            string = f"DEBUG - v{configs['version']} {configs['releasebuild']} {configs['build']} - " \
+                     f"OS: {platform.system()} - Python: {ver}"
+        else:
+            string = f"v{configs['version']}"
+        tk.Label(root, bg="#cccccc", text=string, fg="#000000").grid(
+                row=2, column=0, sticky="w")
+
         tools.configmenu(menu, text, root)
 
         root.mainloop()
@@ -107,7 +118,7 @@ def main(args):
                 tools.clear(systema)
                 for line in range(len(text)):
                     line += 1
-                    print(f"[{line}] {text[line-1]}", end=endl)
+                    print(f"[{line}] {text[line - 1]}", end=endl)
 
 
 if __name__ == "__main__":
