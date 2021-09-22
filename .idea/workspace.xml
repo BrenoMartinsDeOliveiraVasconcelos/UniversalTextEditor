@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Removido label de frases">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Função que cria janelas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
     </list>
@@ -281,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632315652456</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Função que cria janelas">
+      <created>1632316156207</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1632316156207</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -298,7 +306,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Copypaste movido para tools.py" />
     <MESSAGE value="." />
     <MESSAGE value="Limpeza" />
     <MESSAGE value="Função About agora exibe a licensa correta&#10;Agora é exibido um erro caso a biblioteca pyperclip não seja encontrada." />
@@ -323,6 +330,7 @@
     <MESSAGE value="Sistema incompleto de sistema de substituiçaõ" />
     <MESSAGE value="beta4" />
     <MESSAGE value="Removido label de frases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removido label de frases" />
+    <MESSAGE value="Função que cria janelas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Função que cria janelas" />
   </component>
 </project>

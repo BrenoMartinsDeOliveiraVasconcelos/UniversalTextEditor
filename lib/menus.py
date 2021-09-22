@@ -122,10 +122,7 @@ def about(mode="g"):
     cfg = tools.readconfig()
     if mode == "g":
         abt = tk.Tk()
-        abt.title("About Universal Text Editor")
-
-        abt.resizable(False, False)
-        abt["bg"] = "#ffffff"
+        tools.windowmaker(abt, "About", bg="#ffffff")
 
         ix = -1
 
@@ -212,10 +209,7 @@ def macromaker(mode="g"):
     if mode == "g":
         mk = tk.Tk()
 
-        mk.title("Macro maker")
-        mk.geometry("200x90")
-        mk.resizable(False, False)
-        mk["bg"] = "#ffffff"
+        tools.windowmaker(root=mk, title="Macro maker", size="200x90")
 
         indx = -1
         labels = ["Name", "Shortcut", "Text"]
@@ -234,7 +228,8 @@ def macromaker(mode="g"):
 
         tk.Button(mk, text="Create",
                   command=lambda: tools.createmacro([shentry, tentry, nentry]),
-                  bg="#ffffff", fg="#000000", width=10).grid(row=3, column=1)
+                  bg="#ffffff", fg="#000000", width=10,
+                  font=("Segoe", 10)).grid(row=3, column=1)
 
         mk.mainloop()
     elif mode == "c":
@@ -266,20 +261,26 @@ def replacetxt(text):
     consoledb("Replacetxt", "Bruh")
 
     rep = tk.Tk()
-    tools.windowmaker(rep, "Replace", "300x300")
+    tools.windowmaker(rep, "Replace", "175x75")
 
     labels = ["Target", "Result"]
     index = -1
     for i in labels:
         index += 1
         tk.Label(rep, text=i, font=("Segoe", "10"),
-                 bg="#ffffff", fg="#000000").grid(row=index, column=0)
+                 bg="#ffffff", fg="#000000").grid(row=index, column=0,
+                                                  sticky="w")
 
         tentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
         rentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
 
         tentry.grid(row=0, column=1)
         rentry.grid(row=1, column=1)
+
+        tk.Button(rep, text="Replace", font=("Segoe", 10), bg="#ffffff",
+                  fg="#000000", command=lambda: print("Placeholder"),
+                  width=10).grid(
+            row=2, column=1)
 
     rep.resizable(False, False)
 

@@ -159,8 +159,9 @@ def createmacro(entries):
     messagebox.showinfo("Done", f"Created {args[2]}")
 
 
-def windowmaker(root, title, size, bg="#ffffff", resizable=(False, False)):
+def windowmaker(root, title, size="", bg="#ffffff", resizable=(False, False)):
     root.title(title)
-    root.geometry(size)
+    if size != "":
+        root.geometry(size)
     root["bg"] = bg
     root.resizable(resizable[0], resizable[1])
