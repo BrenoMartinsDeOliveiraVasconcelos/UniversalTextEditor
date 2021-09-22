@@ -133,7 +133,7 @@ def configmenu(menu, text, root):
     opts = ["Open", "Save as", "Create a Macro"]
 
     emenu = tk.Menu(root)
-    menu.add_cascade(label="Edit", menu=emenu)
+    menu.add_cascade(label="Tools", menu=emenu)
     i = 0
     for i in range(len(opts)):
         emenu.add_command(label=opts[i],
