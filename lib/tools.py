@@ -149,6 +149,12 @@ def createmacro(entries):
         "shortcut": args[0],
         "text": args[1]
     }
+
+    if macrodict["shortcut"] == "" or macrodict["text"] == ""\
+            or args[2] == "":
+        messagebox.showerror("Error", "Some entries are empty!")
+        return
+
     open(f"{path}/{args[2]}.json",
          "w+").write(json.dumps(macrodict, indent=2))
 
