@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Entries vazias agora darão um erro na função subs()">
-      <change afterPath="$PROJECT_DIR$/macros/.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Entries vazias agora darão um erro na função createmacro()">
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -400,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632352419865</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Entries vazias agora darão um erro na função createmacro()">
+      <created>1632352789328</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1632352789328</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -417,7 +425,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Criador de macros funcional&#10;[Ainda não finalizado]" />
     <MESSAGE value="Label de nome do macro para o criador de macros" />
     <MESSAGE value="Messagebox" />
     <MESSAGE value="Macros em command line funcionando&#10;:macro:" />
@@ -442,6 +449,7 @@
     <MESSAGE value="beta5" />
     <MESSAGE value="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone." />
     <MESSAGE value="Entries vazias agora darão um erro na função subs()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entries vazias agora darão um erro na função subs()" />
+    <MESSAGE value="Entries vazias agora darão um erro na função createmacro()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entries vazias agora darão um erro na função createmacro()" />
   </component>
 </project>

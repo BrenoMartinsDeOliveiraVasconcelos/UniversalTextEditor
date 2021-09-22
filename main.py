@@ -57,7 +57,7 @@ def main(args):
     ver = version.split("\n")[0]
     ver = "".join(ver).split(" ")[0]
     if configs["debug"]:
-        string = f"DEBUG - v{configs['version']} {configs['releasebuild']} " \
+        string = f"DEBUG - v{configs['version']} " \
                  f"{configs['build']} - " \
                  f"OS: {platform.system()} - Python: {ver}"
     else:

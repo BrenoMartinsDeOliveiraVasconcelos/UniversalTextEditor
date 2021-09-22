@@ -1,14 +1,8 @@
-import json
-import os
-
 from lib.consoledb import consoledb, errorprint
 from lib import tools
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
-import pyperclip
-
-pc = True
 
 
 def saveas(text, root=None, mode="g"):
@@ -125,12 +119,9 @@ def about():
 
     ix = -1
 
-    for i in [f"Universal Text Editor",
+    for i in [f"Universal Text Editor v{cfg['version']}",
               "Made by Breno Martins",
-              "This software is distribuited under the GPLv2 license.",
-              f"Version: {cfg['version']}",
-              f"Build: {cfg['build']}",
-              f"Release: {cfg['releasebuild']}"]:
+              "This software is distribuited under the GPLv2 license."]:
         ix += 1
         tk.Label(abt, bg="#ffffff", text=i, fg="#000000").grid(row=ix, column=0)
 
