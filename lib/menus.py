@@ -209,7 +209,7 @@ def macromaker(mode="g"):
     if mode == "g":
         mk = tk.Tk()
 
-        tools.windowmaker(root=mk, title="Macro maker", size="200x90")
+        tools.windowmaker(root=mk, title="Macro maker")
 
         indx = -1
         labels = ["Name", "Shortcut", "Text"]
@@ -261,7 +261,7 @@ def replacetxt(text):
     consoledb("Replacetxt", "Bruh")
 
     rep = tk.Tk()
-    tools.windowmaker(rep, "Replace", "175x75")
+    tools.windowmaker(rep, "Replace")
 
     labels = ["Target", "Result"]
     index = -1
