@@ -72,6 +72,7 @@ def macro(text, mode="g"):
                         consoledb("Macro", txt[index])
                 consoledb("Macro", txt[index])
                 text.delete("1.0", tk.END)
+
                 text.insert("1.0", " ".join(txt))
     elif mode == "c":
         txt = []
