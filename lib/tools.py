@@ -175,6 +175,9 @@ def subs(text, entries):
 
     wrep = entries[0].get()
     repwith = entries[1].get()
+    if wrep == "" or repwith == "":
+        messagebox.showerror("Error", "Some entries are empty!")
+        return
 
     index = -1
     occour = 0

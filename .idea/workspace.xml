@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="beta5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone.">
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632350606886</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone.">
+      <created>1632352156834</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1632352156834</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -405,7 +409,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="beta3&#10;Nova build" />
     <MESSAGE value="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como" />
     <MESSAGE value="Criador de macros funcional&#10;[Ainda não finalizado]" />
     <MESSAGE value="Label de nome do macro para o criador de macros" />
@@ -430,6 +433,7 @@
     <MESSAGE value="Correções de bugd" />
     <MESSAGE value="Cor do fundo da janela principal alterado de #cccccc para #d6d6d6" />
     <MESSAGE value="beta5" />
-    <option name="LAST_COMMIT_MESSAGE" value="beta5" />
+    <MESSAGE value="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone." />
+    <option name="LAST_COMMIT_MESSAGE" value="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone." />
   </component>
 </project>
