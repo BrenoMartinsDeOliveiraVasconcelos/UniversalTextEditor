@@ -46,17 +46,20 @@ def macro(text, mode="g"):
     if mode == "g":
         consoledb("Macro", macros)
 
-        for i in macros:
+        for n in macros:
             index = -1
-            if i.endswith(".json"):
-                minfo = json.load(open(f"{macrof}/{i}"))
+            if n.endswith(".json"):
+                minfo = json.load(open(f"{macrof}/{n}"))
                 txt = text.get("1.0", tk.END).split(" ")
-                for i in txt:
+                for k in txt:
                     index += 1
-                    if "\n" in i:
-                        a = i.split("\n")
+                    if "\n" in k:
+                        a = k.split("\n")
                         txt[index] = a[0] + "\n"
                         txt.insert(index + 1, a[1])
+                        if a[1] == "":
+                            del txt[index+1]
+                            txt[index] = a[0] + "\n"
                 index = -1
                 consoledb("Macro", ' '.join(txt).replace("\n", "+"))
                 for loop in txt:
@@ -99,8 +102,9 @@ def readconfig():
 def opt(option, text, root):
     consoledb("Opt", option)
     if option == 9:
-        yn = messagebox.askyesno("Exit", "Do you really want to exit? Unsaved changes may be "
-                                         "lost forever!")
+        yn = messagebox.askyesno("Exit",
+                                 "Do you really want to exit? Unsaved changes may be "
+                                 "lost forever!")
         if yn == 1:
             exit()
     elif option == 8:
@@ -184,7 +188,6 @@ def subs(text, entries):
             a = i.split("\n")
             string[index] = a[0] + "\n"
             string.insert(index+1, a[1])
-
 
     wrep = entries[0].get()
     repwith = entries[1].get()
