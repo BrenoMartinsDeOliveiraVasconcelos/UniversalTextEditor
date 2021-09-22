@@ -72,13 +72,14 @@ def main(args):
 
         # Label
         ver = version.split("\n")[0]
+        ver = "".join(ver).split(" ")[0]
         if configs["debug"]:
             string = f"DEBUG - v{configs['version']} {configs['releasebuild']} {configs['build']} - " \
                      f"OS: {platform.system()} - Python: {ver}"
         else:
             string = f"v{configs['version']}"
         tk.Label(root, bg="#cccccc", text=string, fg="#000000").grid(
-                row=2, column=0, sticky="w")
+                row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
         tools.configmenu(menu, text, root)
 

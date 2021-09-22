@@ -194,9 +194,11 @@ def subs(text, entries):
     repwith = entries[1].get()
 
     index = -1
+    occour = 0
     for i in string:
         index += 1
         if i.replace("\n", "") == wrep:
+            occour += 1
             consoledb("Subs", f"{string[index]}")
             if "\n" not in i:
                 string[index] = repwith
@@ -205,3 +207,4 @@ def subs(text, entries):
 
     text.delete("1.0", tk.END)
     text.insert("1.0", " ".join(string))
+    messagebox.showinfo("Done", f"Replaced {occour} occourence(s) of {wrep}.")

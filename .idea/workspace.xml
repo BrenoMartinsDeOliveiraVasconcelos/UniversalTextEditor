@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Renomeado a opção &quot;Edit&quot; para &quot;Tools&quot;">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Colocado um Label que exibe a versão">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -358,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632331605169</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Colocado um Label que exibe a versão">
+      <created>1632332639967</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1632332639967</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +383,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Macros&#10;Macros na mesma linha agora funcionam" />
     <MESSAGE value="Sistema de macros melhorado&#10;Correções de bug" />
     <MESSAGE value="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente." />
     <MESSAGE value="Temporariamente removendo checagem de modulo inexistente" />
@@ -400,6 +407,7 @@
     <MESSAGE value="Atualizado esquema de cores para sistemas suportados" />
     <MESSAGE value="Novo formato de build de lançamento&#10;m(mês previsto)y(Ano previsto)r(número da release nesse mês e ano)" />
     <MESSAGE value="Renomeado a opção &quot;Edit&quot; para &quot;Tools&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renomeado a opção &quot;Edit&quot; para &quot;Tools&quot;" />
+    <MESSAGE value="Colocado um Label que exibe a versão" />
+    <option name="LAST_COMMIT_MESSAGE" value="Colocado um Label que exibe a versão" />
   </component>
 </project>
