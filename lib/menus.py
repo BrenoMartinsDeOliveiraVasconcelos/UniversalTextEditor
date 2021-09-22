@@ -265,6 +265,20 @@ def replacetxt(text):
 
     rep = tk.Tk()
     rep["bg"] = "#ffffff"
+    rep.title("Replace")
+
+    labels = ["Target", "Result"]
+    index = -1
+    for i in labels:
+        index += 1
+        tk.Label(rep, text=i, font=("Segoe", "10"),
+                 bg="#ffffff", fg="#000000").grid(row=index, column=0)
+
+        tentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
+        rentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
+
+        tentry.grid(row=0, column=1)
+        rentry.grid(row=1, column=1)
 
     rep.resizable(False, False)
 

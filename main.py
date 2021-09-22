@@ -2,18 +2,12 @@ from lib import tools, menus
 from lib.consoledb import consoledb
 from sys import argv
 import platform
-from random import choice
 import tkinter as tk
 
 scriptpath = tools.scriptpath()
 argv.append('')
 systema = platform.system()
 configs = tools.readconfig()
-if configs["wholesome"]:
-    txtfile = "cool.txt"
-else:
-    txtfile = "rude.txt"
-frases = open(f"{scriptpath}/{txtfile}", "r").readlines()
 
 
 def main(args):
@@ -73,11 +67,6 @@ def main(args):
                                  activerelief="flat")
         scrollbar.grid(row=1, column=1, sticky="nsew")
         text.config(yscrollcommand=scrollbar.set)
-
-        # Label
-        phr = tk.Label(root, bg="#cccccc", font=("Segoe", 10),
-                       text=f"{choice(frases)}", fg="#000000")
-        phr.grid(row=2, column=0, sticky="nsew")
 
         tools.configmenu(menu, text, root)
 
