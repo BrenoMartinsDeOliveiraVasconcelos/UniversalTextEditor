@@ -1,45 +1,27 @@
 import os
 
-from lib.consoledb import consoledb, errorprint
+from lib.consoledb import consoledb
 from lib import tools
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
 
 
-def saveas(text, root=None, mode="g"):
-    if mode == "g":
-        text = text.get("1.0", tk.END)
-        consoledb("SaveAs", text)
+def saveas(text, root=None):
+    text = text.get("1.0", tk.END)
+    consoledb("SaveAs", text)
 
-        fn = filedialog.asksaveasfilename()
-        consoledb("SaveAs", fn)
+    fn = filedialog.asksaveasfilename()
+    consoledb("SaveAs", fn)
 
-        try:
-            open(fn, "w+").write(text.strip('\n'))
-            root.title(f"Universal Text Editor - {fn}")
-        except PermissionError:
-            consoledb("SaveAs", "Permissão negada!", tp=1)
-            messagebox.showerror("Error", "Permission denied!")
-        except OSError:
-            messagebox.showerror("Error", "Invalid argument")
-    elif mode == "c":
-        while True:
-            try:
-                fn = input("Path: ")
-                if fn != ":cancel:":
-                    open(fn, "w+").write(text.strip('\n'))
-                    break
-                else:
-                    break
-            except PermissionError:
-                errorprint("Permission denied or it is a directory!", tp=1)
-            except FileNotFoundError:
-                errorprint("FIle not found", tp=0)
-            except IsADirectoryError:
-                errorprint("It is a directory", tp=0)
-            except OSError:
-                errorprint("Permission denied?", tp=1)
+    try:
+        open(fn, "w+").write(text.strip('\n'))
+        root.title(f"Universal Text Editor - {fn}")
+    except PermissionError:
+        consoledb("SaveAs", "Permissão negada!", tp=1)
+        messagebox.showerror("Error", "Permission denied!")
+    except OSError:
+        messagebox.showerror("Error", "Invalid argument")
 
 
 def opn(text, root):
@@ -63,55 +45,6 @@ def opn(text, root):
     text.delete("1.0", tk.END)
     text.insert("1.0", txt)
     root.title(f"Universal Text Editor - {fn}")
-
-
-def delete(text):
-    while True:
-        index = input("Line number: ")
-        if index == ":last:":
-            index = -1
-            break
-        elif index == ":first:":
-            index = 0
-            break
-        elif index == ":cancel:":
-            index = None
-            break
-        elif index == ':all:':
-            index = None
-            text = []
-            break
-        else:
-            try:
-                index = int(index) - 1
-                break
-            except (ValueError, TypeError):
-                errorprint("Invalid value!", tp=1)
-
-    try:
-        text.pop(index)
-    except IndexError:
-        print("\033[31mNo such line.\033[0m")
-    except TypeError:
-        pass
-
-    return text
-
-
-def cmdopn():
-    while True:
-        fn = input("Path: ")
-        try:
-            if fn != ":cancel:":
-                return open(fn, "r").readlines()
-            else:
-                break
-        except PermissionError:
-            errorprint("Permission denied!", tp=1)
-        except IsADirectoryError:
-            errorprint("It is a directory!", tp=0)
-        except FileNotFoundError:
-            errorprint("File not found", tp=0)
 
 
 def about():

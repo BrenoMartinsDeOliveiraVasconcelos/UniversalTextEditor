@@ -21,14 +21,3 @@ def consoledb(info, text, tp=0, verifydebug=True):
 
     if tp == 3:
         exit(3)
-
-
-def errorprint(text, tp):
-    if tp == 0:
-        symb = "<!>"
-    elif tp == 1:
-        symb = "[!]"
-    else:
-        symb = "\033[0m"
-
-    print(f"{symb} {text}")
