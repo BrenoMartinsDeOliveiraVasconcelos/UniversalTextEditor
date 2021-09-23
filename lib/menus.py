@@ -152,6 +152,12 @@ def macromaker():
     tentry = tk.Text(mk, bg="#ffffff", fg="#000000", font=("Segoe", 10),
                      width=20, height=5)
 
+    scrollbar = tk.Scrollbar(mk, command=tentry.yview,
+                             bg="#ffffff", activebackground="#e0e0e0",
+                             activerelief="flat")
+    scrollbar.grid(row=2, column=2, sticky="nsew")
+    tentry.config(yscrollcommand=scrollbar.set)
+
     nentry.grid(row=0, column=1, sticky="e")
     shentry.grid(row=1, column=1, sticky="e")
     tentry.grid(row=2, column=1, sticky="e")

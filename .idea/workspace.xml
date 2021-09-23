@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Sistema de edição de macros finalizado">
+      <change beforePath="$PROJECT_DIR$/TODO" beforeDir="false" afterPath="$PROJECT_DIR$/TODO" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00004" summary=".">
-      <created>1632136723251</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1632136723251</updated>
     </task>
     <task id="LOCAL-00005" summary="Limpeza">
       <created>1632136986814</created>
@@ -429,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632412781846</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Sistema de edição de macros finalizado">
+      <created>1632413523387</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1632413523387</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -446,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Sistema incompleto de sistema de substituiçaõ" />
     <MESSAGE value="beta4" />
     <MESSAGE value="Removido label de frases" />
     <MESSAGE value="Função que cria janelas" />
@@ -471,6 +468,7 @@
     <MESSAGE value="Sistema de edição de macros parcialmente feito" />
     <MESSAGE value="Correções na UI e sistema de edição de macros quase pronto&#10;Botões agora estão corretamente alinhados" />
     <MESSAGE value="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text" />
+    <MESSAGE value="Sistema de edição de macros finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistema de edição de macros finalizado" />
   </component>
 </project>
