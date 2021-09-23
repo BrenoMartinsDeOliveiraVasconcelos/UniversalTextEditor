@@ -1,7 +1,7 @@
 import os
 
 from lib.consoledb import consoledb
-from lib import tools
+from lib import tools, events
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
@@ -171,5 +171,7 @@ def secretmenu():
 
     tools.windowmaker(secret, "MENU SECRETO")
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
+
+    secret.bind("<Control-c>", events.q)
 
     secret.mainloop()

@@ -69,7 +69,7 @@ def macro(text):
                     else:
                         txt[index] = minfo["text"] + "\n"
                     consoledb("Macro", txt[index])
-            consoledb("Macro", txt[index])
+            consoledb("Macro", txt[index-1])
             text.delete("1.0", tk.END)
 
             text.insert("1.0", " ".join(txt))

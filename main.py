@@ -1,4 +1,4 @@
-from lib import tools, menus
+from lib import tools, menus, events
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
@@ -65,11 +65,15 @@ def main(args):
     else:
         string = f"v{configs['version']}"
 
-    tk.Label(root, bg="#d6d6d6", text=string, fg="#000000").grid(
+    string += "- CTRL+0: Exit"
+
+    tk.Label(root, bg="#d6d6d6", text=string, fg="#000000",
+             font=("Segoe Italic", 10)).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
     tools.configmenu(menu, text, root)
 
+    root.bind("<Control-0>", events.q)
     root.mainloop()
 
 
