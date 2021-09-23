@@ -9,6 +9,12 @@ scriptpath = tools.scriptpath()
 argv.append('')
 systema = platform.system()
 configs = tools.readconfig()
+ui = tools.loadui()
+mainui = ui["main"]
+menui = mainui["menu"]
+textui = mainui["text"]
+scrollbarui = mainui["scrollbar"]
+labelui = mainui["label"]
 
 
 def main(args):
@@ -31,26 +37,26 @@ def main(args):
     else:
         root.geometry("686x595")
     root.resizable(False, False)
-    root["bg"] = "#d6d6d6"
+    root["bg"] = mainui["bg"]  # "#d6d6d6"
 
     # Menu
-    menu = tk.Menu(root, bg="#ffffff", fg="#000000",
-                   activebackground="#e0e0e0", activeforeground="#000000",
-                   disabledforeground="#a1a1a1", relief="flat", border=0)
+    menu = tk.Menu(root, bg=menui["bg"], fg=menui["fg"],
+                   activebackground=menui["abg"], activeforeground=menui["afg"],
+                   disabledforeground=menui["dfg"], relief="flat", border=0)
 
     root.config(menu=menu)
 
     # Text
-    text = tk.Text(root, bg="#ffffff", fg="#000000",
+    text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
                    font=("TkDefaultFont", 10), wrap="word", undo=True,
-                   insertbackground="#000000", selectbackground="#e0e0e0",
-                   selectforeground="#000000",
+                   insertbackground=textui["ibg"], selectbackground=textui["sbg"],
+                   selectforeground=textui["sfg"],
                    width=95, height=35)
     text.grid(row=1, column=0, rowspan=1)
 
     # Scrollbar
     scrollbar = tk.Scrollbar(root, command=text.yview,
-                             bg="#ffffff", activebackground="#e0e0e0",
+                             bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
                              activerelief="flat")
     scrollbar.grid(row=1, column=1, sticky="nsew")
     text.config(yscrollcommand=scrollbar.set)
@@ -65,9 +71,9 @@ def main(args):
     else:
         string = f"v{configs['version']}"
 
-    string += "- CTRL+C: Exit"
+    string += "- CTRL+0: Exit"
 
-    tk.Label(root, bg="#d6d6d6", text=string, fg="#000000").grid(
+    tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
     tools.configmenu(menu, text, root)

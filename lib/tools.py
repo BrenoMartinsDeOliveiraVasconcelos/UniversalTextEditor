@@ -39,6 +39,10 @@ def scriptpath():
     return '/'.join(script.replace("\\", "/").split("/")[:-1])
 
 
+def loadui():
+    return json.load(open(scriptpath()+"/stuffs/ui.json"))
+
+
 def macro(text):
     macrof = f"{scriptpath()}/macros"
     macros = os.listdir(macrof)
@@ -76,7 +80,7 @@ def macro(text):
 
 
 def readconfig():
-    path = scriptpath() + "/config.json"
+    path = scriptpath() + "/stuffs/config.json"
 
     with open(path) as json_file:
         data = json.load(json_file)

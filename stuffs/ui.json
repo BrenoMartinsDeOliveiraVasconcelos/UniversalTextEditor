@@ -1,0 +1,27 @@
+{
+  "main": {
+    "bg": "#d6d6d6",
+    "menu": {
+      "bg": "#ffffff",
+      "fg": "#000000",
+      "abg": "#e0e0e0",
+      "afg": "#000000",
+      "dfg": "#a1a1a1"
+    },
+    "text": {
+      "bg": "#ffffff",
+      "fg": "#000000",
+      "ibg": "#000000",
+      "sbg": "#e0e0e0",
+      "sfg": "#000000"
+    },
+    "scrollbar": {
+      "bg": "#ffffff",
+      "abg": "#e0e0e0"
+    },
+    "label": {
+      "bg": "#d6d6d6",
+      "fg": "#000000"
+    }
+  }
+}
