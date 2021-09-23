@@ -254,8 +254,10 @@ def madit(root, var):
         tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
                                                                 column=0, sticky="nw")
 
-    sentry = tk.Entry(root, width=20, font=("Segoe", 10))
-    nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10))
+    sentry = tk.Entry(root, width=20, font=("Segoe", 10),
+                      bg="#ffffff", fg="#000000")
+    nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10),
+                     bg="#ffffff", fg="#000000")
 
     sentry.grid(row=2, column=1)
     nentry.grid(row=3, column=1)
@@ -270,5 +272,5 @@ def madit(root, var):
     nentry.insert("1.0", defaultvals[1])
 
     tk.Button(root, text="Ok", width=10,
-              command=lambda: editmacro(sentry, nentry, value)
-              ).grid(row=4, column=1, sticky="e")
+              command=lambda: editmacro(sentry, nentry, value),
+              bg="#ffffff", fg="#000000").grid(row=4, column=1, sticky="e")

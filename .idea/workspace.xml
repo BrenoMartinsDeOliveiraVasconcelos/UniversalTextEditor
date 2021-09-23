@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Correções na UI&#10;Scrollbar no widget de texto do criador de macros">
-      <change beforePath="$PROJECT_DIR$/lib/consoledb.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/consoledb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Correção da UI">
+      <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Função About agora exibe a licensa correta&#10;Agora é exibido um erro caso a biblioteca pyperclip não seja encontrada.">
-      <created>1632137602571</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1632137602571</updated>
     </task>
     <task id="LOCAL-00007" summary="Texto adicionado abaixo do widget de texto">
       <created>1632139199529</created>
@@ -428,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632421851837</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Correção da UI">
+      <created>1632422562470</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1632422562471</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Removido label de frases" />
     <MESSAGE value="Função que cria janelas" />
     <MESSAGE value="Convertido janelas para a função windowmaker" />
     <MESSAGE value="Correções de bugs" />
@@ -470,6 +468,7 @@
     <MESSAGE value="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text" />
     <MESSAGE value="Sistema de edição de macros finalizado" />
     <MESSAGE value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
+    <MESSAGE value="Correção da UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção da UI" />
   </component>
 </project>
