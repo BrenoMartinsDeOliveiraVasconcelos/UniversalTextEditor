@@ -85,27 +85,29 @@ def readconfig():
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 9:
+    if option == 10:
         yn = messagebox.askyesno("Exit",
                                  "Do you really want to exit? Unsaved changes may be "
                                  "lost forever!")
         if yn == 1:
             exit()
-    elif option == 8:
+    elif option == 9:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 7:
+    elif option == 8:
         menus.replacetxt(text)
-    elif option == 6:
+    elif option == 7:
         text.delete("1.0", tk.END)
-    elif option == 5:
+    elif option == 6:
         macro(text)
+    elif option == 5:
+        menus.editmacro()
     elif option == 4:
-        copypaste("p", text)
-    elif option == 3:
-        copypaste("c", text)
-    elif option == 2:
         menus.macromaker()
+    elif option == 3:
+        copypaste("p", text)
+    elif option == 2:
+        copypaste("c", text)
     elif option == 1:
         menus.saveas(text, root=root)
     elif option == 0:
@@ -113,20 +115,39 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as", "Create a Macro"]
+    opts = ["Open", "Save as", "Copy", "Paste"]
+    mopts = ["Create a Macro",  "Edit a Macro", "Macronize"]
+    spopt = ["Clear", "Replace"]
+    topts = ["About", "Exit"]
 
     emenu = tk.Menu(root)
-    menu.add_cascade(label="Tools", menu=emenu)
+    tmenu = tk.Menu(root)
+    mmenu = tk.Menu(root)
+    pmenu = tk.Menu(root)
+    menu.add_cascade(label="File", menu=emenu)
     i = 0
     for i in range(len(opts)):
         emenu.add_command(label=opts[i],
                           command=lambda x=i: opt(x, text, root))
 
-    spopt = ["Copy", "Paste", "Macro", "Clear", "Replace", "About", "Exit"]
+    menu.add_cascade(label="Macro", menu=mmenu)
+    for e in range(len(mopts)):
+        consoledb("Configuremenu", e)
+        i += 1
+        mmenu.add_cascade(label=mopts[e],
+                          command=lambda x=i: opt(x, text, root))
+
+    menu.add_cascade(label="Text", menu=tmenu)
     for o in range(len(spopt)):
         i += 1
-        menu.add_command(label=spopt[o],
-                         command=lambda x=i: opt(x, text, root))
+        tmenu.add_command(label=spopt[o],
+                          command=lambda x=i: opt(x, text, root))
+
+    menu.add_cascade(label="Help", menu=pmenu)
+    for u in range(len(topts)):
+        i += 1
+        pmenu.add_command(label=topts[u],
+                          command=lambda x=i: opt(x, text, root))
 
 
 def clear(sys):

@@ -17,6 +17,8 @@ def main(args):
     elif args[1] == "-macromaker":
         menus.macromaker()
         exit()
+    elif args[1] == "-secret":
+        menus.secretmenu()
     else:
         consoledb("Main", "No valid arguments")
 

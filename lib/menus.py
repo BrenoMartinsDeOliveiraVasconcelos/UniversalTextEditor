@@ -126,7 +126,7 @@ def about():
         tk.Label(abt, bg="#ffffff", text=i, fg="#000000").grid(row=ix, column=0)
 
     tk.Button(abt, bg="#ffffff", command=abt.destroy,
-              text="Ok", width=10, fg="#000000") .grid(row=ix+1, column=0)
+              text="Ok", width=10, fg="#000000").grid(row=ix + 1, column=0)
 
     abt.mainloop()
 
@@ -188,3 +188,31 @@ def replacetxt(text):
     rep.resizable(False, False)
 
     rep.mainloop()
+
+
+def editmacro():
+    pass
+
+
+def secretmenu():
+    # Essa função contém uma tela que é feito apenas para testes
+    # de futuras novas features
+    # essa função só poderá ser ativada com argumentos específicos
+
+    secret = tk.Tk()
+
+    tools.windowmaker(secret, "MENU SECRETO")
+    consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
+
+    opts = ["1", "2", "3"]
+    var = tk.StringVar(secret)
+    var.set("HIMITSU")
+
+    w = tk.OptionMenu(secret, var, *opts).pack()
+    tk.Button(w, text="HIMITSU", command=lambda:
+                                                                    messagebox.showinfo(
+                                                                                                        "Segredo",
+                                                                                                        f"{var.get()}"
+                                                                    )).pack()
+
+    secret.mainloop()
