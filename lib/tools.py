@@ -226,10 +226,29 @@ def subs(text, entries):
 def madit(root, var):
     value = var.get()
     path = scriptpath() + "/macros"
+    minfo = json.load(open(f"{path}/{value}.json"))
+    defaultvals = [
+        minfo["shortcut"], minfo["text"]
+    ]
 
     index = 1
-    labels = ["Shortcut: ", "Name: "]
+    labels = ["Shortcut: ", "Text: "]
     for i in labels:
         index += 1
         tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
-                                                                column=0)
+                                                                column=0, sticky="W")
+
+    sentry = tk.Entry(root, width=20, font=("Segoe", 10))
+    nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10))
+
+    sentry.grid(row=2, column=1)
+    nentry.grid(row=3, column=1)
+
+    scrollbar = tk.Scrollbar(root, command=nentry.yview,
+                             bg="#ffffff", activebackground="#e0e0e0",
+                             activerelief="flat")
+    scrollbar.grid(row=3, column=2, sticky="nsew")
+    nentry.config(yscrollcommand=scrollbar.set)
+
+    sentry.insert(0, defaultvals[0])
+    nentry.insert("1.0", defaultvals[1])

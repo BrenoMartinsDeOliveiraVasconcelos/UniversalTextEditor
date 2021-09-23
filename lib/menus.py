@@ -211,11 +211,11 @@ def editmacro():
              fg="#000000").grid(row=0, column=0, sticky="w")
     optmenu = tk.OptionMenu(medit, var, *names)
 
-    optmenu.grid(row=0, column=1)
+    optmenu.grid(row=0, column=1, sticky="e")
 
     tk.Button(medit, text="Edit", bg="#ffffff", fg="#000000",
               command=lambda: tools.madit(medit, var),
-              width=10).grid(row=1, column=1)
+              width=10).grid(row=1, column=1, sticky="e")
 
     medit.mainloop()
 

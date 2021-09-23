@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Nova organização do menu superior">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Sistema de edição de macros parcialmente feito">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -422,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632400652243</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Sistema de edição de macros parcialmente feito">
+      <created>1632406380609</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1632406380609</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -439,7 +447,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Macros em command line funcionando&#10;:macro:" />
     <MESSAGE value="Editor e criador de macros feito pra linha de comando" />
     <MESSAGE value="ABout" />
     <MESSAGE value="Sistema incompleto de sistema de substituiçaõ" />
@@ -464,6 +471,7 @@
     <MESSAGE value="Entries vazias agora darão um erro na função createmacro()" />
     <MESSAGE value="Removido releasebuild, limpeza no código&#10;Tirado alguns imports inúteis &#10;releasebuild não é mais existente" />
     <MESSAGE value="Nova organização do menu superior" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nova organização do menu superior" />
+    <MESSAGE value="Sistema de edição de macros parcialmente feito" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistema de edição de macros parcialmente feito" />
   </component>
 </project>

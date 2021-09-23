@@ -64,6 +64,7 @@ def main(args):
                  f"OS: {platform.system()} - Python: {ver}"
     else:
         string = f"v{configs['version']}"
+
     tk.Label(root, bg="#d6d6d6", text=string, fg="#000000").grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
