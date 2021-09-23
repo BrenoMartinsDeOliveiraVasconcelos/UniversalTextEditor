@@ -134,7 +134,7 @@ def configmenu(menu, text, root):
     for e in range(len(mopts)):
         consoledb("Configuremenu", e)
         i += 1
-        mmenu.add_cascade(label=mopts[e],
+        mmenu.add_command(label=mopts[e],
                           command=lambda x=i: opt(x, text, root))
 
     menu.add_cascade(label="Text", menu=tmenu)
