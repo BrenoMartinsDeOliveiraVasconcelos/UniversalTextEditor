@@ -145,16 +145,19 @@ def macromaker():
         tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
                                                               column=0, sticky="w")
 
-    nentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
-    shentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
-    tentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
+    nentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
+                      font=("Segoe", 10))
+    shentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
+                       font=("Segoe", 10))
+    tentry = tk.Text(mk, bg="#ffffff", fg="#000000", font=("Segoe", 10),
+                     width=20, height=5)
 
     nentry.grid(row=0, column=1, sticky="e")
     shentry.grid(row=1, column=1, sticky="e")
     tentry.grid(row=2, column=1, sticky="e")
 
     tk.Button(mk, text="Create",
-              command=lambda: tools.createmacro([shentry, tentry, nentry]),
+              command=lambda: tools.createmacro([shentry, nentry], tentry),
               bg="#ffffff", fg="#000000", width=10,
               font=("Segoe", 10)).grid(row=3, column=1, sticky="e")
 

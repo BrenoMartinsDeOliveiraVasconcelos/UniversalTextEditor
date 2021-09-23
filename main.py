@@ -4,7 +4,6 @@ from sys import argv
 from sys import version
 import platform
 import tkinter as tk
-from tkinter import messagebox
 
 scriptpath = tools.scriptpath()
 argv.append('')
@@ -71,8 +70,6 @@ def main(args):
 
     tools.configmenu(menu, text, root)
 
-    messagebox.showwarning("Warning",
-                           "This is currently in beta, bugs may happen!")
     root.mainloop()
 
 

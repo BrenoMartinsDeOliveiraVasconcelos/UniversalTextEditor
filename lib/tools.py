@@ -159,27 +159,30 @@ def clear(sys):
         os.system("clear")
 
 
-def createmacro(entries):
+def createmacro(entries, text):
     args = []
     path = scriptpath() + "/macros"
     for i in entries:
         consoledb("Createmacro", i.get())
         args.append(str(i.get()))
 
+    args.append(text.get("1.0", tk.END))
+    consoledb("Createmacro", args)
+
     macrodict = {
         "shortcut": args[0],
-        "text": args[1]
+        "text": args[2]
     }
 
     if macrodict["shortcut"] == "" or macrodict["text"] == "" \
-            or args[2] == "":
+            or args[1] == "":
         messagebox.showerror("Error", "Some entries are empty!")
         return
 
-    open(f"{path}/{args[2]}.json",
+    open(f"{path}/{args[1]}.json",
          "w+").write(json.dumps(macrodict, indent=2))
 
-    messagebox.showinfo("Done", f"Created {args[2]}")
+    messagebox.showinfo("Done", f"Created {args[1]}")
 
 
 def windowmaker(root, title, size="", bg="#ffffff", resizable=(False, False)):
@@ -223,6 +226,10 @@ def subs(text, entries):
     messagebox.showinfo("Done", f"Replaced {occour} occourence(s) of {wrep}.")
 
 
+def editmacro(entry, text):
+    pass
+
+
 def madit(root, var):
     value = var.get()
     path = scriptpath() + "/macros"
@@ -254,4 +261,5 @@ def madit(root, var):
     nentry.insert("1.0", defaultvals[1])
 
     tk.Button(root, text="Ok", width=10,
-              command=lambda: print("Teste")).grid(row=4, column=1, sticky="e")
+              command=lambda: editmacro(sentry, nentry)
+              ).grid(row=4, column=1, sticky="e")
