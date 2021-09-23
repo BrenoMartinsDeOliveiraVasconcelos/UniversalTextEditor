@@ -139,7 +139,7 @@ def macromaker():
     tools.windowmaker(root=mk, title="Macro maker")
 
     indx = -1
-    labels = ["Name", "Shortcut", "Text"]
+    labels = ["Name: ", "Shortcut: ", "Text: "]
     for i in labels:
         indx += 1
         tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
@@ -149,14 +149,14 @@ def macromaker():
     shentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
     tentry = tk.Entry(mk, bg="#ffffff", fg="#000000")
 
-    nentry.grid(row=0, column=1)
-    shentry.grid(row=1, column=1)
-    tentry.grid(row=2, column=1)
+    nentry.grid(row=0, column=1, sticky="e")
+    shentry.grid(row=1, column=1, sticky="e")
+    tentry.grid(row=2, column=1, sticky="e")
 
     tk.Button(mk, text="Create",
               command=lambda: tools.createmacro([shentry, tentry, nentry]),
               bg="#ffffff", fg="#000000", width=10,
-              font=("Segoe", 10)).grid(row=3, column=1)
+              font=("Segoe", 10)).grid(row=3, column=1, sticky="e")
 
     mk.mainloop()
 
@@ -167,7 +167,7 @@ def replacetxt(text):
     rep = tk.Tk()
     tools.windowmaker(rep, "Replace")
 
-    labels = ["Target", "Result"]
+    labels = ["Target: ", "Result: "]
     index = -1
     for i in labels:
         index += 1
@@ -185,7 +185,7 @@ def replacetxt(text):
                   fg="#000000", command=lambda: tools.subs(text,
                                                            [tentry, rentry]),
                   width=10).grid(
-            row=2, column=1)
+            row=2, column=1, sticky="e")
 
     rep.resizable(False, False)
 

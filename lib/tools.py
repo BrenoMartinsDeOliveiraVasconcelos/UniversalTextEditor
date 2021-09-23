@@ -57,7 +57,7 @@ def macro(text):
                     txt[index] = a[0] + "\n"
                     txt.insert(index + 1, a[1])
                     if a[1] == "":
-                        del txt[index+1]
+                        del txt[index + 1]
                         txt[index] = a[0] + "\n"
             index = -1
             consoledb("Macro", ' '.join(txt).replace("\n", "+"))
@@ -116,7 +116,7 @@ def opt(option, text, root):
 
 def configmenu(menu, text, root):
     opts = ["Open", "Save as", "Copy", "Paste"]
-    mopts = ["Create a Macro",  "Edit a Macro", "Macronize"]
+    mopts = ["Create a Macro", "Edit a Macro", "Macronize"]
     spopt = ["Clear", "Replace"]
     topts = ["About", "Exit"]
 
@@ -171,7 +171,7 @@ def createmacro(entries):
         "text": args[1]
     }
 
-    if macrodict["shortcut"] == "" or macrodict["text"] == ""\
+    if macrodict["shortcut"] == "" or macrodict["text"] == "" \
             or args[2] == "":
         messagebox.showerror("Error", "Some entries are empty!")
         return
@@ -198,7 +198,7 @@ def subs(text, entries):
         if "\n" in i:
             a = i.split("\n")
             string[index] = a[0] + "\n"
-            string.insert(index+1, a[1])
+            string.insert(index + 1, a[1])
 
     wrep = entries[0].get()
     repwith = entries[1].get()
@@ -236,7 +236,7 @@ def madit(root, var):
     for i in labels:
         index += 1
         tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
-                                                                column=0, sticky="W")
+                                                                column=0, sticky="nw")
 
     sentry = tk.Entry(root, width=20, font=("Segoe", 10))
     nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10))
@@ -252,3 +252,6 @@ def madit(root, var):
 
     sentry.insert(0, defaultvals[0])
     nentry.insert("1.0", defaultvals[1])
+
+    tk.Button(root, text="Ok", width=10,
+              command=lambda: print("Teste")).grid(row=4, column=1, sticky="e")
