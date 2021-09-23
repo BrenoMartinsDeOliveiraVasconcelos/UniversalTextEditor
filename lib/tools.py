@@ -221,3 +221,15 @@ def subs(text, entries):
     text.delete("1.0", tk.END)
     text.insert("1.0", " ".join(string))
     messagebox.showinfo("Done", f"Replaced {occour} occourence(s) of {wrep}.")
+
+
+def madit(root, var):
+    value = var.get()
+    path = scriptpath() + "/macros"
+
+    index = 1
+    labels = ["Shortcut: ", "Name: "]
+    for i in labels:
+        index += 1
+        tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
+                                                                column=0)

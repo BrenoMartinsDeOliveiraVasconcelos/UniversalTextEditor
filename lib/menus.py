@@ -1,3 +1,5 @@
+import os
+
 from lib.consoledb import consoledb, errorprint
 from lib import tools
 import tkinter as tk
@@ -191,7 +193,31 @@ def replacetxt(text):
 
 
 def editmacro():
-    pass
+    path = tools.scriptpath() + "/macros"
+    macros = os.listdir(path)
+    names = []
+
+    for i in macros:
+        if i.endswith(".json"):
+            names.append(i.replace(".json", ""))
+
+    medit = tk.Tk()
+    tools.windowmaker(medit, "Macro editor")
+
+    var = tk.StringVar(medit)
+    var.set(names[0])
+
+    tk.Label(medit, text="Macro: ", bg="#ffffff",
+             fg="#000000").grid(row=0, column=0, sticky="w")
+    optmenu = tk.OptionMenu(medit, var, *names)
+
+    optmenu.grid(row=0, column=1)
+
+    tk.Button(medit, text="Edit", bg="#ffffff", fg="#000000",
+              command=lambda: tools.madit(medit, var),
+              width=10).grid(row=1, column=1)
+
+    medit.mainloop()
 
 
 def secretmenu():
@@ -203,16 +229,5 @@ def secretmenu():
 
     tools.windowmaker(secret, "MENU SECRETO")
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
-
-    opts = ["1", "2", "3"]
-    var = tk.StringVar(secret)
-    var.set("HIMITSU")
-
-    w = tk.OptionMenu(secret, var, *opts).pack()
-    tk.Button(w, text="HIMITSU", command=lambda:
-                                                                    messagebox.showinfo(
-                                                                                                        "Segredo",
-                                                                                                        f"{var.get()}"
-                                                                    )).pack()
 
     secret.mainloop()
