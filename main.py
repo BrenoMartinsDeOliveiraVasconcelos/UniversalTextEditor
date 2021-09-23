@@ -42,7 +42,7 @@ def main(args):
 
     # Text
     text = tk.Text(root, bg="#ffffff", fg="#000000",
-                   font=("Segoe", 10), wrap="word", undo=True,
+                   font=("TkDefaultFont", 10), wrap="word", undo=True,
                    insertbackground="#000000", selectbackground="#e0e0e0",
                    selectforeground="#000000",
                    width=95, height=35)
@@ -65,10 +65,9 @@ def main(args):
     else:
         string = f"v{configs['version']}"
 
-    string += "- CTRL+0: Exit"
+    string += "- CTRL+C: Exit"
 
-    tk.Label(root, bg="#d6d6d6", text=string, fg="#000000",
-             font=("Segoe Italic", 10)).grid(
+    tk.Label(root, bg="#d6d6d6", text=string, fg="#000000").grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
     tools.configmenu(menu, text, root)

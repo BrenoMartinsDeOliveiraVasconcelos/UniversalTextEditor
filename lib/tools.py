@@ -254,9 +254,9 @@ def madit(root, var):
         tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
                                                                 column=0, sticky="nw")
 
-    sentry = tk.Entry(root, width=20, font=("Segoe", 10),
+    sentry = tk.Entry(root, width=20, font=("TkDefaultFont", 10),
                       bg="#ffffff", fg="#000000")
-    nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10),
+    nentry = tk.Text(root, height=5, width=20, font=("TkDefaultFont", 10),
                      bg="#ffffff", fg="#000000")
 
     sentry.grid(row=2, column=1)

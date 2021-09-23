@@ -79,10 +79,10 @@ def macromaker():
                                                               column=0, sticky="nw")
 
     nentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
-                      font=("Segoe", 10))
+                      font=("TkDefaultFont", 10))
     shentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
-                       font=("Segoe", 10))
-    tentry = tk.Text(mk, bg="#ffffff", fg="#000000", font=("Segoe", 10),
+                       font=("TkDefaultFont", 10))
+    tentry = tk.Text(mk, bg="#ffffff", fg="#000000", font=("TkDefaultFont", 10),
                      width=20, height=5)
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
@@ -98,7 +98,7 @@ def macromaker():
     tk.Button(mk, text="Create",
               command=lambda: tools.createmacro([shentry, nentry], tentry),
               bg="#ffffff", fg="#000000", width=10,
-              font=("Segoe", 10)).grid(row=3, column=1, sticky="e")
+              font=("TkDefaultFont", 10)).grid(row=3, column=1, sticky="e")
 
     mk.mainloop()
 
@@ -113,7 +113,7 @@ def replacetxt(text):
     index = -1
     for i in labels:
         index += 1
-        tk.Label(rep, text=i, font=("Segoe", "10"),
+        tk.Label(rep, text=i, font=("TkDefaultFont", "10"),
                  bg="#ffffff", fg="#000000").grid(row=index, column=0,
                                                   sticky="w")
 
@@ -123,7 +123,7 @@ def replacetxt(text):
         tentry.grid(row=0, column=1)
         rentry.grid(row=1, column=1)
 
-        tk.Button(rep, text="Replace", font=("Segoe", 10), bg="#ffffff",
+        tk.Button(rep, text="Replace", bg="#ffffff",
                   fg="#000000", command=lambda: tools.subs(text,
                                                            [tentry, rentry]),
                   width=10).grid(
