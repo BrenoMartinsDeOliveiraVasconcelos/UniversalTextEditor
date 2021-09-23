@@ -143,7 +143,7 @@ def macromaker():
     for i in labels:
         indx += 1
         tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
-                                                              column=0, sticky="w")
+                                                              column=0, sticky="nw")
 
     nentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
                       font=("Segoe", 10))

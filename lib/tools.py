@@ -171,7 +171,7 @@ def createmacro(entries, text):
 
     macrodict = {
         "shortcut": args[0],
-        "text": args[2]
+        "text": args[2].strip("\n")
     }
 
     if macrodict["shortcut"] == "" or macrodict["text"] == "" \
@@ -226,8 +226,17 @@ def subs(text, entries):
     messagebox.showinfo("Done", f"Replaced {occour} occourence(s) of {wrep}.")
 
 
-def editmacro(entry, text):
-    pass
+def editmacro(entry, text, value):
+    path = scriptpath() + "/macros"
+    madict = json.load(open(f"{path}/{value}.json"))
+    vedit = [entry.get(), text.get("1.0", tk.END)]
+    madict["shortcut"] = vedit[0]
+    madict["text"] = vedit[1]
+
+    consoledb("Editmacro", madict)
+    open(f"{path}/{value}.json", "w+").write(json.dumps(madict, indent=2))
+
+    messagebox.showinfo("Done", "Done")
 
 
 def madit(root, var):
@@ -261,5 +270,5 @@ def madit(root, var):
     nentry.insert("1.0", defaultvals[1])
 
     tk.Button(root, text="Ok", width=10,
-              command=lambda: editmacro(sentry, nentry)
+              command=lambda: editmacro(sentry, nentry, value)
               ).grid(row=4, column=1, sticky="e")
