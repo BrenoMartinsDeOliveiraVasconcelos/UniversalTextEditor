@@ -8,7 +8,7 @@ import tkinter as tk
 scriptpath = scriptinfo.scriptpath()
 argv.append('')
 systema = platform.system()
-configs = util.readconfig()
+configs = scriptinfo.readconfig()
 ui = colorscheme.loadui()
 mainui = ui["main"]
 menui = mainui["menu"]
@@ -64,12 +64,12 @@ def main(args):
     ver = "".join(ver).split(" ")[0]
     if configs["debug"]:
         string = f"DEBUG - v{configs['version']} " \
-                 f"{configs['build']} - " \
-                 f"OS: {platform.system()} - Python: {ver}"
+                 f"{configs['build']}, Dt: {configs['dark']}, " \
+                 f"OS: {platform.system()}, Python: {ver}"
     else:
         string = f"v{configs['version']}"
 
-    string += "- CTRL+0: Exit"
+    string += " - CTRL+0: Exit"
 
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)

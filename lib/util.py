@@ -78,14 +78,6 @@ def macro(text):
             text.insert("1.0", " ".join(txt))
 
 
-def readconfig():
-    path = scriptinfo.scriptpath() + "/stuffs/config.json"
-
-    with open(path) as json_file:
-        data = json.load(json_file)
-        return data
-
-
 def opt(option, text, root):
     consoledb("Opt", option)
     if option == 10:

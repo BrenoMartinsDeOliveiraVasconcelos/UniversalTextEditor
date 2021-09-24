@@ -54,7 +54,7 @@ def opn(text, root):
 
 
 def about():
-    cfg = util.readconfig()
+    cfg = scriptinfo.readconfig()
     abt = tk.Tk()
     util.windowmaker(abt, "About")
 
