@@ -1,4 +1,4 @@
-from lib import tools
+from lib import util
 
 
 def consoledb(info, text, tp=0, verifydebug=True):
@@ -14,7 +14,7 @@ def consoledb(info, text, tp=0, verifydebug=True):
     else:
         symb = "?"
 
-    config = tools.readconfig()
+    config = util.readconfig()
 
     if config["debug"] or not verifydebug:
         print(f"{info} {symb} {text}")

@@ -1,7 +1,7 @@
 import os
 import json
 from lib.consoledb import consoledb
-from lib import menus
+from lib import menus, scriptinfo
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
@@ -34,17 +34,8 @@ def copypaste(mode, text):
         text.insert("-1.0", string)
 
 
-def scriptpath():
-    script = os.path.dirname(os.path.realpath(__file__))
-    return '/'.join(script.replace("\\", "/").split("/")[:-1])
-
-
-def loadui():
-    return json.load(open(scriptpath()+"/stuffs/ui.json"))
-
-
 def macro(text):
-    macrof = f"{scriptpath()}/macros"
+    macrof = f"{scriptinfo.scriptpath()}/macros"
     macros = os.listdir(macrof)
 
     consoledb("Macro", macros)
@@ -80,7 +71,7 @@ def macro(text):
 
 
 def readconfig():
-    path = scriptpath() + "/stuffs/config.json"
+    path = scriptinfo.scriptpath() + "/stuffs/config.json"
 
     with open(path) as json_file:
         data = json.load(json_file)
@@ -165,7 +156,7 @@ def clear(sys):
 
 def createmacro(entries, text):
     args = []
-    path = scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/macros"
     for i in entries:
         consoledb("Createmacro", i.get())
         args.append(str(i.get()))
@@ -231,7 +222,7 @@ def subs(text, entries):
 
 
 def editmacro(entry, text, value):
-    path = scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/macros"
     madict = json.load(open(f"{path}/{value}.json"))
     vedit = [entry.get(), text.get("1.0", tk.END)]
     madict["shortcut"] = vedit[0]
@@ -245,7 +236,7 @@ def editmacro(entry, text, value):
 
 def madit(root, var):
     value = var.get()
-    path = scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/macros"
     minfo = json.load(open(f"{path}/{value}.json"))
     defaultvals = [
         minfo["shortcut"], minfo["text"]

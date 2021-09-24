@@ -1,10 +1,13 @@
 import os
-
+from lib import util, events, colorscheme, scriptinfo
 from lib.consoledb import consoledb
-from lib import tools, events
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
+
+ui = colorscheme.loadui()
+menui = ui["menus"]
+labelui = menui["label"]
 
 
 def saveas(text, root=None):
@@ -48,9 +51,9 @@ def opn(text, root):
 
 
 def about():
-    cfg = tools.readconfig()
+    cfg = util.readconfig()
     abt = tk.Tk()
-    tools.windowmaker(abt, "About", bg="#ffffff")
+    util.windowmaker(abt, "About", bg="#ffffff")
 
     ix = -1
 
@@ -58,7 +61,7 @@ def about():
               "Made by Breno Martins",
               "This software is distribuited under the GPLv2 license."]:
         ix += 1
-        tk.Label(abt, bg="#ffffff", text=i, fg="#000000").grid(row=ix, column=0)
+        tk.Label(abt, bg=labelui["bg"], text=i, fg=labelui["fg"]).grid(row=ix, column=0)
 
     tk.Button(abt, bg="#ffffff", command=abt.destroy,
               text="Ok", width=10, fg="#000000").grid(row=ix + 1, column=0)
@@ -69,7 +72,7 @@ def about():
 def macromaker():
     mk = tk.Tk()
 
-    tools.windowmaker(root=mk, title="Macro maker")
+    util.windowmaker(root=mk, title="Macro maker")
 
     indx = -1
     labels = ["Name: ", "Shortcut: ", "Text: "]
@@ -96,7 +99,7 @@ def macromaker():
     tentry.grid(row=2, column=1, sticky="e")
 
     tk.Button(mk, text="Create",
-              command=lambda: tools.createmacro([shentry, nentry], tentry),
+              command=lambda: util.createmacro([shentry, nentry], tentry),
               bg="#ffffff", fg="#000000", width=10,
               font=("TkDefaultFont", 10)).grid(row=3, column=1, sticky="e")
 
@@ -107,7 +110,7 @@ def replacetxt(text):
     consoledb("Replacetxt", "Bruh")
 
     rep = tk.Tk()
-    tools.windowmaker(rep, "Replace")
+    util.windowmaker(rep, "Replace")
 
     labels = ["Target: ", "Result: "]
     index = -1
@@ -124,8 +127,8 @@ def replacetxt(text):
         rentry.grid(row=1, column=1)
 
         tk.Button(rep, text="Replace", bg="#ffffff",
-                  fg="#000000", command=lambda: tools.subs(text,
-                                                           [tentry, rentry]),
+                  fg="#000000", command=lambda: util.subs(text,
+                                                          [tentry, rentry]),
                   width=10).grid(
             row=2, column=1, sticky="e")
 
@@ -135,7 +138,7 @@ def replacetxt(text):
 
 
 def editmacro():
-    path = tools.scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/macros"
     macros = os.listdir(path)
     names = []
 
@@ -144,7 +147,7 @@ def editmacro():
             names.append(i.replace(".json", ""))
 
     medit = tk.Tk()
-    tools.windowmaker(medit, "Macro editor")
+    util.windowmaker(medit, "Macro editor")
 
     var = tk.StringVar(medit)
     var.set(names[0])
@@ -156,7 +159,7 @@ def editmacro():
     optmenu.grid(row=0, column=1, sticky="e")
 
     tk.Button(medit, text="Edit", bg="#ffffff", fg="#000000",
-              command=lambda: tools.madit(medit, var),
+              command=lambda: util.madit(medit, var),
               width=10).grid(row=1, column=1, sticky="e")
 
     medit.mainloop()
@@ -169,7 +172,7 @@ def secretmenu():
 
     secret = tk.Tk()
 
-    tools.windowmaker(secret, "MENU SECRETO")
+    util.windowmaker(secret, "MENU SECRETO")
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
 
     secret.bind("<Control-c>", events.q)

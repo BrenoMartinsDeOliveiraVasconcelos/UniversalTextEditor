@@ -1,15 +1,15 @@
-from lib import tools, menus, events
+from lib import util, menus, events, colorscheme, scriptinfo
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
 import platform
 import tkinter as tk
 
-scriptpath = tools.scriptpath()
+scriptpath = scriptinfo.scriptpath()
 argv.append('')
 systema = platform.system()
-configs = tools.readconfig()
-ui = tools.loadui()
+configs = util.readconfig()
+ui = colorscheme.loadui()
 mainui = ui["main"]
 menui = mainui["menu"]
 textui = mainui["text"]
@@ -76,7 +76,7 @@ def main(args):
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
-    tools.configmenu(menu, text, root)
+    util.configmenu(menu, text, root)
 
     root.bind("<Control-0>", events.q)
     root.mainloop()
