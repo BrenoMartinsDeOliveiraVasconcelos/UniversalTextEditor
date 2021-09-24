@@ -18,15 +18,11 @@ labelui = mainui["label"]
 
 
 def main(args):
-    if args[1] == "-g":
-        consoledb("Main", "Iniciando GUI...")
-    elif args[1] == "-macromaker":
+    if args[1] == "-macromaker":
         menus.macromaker()
         exit()
     elif args[1] == "-secret":
         menus.secretmenu()
-    else:
-        consoledb("Main", "No valid arguments")
 
     root = tk.Tk()
     root.title("Universal Text Editor")
