@@ -98,19 +98,19 @@ def opt(option, text, root):
         consoledb("Opt", "About")
         menus.about()
     elif option == 8:
-        menus.replacetxt(text)
-    elif option == 7:
-        text.delete("1.0", tk.END)
-    elif option == 6:
-        macro(text)
-    elif option == 5:
-        menus.editmacro()
-    elif option == 4:
-        menus.macromaker()
-    elif option == 3:
         copypaste("p", text)
-    elif option == 2:
+    elif option == 7:
         copypaste("c", text)
+    elif option == 6:
+        menus.replacetxt(text)
+    elif option == 5:
+        text.delete("1.0", tk.END)
+    elif option == 4:
+        macro(text)
+    elif option == 3:
+        menus.editmacro()
+    elif option == 2:
+        menus.macromaker()
     elif option == 1:
         menus.saveas(text, root=root)
     elif option == 0:
@@ -118,9 +118,9 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as", "Copy", "Paste"]
+    opts = ["Open", "Save as"]
     mopts = ["Create a Macro", "Edit a Macro", "Macronize"]
-    spopt = ["Clear", "Replace"]
+    spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["About", "Exit"]
 
     emenu = tk.Menu(root)

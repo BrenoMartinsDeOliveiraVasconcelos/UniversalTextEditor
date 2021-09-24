@@ -28,8 +28,6 @@ def saveas(text, root=None):
     except PermissionError:
         consoledb("SaveAs", "Permissão negada!", tp=1)
         messagebox.showerror("Error", "Permission denied!")
-    except OSError:
-        messagebox.showerror("Error", "Invalid argument")
 
 
 def opn(text, root):
@@ -58,7 +56,7 @@ def opn(text, root):
 def about():
     cfg = util.readconfig()
     abt = tk.Tk()
-    util.windowmaker(abt, "About", bg="#ffffff")
+    util.windowmaker(abt, "About")
 
     ix = -1
 
