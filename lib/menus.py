@@ -8,6 +8,11 @@ from tkinter import messagebox
 ui = colorscheme.loadui()
 menui = ui["menus"]
 labelui = menui["label"]
+buttonui = menui["button"]
+enui = menui["entry"]
+textui = menui["text"]
+scrollbarui = menui["scrollbar"]
+opui = menui["optionmenu"]
 
 
 def saveas(text, root=None):
@@ -61,10 +66,12 @@ def about():
               "Made by Breno Martins",
               "This software is distribuited under the GPLv2 license."]:
         ix += 1
-        tk.Label(abt, bg=labelui["bg"], text=i, fg=labelui["fg"]).grid(row=ix, column=0)
+        tk.Label(abt, bg=labelui["bg"], text=i, fg=labelui["fg"]).grid(
+            row=ix, column=0
+        )
 
-    tk.Button(abt, bg="#ffffff", command=abt.destroy,
-              text="Ok", width=10, fg="#000000").grid(row=ix + 1, column=0)
+    tk.Button(abt, bg=buttonui["bg"], command=abt.destroy,
+              text="Ok", width=10, fg=buttonui["fg"]).grid(row=ix + 1, column=0)
 
     abt.mainloop()
 
@@ -78,18 +85,18 @@ def macromaker():
     labels = ["Name: ", "Shortcut: ", "Text: "]
     for i in labels:
         indx += 1
-        tk.Label(mk, text=i, bg="#ffffff", fg="#000000").grid(row=indx,
-                                                              column=0, sticky="nw")
+        tk.Label(mk, text=i, bg=labelui["bg"], fg=labelui["fg"]).grid(row=indx,
+                                                                      column=0, sticky="nw")
 
-    nentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
+    nentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
                       font=("TkDefaultFont", 10))
-    shentry = tk.Entry(mk, bg="#ffffff", fg="#000000", width=20,
+    shentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
                        font=("TkDefaultFont", 10))
-    tentry = tk.Text(mk, bg="#ffffff", fg="#000000", font=("TkDefaultFont", 10),
+    tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("TkDefaultFont", 10),
                      width=20, height=5)
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
-                             bg="#ffffff", activebackground="#e0e0e0",
+                             bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
                              activerelief="flat")
     scrollbar.grid(row=2, column=2, sticky="nsew")
     tentry.config(yscrollcommand=scrollbar.set)
@@ -100,7 +107,7 @@ def macromaker():
 
     tk.Button(mk, text="Create",
               command=lambda: util.createmacro([shentry, nentry], tentry),
-              bg="#ffffff", fg="#000000", width=10,
+              bg=buttonui["bg"], fg=buttonui["fg"], width=10,
               font=("TkDefaultFont", 10)).grid(row=3, column=1, sticky="e")
 
     mk.mainloop()
@@ -117,18 +124,17 @@ def replacetxt(text):
     for i in labels:
         index += 1
         tk.Label(rep, text=i, font=("TkDefaultFont", "10"),
-                 bg="#ffffff", fg="#000000").grid(row=index, column=0,
-                                                  sticky="w")
+                 bg=labelui["bg"], fg=labelui["fg"]).grid(row=index, column=0,
+                                                          sticky="w")
 
-        tentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
-        rentry = tk.Entry(rep, bg="#ffffff", fg="#000000")
+        tentry = tk.Entry(rep, bg=enui["bg"], fg=enui["fg"])
+        rentry = tk.Entry(rep, bg=enui["bg"], fg=enui["fg"])
 
         tentry.grid(row=0, column=1)
         rentry.grid(row=1, column=1)
 
-        tk.Button(rep, text="Replace", bg="#ffffff",
-                  fg="#000000", command=lambda: util.subs(text,
-                                                          [tentry, rentry]),
+        tk.Button(rep, text="Replace", bg=buttonui["bg"], fg=buttonui["fg"],
+                  command=lambda: util.subs(text, [tentry, rentry]),
                   width=10).grid(
             row=2, column=1, sticky="e")
 
@@ -152,13 +158,16 @@ def editmacro():
     var = tk.StringVar(medit)
     var.set(names[0])
 
-    tk.Label(medit, text="Macro: ", bg="#ffffff",
-             fg="#000000").grid(row=0, column=0, sticky="w")
+    tk.Label(medit, text="Macro: ", bg=labelui["bg"], fg=labelui["fg"]
+             ).grid(row=0, column=0, sticky="w")
     optmenu = tk.OptionMenu(medit, var, *names)
+    optmenu.config(bg=opui)
+
+    optmenu["menu"].config(bg=opui)
 
     optmenu.grid(row=0, column=1, sticky="e")
 
-    tk.Button(medit, text="Edit", bg="#ffffff", fg="#000000",
+    tk.Button(medit, text="Edit", bg=buttonui["bg"], fg=buttonui["fg"],
               command=lambda: util.madit(medit, var),
               width=10).grid(row=1, column=1, sticky="e")
 

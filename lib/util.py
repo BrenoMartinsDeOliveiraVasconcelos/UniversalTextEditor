@@ -1,12 +1,20 @@
 import os
 import json
 from lib.consoledb import consoledb
-from lib import menus, scriptinfo
+from lib import menus, scriptinfo, colorscheme
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
 
 pc = True
+ui = colorscheme.loadui()
+menui = ui["menus"]
+ibg = menui["bg"]
+labelui = menui["label"]
+buttonui = menui["button"]
+enui = menui["entry"]
+textui = menui["text"]
+scrollbarui = menui["scrollbar"]
 
 
 def copypaste(mode, text):
@@ -64,7 +72,7 @@ def macro(text):
                     else:
                         txt[index] = minfo["text"] + "\n"
                     consoledb("Macro", txt[index])
-            consoledb("Macro", txt[index-1])
+            consoledb("Macro", txt[index - 1])
             text.delete("1.0", tk.END)
 
             text.insert("1.0", " ".join(txt))
@@ -180,7 +188,7 @@ def createmacro(entries, text):
     messagebox.showinfo("Done", f"Created {args[1]}")
 
 
-def windowmaker(root, title, size="", bg="#ffffff", resizable=(False, False)):
+def windowmaker(root, title, size="", bg=ibg, resizable=(False, False)):
     root.title(title)
     if size != "":
         root.geometry(size)
@@ -246,19 +254,19 @@ def madit(root, var):
     labels = ["Shortcut: ", "Text: "]
     for i in labels:
         index += 1
-        tk.Label(root, text=i, bg="#ffffff", fg="#000000").grid(row=index,
-                                                                column=0, sticky="nw")
+        tk.Label(root, text=i, bg=labelui["bg"], fg=labelui["fg"]).grid(row=index,
+                                                                        column=0, sticky="nw")
 
     sentry = tk.Entry(root, width=20, font=("TkDefaultFont", 10),
-                      bg="#ffffff", fg="#000000")
+                      bg=enui["bg"], fg=enui["fg"])
     nentry = tk.Text(root, height=5, width=20, font=("TkDefaultFont", 10),
-                     bg="#ffffff", fg="#000000")
+                     bg=textui["bg"], fg=textui["fg"])
 
     sentry.grid(row=2, column=1)
     nentry.grid(row=3, column=1)
 
     scrollbar = tk.Scrollbar(root, command=nentry.yview,
-                             bg="#ffffff", activebackground="#e0e0e0",
+                             bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
                              activerelief="flat")
     scrollbar.grid(row=3, column=2, sticky="nsew")
     nentry.config(yscrollcommand=scrollbar.set)
@@ -268,4 +276,5 @@ def madit(root, var):
 
     tk.Button(root, text="Ok", width=10,
               command=lambda: editmacro(sentry, nentry, value),
-              bg="#ffffff", fg="#000000").grid(row=4, column=1, sticky="e")
+              bg=buttonui["bg"], fg=buttonui["fg"]).grid(row=4, column=1,
+                                                         sticky="e")

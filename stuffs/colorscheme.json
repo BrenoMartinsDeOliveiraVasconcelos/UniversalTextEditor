@@ -10,10 +10,7 @@
     },
     "text": {
       "bg": "#ffffff",
-      "fg": "#000000",
-      "ibg": "#000000",
-      "sbg": "#e0e0e0",
-      "sfg": "#000000"
+      "fg": "#000000"
     },
     "scrollbar": {
       "bg": "#ffffff",
@@ -25,9 +22,27 @@
     }
   },
   "menus": {
+    "bg": "#f7f7f7",
     "label": {
+      "bg": "#f7f7f7",
+      "fg": "#000000"
+    },
+    "button": {
+      "bg": "#f7f7f7",
+      "fg": "#000000"
+    },
+    "entry": {
       "bg": "#ffffff",
       "fg": "#000000"
-    }
+    },
+      "text": {
+        "bg": "#ffffff",
+        "fg": "#000000"
+    },
+      "scrollbar": {
+        "bg": "#ffffff",
+        "abg": "#e0e0e0"
+    },
+    "optionmenu": "#f7f7f7"
   }
 }
