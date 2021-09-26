@@ -5,7 +5,6 @@ from lib import menus, scriptinfo, colorscheme
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
-import datetime
 import sys
 
 pc = True
@@ -17,46 +16,6 @@ buttonui = menui["button"]
 enui = menui["entry"]
 textui = menui["text"]
 scrollbarui = menui["scrollbar"]
-
-
-def cmd(text):
-    txt = text.get("1.0", tk.END)
-    stxt = txt.split(" ")
-
-    cmdlist = ["dte", "tme"]
-
-    index = -1
-    for i in stxt:
-        index += 1
-        cword = i.replace("\n", "")
-        finalstring = []
-        endline = ""
-        if i[-1] == "\n":
-            endline = "\n"
-        try:
-            if cword[0] == "*":
-                if ''.join(cword[1:4]) in cmdlist:
-                    command = "".join(cword[1:4])
-                    args = (''.join(cword[5:])).split(";")
-                    consoledb("Cmd", command)
-                    if command == "dte":
-                        time = datetime.datetime.now()
-                        for arg in args:
-                            if arg == "y":
-                                finalstring.append(str(time.year))
-                            elif arg == "m":
-                                finalstring.append(str(time.month))
-                            elif arg == "d":
-                                finalstring.append(str(time.day))
-                        stxt[index] = f"{args[3]}".join(finalstring)
-                    elif command == "tme":
-                        consoledb("Cmd", "<ok>")
-        except IndexError:
-            pass
-        stxt[index] += endline
-
-    text.delete("1.0", tk.END)
-    text.insert("1.0", " ".join(stxt))
 
 
 def copypaste(mode, text):
@@ -132,16 +91,21 @@ def macro(text):
 def opt(option, text, root):
     consoledb("Opt", option)
     if option == 11:
-        yn = messagebox.askyesno("Exit",
-                                 "Do you really want to exit? Unsaved changes may be "
-                                 "lost forever!")
-        if yn == 1:
+        yn = messagebox.askyesnocancel("Do you want save?", "Do you want to "
+                                                            "exit without saving?")
+        consoledb("Opt", yn)
+        if yn is True:
             sys.exit()
+        elif yn is False:
+            menus.saveas(text, root=root)
+            sys.exit()
+        elif yn is None:
+            consoledb("Opt", "Cancelado")
     elif option == 10:
         consoledb("Opt", "About")
         menus.about()
     elif option == 9:
-        cmd(text)
+        messagebox.showerror("Removed", "Ouch! You found a removed feature!")
     elif option == 8:
         copypaste("p", text)
     elif option == 7:
@@ -198,10 +162,10 @@ def configmenu(menu, text, root):
                           command=lambda x=i: opt(x, text, root))
 
 
-def clear(sys):
-    if sys == "Windows":
+def clear(sistema):
+    if sistema == "Windows":
         os.system("cls")
-    elif sys == "Linux":
+    elif sistema == "Linux":
         os.system("export TERM=xterm && clear")
     else:
         os.system("clear")

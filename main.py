@@ -66,14 +66,11 @@ def main(args):
     else:
         string = f"v{configs['version']}"
 
-    string += " - CTRL+0: Exit"
-
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
     utils.configmenu(menu, text, root)
 
-    root.bind("<Control-0>", events.q)
     root.mainloop()
 
 
