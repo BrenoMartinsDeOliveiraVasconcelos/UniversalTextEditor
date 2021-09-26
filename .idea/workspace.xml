@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Instalador funcionando em Linux">
-      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/apt.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/pacman.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/pyinstaller.sh" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Adaptação da UI do instalador para rodar no Windows">
+      <change afterPath="$PROJECT_DIR$/install.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.spec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/instlib/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/instlib/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +53,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Códigos\Python\Projetos\ute" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/stuffs" />
     </key>
@@ -117,13 +116,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Messagebox">
-      <created>1632230991268</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1632230991268</updated>
     </task>
     <task id="LOCAL-00022" summary="Macros em command line funcionando&#10;:macro:">
       <created>1632253275162</created>
@@ -461,7 +453,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632602054681</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Adaptação da UI do instalador para rodar no Windows">
+      <created>1632618010572</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1632618010572</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -478,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Entries vazias agora darão um erro na função subs()" />
     <MESSAGE value="Entries vazias agora darão um erro na função createmacro()" />
     <MESSAGE value="Removido releasebuild, limpeza no código&#10;Tirado alguns imports inúteis &#10;releasebuild não é mais existente" />
     <MESSAGE value="Nova organização do menu superior" />
@@ -503,6 +501,7 @@
     <MESSAGE value="Quase pronto" />
     <MESSAGE value="Instalador" />
     <MESSAGE value="Instalador funcionando em Linux" />
-    <option name="LAST_COMMIT_MESSAGE" value="Instalador funcionando em Linux" />
+    <MESSAGE value="Adaptação da UI do instalador para rodar no Windows" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaptação da UI do instalador para rodar no Windows" />
   </component>
 </project>
