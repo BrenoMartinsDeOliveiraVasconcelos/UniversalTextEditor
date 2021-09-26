@@ -19,9 +19,11 @@ def install():
     text = tk.Text(inst)
     text.insert("1.0", ''.join(open("./__Installer__/tos.txt", "r").readlines()))
     text.grid(row=1, column=0, columnspan=2)
-    tk.Button(inst, text="Agree and install", width=10,
-              command=lambda: helpers.installation(so, user)).grid(row=2, column=0, sticky="w", padx=50)
-    tk.Button(inst, text="Exit", width=10, command=inst.destroy).grid(row=2, column=1, padx=50)
+    tk.Button(inst, text="Agree and install", width=20,
+              command=lambda: helpers.installation(so, user)).grid(row=2,
+                                                                   column=0, sticky="w")
+    tk.Button(inst, text="Exit", width=20, command=inst.destroy).grid(row=2,
+                                                                      column=1, sticky="e")
 
     inst.mainloop()
 
