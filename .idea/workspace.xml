@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="commit message">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Círculos">
+      <change afterPath="$PROJECT_DIR$/../PyTacToe/assets/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PyTacToe/table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Sistema incompleto de sistema de substituiçaõ">
-      <created>1632259774776</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1632259774776</updated>
     </task>
     <task id="LOCAL-00027" summary="beta4">
       <created>1632259942823</created>
@@ -479,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632694006710</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Círculos">
+      <created>1632694249693</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1632694249694</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correções na UI e sistema de edição de macros quase pronto&#10;Botões agora estão corretamente alinhados" />
     <MESSAGE value="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text" />
     <MESSAGE value="Sistema de edição de macros finalizado" />
     <MESSAGE value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
@@ -521,6 +523,7 @@
     <MESSAGE value="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe" />
     <MESSAGE value="Melhoria no dialogo de saida pelo menu exit" />
     <MESSAGE value="commit message" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit message" />
+    <MESSAGE value="Círculos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Círculos" />
   </component>
 </project>
