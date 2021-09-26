@@ -4,6 +4,7 @@ from sys import argv
 from sys import version
 import platform
 import tkinter as tk
+from sys import exit
 
 scriptpath = scriptinfo.scriptpath()
 argv.append('')
@@ -20,7 +21,7 @@ labelui = mainui["label"]
 def main(args):
     if args[1] == "-macromaker":
         menus.macromaker()
-        exit()
+        sys.exit()
     elif args[1] == "-secret":
         menus.secretmenu()
 

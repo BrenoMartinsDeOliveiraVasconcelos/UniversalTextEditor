@@ -6,6 +6,7 @@ import pyperclip
 import tkinter as tk
 from tkinter import messagebox
 import datetime
+import sys
 
 pc = True
 ui = colorscheme.loadui()
@@ -135,7 +136,7 @@ def opt(option, text, root):
                                  "Do you really want to exit? Unsaved changes may be "
                                  "lost forever!")
         if yn == 1:
-            exit()
+            sys.exit()
     elif option == 10:
         consoledb("Opt", "About")
         menus.about()
