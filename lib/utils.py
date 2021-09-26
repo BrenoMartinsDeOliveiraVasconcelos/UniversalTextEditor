@@ -90,7 +90,7 @@ def macro(text):
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 11:
+    if option == 10:
         yn = messagebox.askyesnocancel("Do you want save?", "Do you want to "
                                                             "exit without saving?")
         consoledb("Opt", yn)
@@ -101,11 +101,9 @@ def opt(option, text, root):
             sys.exit()
         elif yn is None:
             consoledb("Opt", "Cancelado")
-    elif option == 10:
+    elif option == 9:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 9:
-        messagebox.showerror("Removed", "Ouch! You found a removed feature!")
     elif option == 8:
         copypaste("p", text)
     elif option == 7:
@@ -129,7 +127,7 @@ def opt(option, text, root):
 def configmenu(menu, text, root):
     opts = ["Open", "Save as"]
     mopts = ["Create a Macro", "Edit a Macro", "Macronize"]
-    spopt = ["Clear", "Replace", "Copy", "Paste", "Formula"]
+    spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["About", "Exit"]
 
     emenu = tk.Menu(root)
