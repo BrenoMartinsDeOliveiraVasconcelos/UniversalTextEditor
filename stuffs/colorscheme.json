@@ -10,7 +10,9 @@
     },
     "text": {
       "bg": "#ffffff",
-      "fg": "#000000"
+      "fg": "#000000",
+      "ibg": "#000000",
+      "sbg": "#4275ff"
     },
     "scrollbar": {
       "bg": "#ffffff",
@@ -35,9 +37,11 @@
       "bg": "#ffffff",
       "fg": "#000000"
     },
-      "text": {
-        "bg": "#ffffff",
-        "fg": "#000000"
+    "text": {
+      "bg": "#ffffff",
+      "fg": "#000000",
+      "ibg": "#000000",
+      "sbg": "#4275ff"
     },
       "scrollbar": {
         "bg": "#ffffff",

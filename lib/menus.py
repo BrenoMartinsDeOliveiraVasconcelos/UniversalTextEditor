@@ -1,5 +1,5 @@
 import os
-from lib import util, events, colorscheme, scriptinfo
+from lib import utils, events, colorscheme, scriptinfo
 from lib.consoledb import consoledb
 import tkinter as tk
 from tkinter import filedialog
@@ -56,7 +56,7 @@ def opn(text, root):
 def about():
     cfg = scriptinfo.readconfig()
     abt = tk.Tk()
-    util.windowmaker(abt, "About")
+    utils.windowmaker(abt, "About")
 
     ix = -1
 
@@ -77,7 +77,7 @@ def about():
 def macromaker():
     mk = tk.Tk()
 
-    util.windowmaker(root=mk, title="Macro maker")
+    utils.windowmaker(root=mk, title="Macro maker")
 
     indx = -1
     labels = ["Name: ", "Shortcut: ", "Text: "]
@@ -91,7 +91,7 @@ def macromaker():
     shentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
                        font=("TkDefaultFont", 10))
     tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("TkDefaultFont", 10),
-                     width=20, height=5)
+                     width=20, height=5, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
                              bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
@@ -104,7 +104,7 @@ def macromaker():
     tentry.grid(row=2, column=1, sticky="e")
 
     tk.Button(mk, text="Create",
-              command=lambda: util.createmacro([shentry, nentry], tentry),
+              command=lambda: utils.createmacro([shentry, nentry], tentry),
               bg=buttonui["bg"], fg=buttonui["fg"], width=10,
               font=("TkDefaultFont", 10)).grid(row=3, column=1, sticky="e")
 
@@ -115,7 +115,7 @@ def replacetxt(text):
     consoledb("Replacetxt", "Bruh")
 
     rep = tk.Tk()
-    util.windowmaker(rep, "Replace")
+    utils.windowmaker(rep, "Replace")
 
     labels = ["Target: ", "Result: "]
     index = -1
@@ -132,7 +132,7 @@ def replacetxt(text):
         rentry.grid(row=1, column=1)
 
         tk.Button(rep, text="Replace", bg=buttonui["bg"], fg=buttonui["fg"],
-                  command=lambda: util.subs(text, [tentry, rentry]),
+                  command=lambda: utils.subs(text, [tentry, rentry]),
                   width=10).grid(
             row=2, column=1, sticky="e")
 
@@ -151,7 +151,7 @@ def editmacro():
             names.append(i.replace(".json", ""))
 
     medit = tk.Tk()
-    util.windowmaker(medit, "Macro editor")
+    utils.windowmaker(medit, "Macro editor")
 
     var = tk.StringVar(medit)
     var.set(names[0])
@@ -166,7 +166,7 @@ def editmacro():
     optmenu.grid(row=0, column=1, sticky="e")
 
     tk.Button(medit, text="Edit", bg=buttonui["bg"], fg=buttonui["fg"],
-              command=lambda: util.madit(medit, var),
+              command=lambda: utils.madit(medit, var),
               width=10).grid(row=1, column=1, sticky="e")
 
     medit.mainloop()
@@ -179,7 +179,7 @@ def secretmenu():
 
     secret = tk.Tk()
 
-    util.windowmaker(secret, "MENU SECRETO")
+    utils.windowmaker(secret, "MENU SECRETO")
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
 
     secret.bind("<Control-c>", events.q)

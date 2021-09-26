@@ -1,47 +1,51 @@
 {
   "main": {
-    "bg": "#292929",
+    "bg": "#282a36",
     "menu": {
-      "bg": "#ffffff",
-      "fg": "#000000",
-      "abg": "#e0e0e0",
-      "afg": "#000000",
+      "bg": "#282a36",
+      "fg": "#f8f8f2",
+      "abg": "#44475a",
+      "afg": "#f8f8f2",
       "dfg": "#a1a1a1"
     },
     "text": {
-      "bg": "#3E3B40",
-      "fg": "#FFFFFF"
+      "bg": "#282a36",
+      "fg": "#f8f8f2",
+      "ibg": "#f8f8f2",
+      "sbg": "#f8f8f2"
     },
     "scrollbar": {
-      "bg": "#716C75",
-      "abg": "#5B585F"
+      "bg": "#282a36",
+      "abg": "#44475a"
     },
     "label": {
-      "bg": "#292929",
-      "fg": "#ffffff"
+      "bg": "#282a36",
+      "fg": "#f8f8f2"
     }
   },
   "menus": {
-    "bg": "#f7f7f7",
-    "label": {
-      "bg": "#f7f7f7",
-      "fg": "#000000"
-    },
+    "bg": "#282a36",
     "button": {
-      "bg": "#f7f7f7",
-      "fg": "#000000"
+      "bg": "#282a36",
+      "fg": "#f8f8f2"
     },
     "entry": {
       "bg": "#ffffff",
       "fg": "#000000"
     },
-      "text": {
-        "bg": "#ffffff",
-        "fg": "#000000"
+    "text": {
+      "bg": "#282a36",
+      "fg": "#f8f8f2",
+      "ibg": "#f8f8f2",
+      "sbg": "#f8f8f2"
     },
-      "scrollbar": {
-        "bg": "#ffffff",
-        "abg": "#e0e0e0"
+    "scrollbar": {
+      "bg": "#282a36",
+      "abg": "#44475a"
+    },
+    "label": {
+      "bg": "#282a36",
+      "fg": "#f8f8f2"
     },
     "optionmenu": "#f7f7f7"
   }

@@ -1,4 +1,4 @@
-from lib import util, menus, events, colorscheme, scriptinfo
+from lib import utils, menus, events, colorscheme, scriptinfo
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
@@ -45,7 +45,7 @@ def main(args):
     # Text
     text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
                    font=("TkDefaultFont", 10), wrap="word", undo=True,
-                   width=95, height=35)
+                   width=95, height=35, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
     text.grid(row=1, column=0, rowspan=1)
 
     # Scrollbar
@@ -70,7 +70,7 @@ def main(args):
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
-    util.configmenu(menu, text, root)
+    utils.configmenu(menu, text, root)
 
     root.bind("<Control-0>", events.q)
     root.mainloop()

@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="UI.json">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Instalador funcionando em Linux">
+      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/apt.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/pacman.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/__Installer__/scripts/pyinstaller.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instlib/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/instlib/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requeriments.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requeriments.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +55,32 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/stuffs" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.fastinstall">
+    <configuration name="fastinstall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UniversalTextEditor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fastinstall.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UniversalTextEditor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +104,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fastinstall" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
@@ -89,69 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00010" summary="adicionado comando :cp: na linha de comando">
-      <created>1632153760236</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1632153760236</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Mudanças pequenas&#10;.lower() em main.py&#10;Ajuste de linhas na função principal">
-      <created>1632154114899</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1632154114899</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Sistema de macros melhorado&#10;Correções de bug">
-      <created>1632152478439</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1632152478439</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Adições&#10;Adicionado o macro @github@ que retorna o repositório&#10;Os arquivos não irão ser salvos com uma qubera de linha no final sem o usuário colocar manualmente.">
-      <created>1632153724076</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1632153724076</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Temporariamente removendo checagem de modulo inexistente">
-      <created>1632158825142</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1632158825142</updated>
-    </task>
-    <task id="LOCAL-00017" summary="beta3&#10;Nova build">
-      <created>1632223443268</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1632223443268</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Reformulação do design&#10;Adicionado o menu Edit que abre um menu de contexto com as opções de abrir e salvar como">
-      <created>1632224984578</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1632224984578</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Criador de macros funcional&#10;[Ainda não finalizado]">
-      <created>1632227560762</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1632227560762</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Label de nome do macro para o criador de macros">
-      <created>1632230646877</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1632230646877</updated>
     </task>
     <task id="LOCAL-00021" summary="Messagebox">
       <created>1632230991268</created>
@@ -433,7 +398,70 @@
       <option name="project" value="LOCAL" />
       <updated>1632434368657</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Limpeza de código">
+      <created>1632510051842</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1632510051843</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Release candidate 1">
+      <created>1632510119560</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1632510119560</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Ainda não">
+      <created>1632510208849</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1632510208849</updated>
+    </task>
+    <task id="LOCAL-00064" summary="beta7">
+      <created>1632512669357</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1632512669360</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Correção do bug das linhas">
+      <created>1632513909481</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1632513909482</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Comandos">
+      <created>1632594508609</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1632594508611</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Tema escuro da tela principal pronta">
+      <created>1632595284684</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1632595284685</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Quase pronto">
+      <created>1632595855871</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1632595855871</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Instalador">
+      <created>1632602054680</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1632602054681</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -450,16 +478,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Macro para GPLv2" />
-    <MESSAGE value="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela" />
-    <MESSAGE value="Atualizado esquema de cores para sistemas suportados" />
-    <MESSAGE value="Novo formato de build de lançamento&#10;m(mês previsto)y(Ano previsto)r(número da release nesse mês e ano)" />
-    <MESSAGE value="Renomeado a opção &quot;Edit&quot; para &quot;Tools&quot;" />
-    <MESSAGE value="Colocado um Label que exibe a versão" />
-    <MESSAGE value="Correções de bugd" />
-    <MESSAGE value="Cor do fundo da janela principal alterado de #cccccc para #d6d6d6" />
-    <MESSAGE value="beta5" />
-    <MESSAGE value="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone." />
     <MESSAGE value="Entries vazias agora darão um erro na função subs()" />
     <MESSAGE value="Entries vazias agora darão um erro na função createmacro()" />
     <MESSAGE value="Removido releasebuild, limpeza no código&#10;Tirado alguns imports inúteis &#10;releasebuild não é mais existente" />
@@ -475,6 +493,16 @@
     <MESSAGE value="Mudado fonte" />
     <MESSAGE value="Beta 6" />
     <MESSAGE value="UI.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI.json" />
+    <MESSAGE value="Limpeza de código" />
+    <MESSAGE value="Release candidate 1" />
+    <MESSAGE value="Ainda não" />
+    <MESSAGE value="beta7" />
+    <MESSAGE value="Correção do bug das linhas" />
+    <MESSAGE value="Comandos" />
+    <MESSAGE value="Tema escuro da tela principal pronta" />
+    <MESSAGE value="Quase pronto" />
+    <MESSAGE value="Instalador" />
+    <MESSAGE value="Instalador funcionando em Linux" />
+    <option name="LAST_COMMIT_MESSAGE" value="Instalador funcionando em Linux" />
   </component>
 </project>
