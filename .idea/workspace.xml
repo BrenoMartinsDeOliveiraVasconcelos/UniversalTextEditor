@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Círculos">
-      <change afterPath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/main.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="jogo da velha">
+      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/table.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -166,13 +165,6 @@
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1632318679641</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Correções de bugs&#10;Macros em final de linha agora são substiuidos">
-      <created>1632314117283</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1632314117283</updated>
     </task>
     <task id="LOCAL-00033" summary="u&#10;COMMIT">
       <created>1632314217638</created>
@@ -482,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632695005167</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="jogo da velha">
+      <created>1632925925511</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1632925925511</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correções na UI&#10;A entrada de texto na crianção de macros foi substituida de tk.Entry para tk.Text" />
     <MESSAGE value="Sistema de edição de macros finalizado" />
     <MESSAGE value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
     <MESSAGE value="Correção da UI" />
@@ -524,6 +522,7 @@
     <MESSAGE value="Melhoria no dialogo de saida pelo menu exit" />
     <MESSAGE value="commit message" />
     <MESSAGE value="Círculos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Círculos" />
+    <MESSAGE value="jogo da velha" />
+    <option name="LAST_COMMIT_MESSAGE" value="jogo da velha" />
   </component>
 </project>
