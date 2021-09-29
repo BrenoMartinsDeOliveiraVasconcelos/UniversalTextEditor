@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="jogo da velha">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="jogo da velha funcional">
       <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PyTacToe/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/table.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -165,13 +166,6 @@
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1632318679641</updated>
-    </task>
-    <task id="LOCAL-00033" summary="u&#10;COMMIT">
-      <created>1632314217638</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1632314217638</updated>
     </task>
     <task id="LOCAL-00034" summary="Macro para GPLv2">
       <created>1632315571313</created>
@@ -481,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632925925511</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="jogo da velha funcional">
+      <created>1632927306649</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1632927306650</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +499,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Sistema de edição de macros finalizado" />
     <MESSAGE value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
     <MESSAGE value="Correção da UI" />
     <MESSAGE value="Correção da UI&#10;No linux, a UI ficava com o tema bugado" />
@@ -523,6 +523,7 @@
     <MESSAGE value="commit message" />
     <MESSAGE value="Círculos" />
     <MESSAGE value="jogo da velha" />
-    <option name="LAST_COMMIT_MESSAGE" value="jogo da velha" />
+    <MESSAGE value="jogo da velha funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="jogo da velha funcional" />
   </component>
 </project>
