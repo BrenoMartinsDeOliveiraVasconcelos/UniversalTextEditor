@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Círculos">
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/lib.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../PyTacToe/table.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
