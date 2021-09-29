@@ -7,6 +7,7 @@ def loadui():
     if not dark:
         file = "colorscheme"
     else:
-        file = "darkcolors"
+        # file = "darkcolors"
+        file = "colorscheme"
 
     return json.load(open(scriptinfo.scriptpath()+f"/stuffs/{file}.json"))

@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="jogo da velha funcional">
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/mechanics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/lib/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PyTacToe/table.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTacToe/table.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/colorscheme.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/colorscheme.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +21,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../PyTacToe" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -58,7 +55,7 @@
       <recent name="$PROJECT_DIR$/stuffs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="fastinstall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UniversalTextEditor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,8 +121,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.fastinstall" />
       </list>
     </recent_temporary>
@@ -166,13 +163,6 @@
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1632318679641</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Macro para GPLv2">
-      <created>1632315571313</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1632315571313</updated>
     </task>
     <task id="LOCAL-00035" summary="Macro para GPLv2">
       <created>1632315576173</created>
@@ -482,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632927306650</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="jogo da velha funcional">
+      <created>1632954125226</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1632954125226</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

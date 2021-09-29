@@ -1,10 +1,10 @@
-from lib import utils, menus, events, colorscheme, scriptinfo
+from lib import utils, menus, colorscheme, scriptinfo
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
 import platform
 import tkinter as tk
-from sys import exit
+import sys
 
 scriptpath = scriptinfo.scriptpath()
 argv.append('')
