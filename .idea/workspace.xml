@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="--noconsole">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,20 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Colocado um Label que exibe a versão">
-      <created>1632332639967</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1632332639967</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Correções de bugd">
-      <created>1632341131774</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1632341131774</updated>
     </task>
     <task id="LOCAL-00042" summary="Cor do fundo da janela principal alterado de #cccccc para #d6d6d6">
       <created>1632341358874</created>
@@ -478,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633016631707</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="sys.exit()">
+      <created>1633017227063</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1633017227063</updated>
+    </task>
+    <task id="LOCAL-00090" summary="--noconsole">
+      <created>1633017252829</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1633017252829</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Ainda não" />
-    <MESSAGE value="beta7" />
     <MESSAGE value="Correção do bug das linhas" />
     <MESSAGE value="Comandos" />
     <MESSAGE value="Tema escuro da tela principal pronta" />
@@ -520,6 +520,8 @@
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer" />
     <MESSAGE value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
+    <MESSAGE value="sys.exit()" />
+    <MESSAGE value="--noconsole" />
+    <option name="LAST_COMMIT_MESSAGE" value="--noconsole" />
   </component>
 </project>
