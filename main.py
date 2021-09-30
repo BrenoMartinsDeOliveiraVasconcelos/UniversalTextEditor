@@ -1,4 +1,4 @@
-from lib import utils, menus, colorscheme, scriptinfo
+from lib import utils, menus, colorscheme, scriptinfo, events
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
@@ -75,6 +75,7 @@ def main(args):
 
     utils.configmenu(menu, text, root)
 
+    root.protocol("WM_DELETE_WINDOW", lambda: events.close(root, text))
     root.mainloop()
 
 

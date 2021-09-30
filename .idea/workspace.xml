@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Novo icone">
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Limpeza de código">
+      <change beforePath="$PROJECT_DIR$/lib/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,13 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Correções de bugs">
-      <created>1632318679641</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1632318679641</updated>
     </task>
     <task id="LOCAL-00036" summary="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela">
       <created>1632319974426</created>
@@ -478,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632966897836</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="Limpeza de código">
+      <created>1633008316689</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1633008316689</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +499,6 @@
     <MESSAGE value="Mudado fonte" />
     <MESSAGE value="Beta 6" />
     <MESSAGE value="UI.json" />
-    <MESSAGE value="Limpeza de código" />
     <MESSAGE value="Release candidate 1" />
     <MESSAGE value="Ainda não" />
     <MESSAGE value="beta7" />
@@ -520,6 +520,7 @@
     <MESSAGE value="Fase de desenvolvimento: Beta para Stable" />
     <MESSAGE value="Icone adicionado (windows)" />
     <MESSAGE value="Novo icone" />
-    <option name="LAST_COMMIT_MESSAGE" value="Novo icone" />
+    <MESSAGE value="Limpeza de código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpeza de código" />
   </component>
 </project>
