@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Limpeza no repositório">
-      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
-    </list>
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Fonte revertida para Segoe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -134,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00046" summary="Entries vazias agora darão um erro na função createmacro()">
-      <created>1632352789328</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1632352789328</updated>
     </task>
     <task id="LOCAL-00047" summary="Removido releasebuild, limpeza no código&#10;Tirado alguns imports inúteis &#10;releasebuild não é mais existente">
       <created>1632353037199</created>
@@ -478,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633028454848</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="Fonte revertida para Segoe">
+      <created>1633028763393</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1633028763397</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,7 +493,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Quase pronto" />
     <MESSAGE value="Instalador" />
     <MESSAGE value="Instalador funcionando em Linux" />
     <MESSAGE value="Adaptação da UI do instalador para rodar no Windows" />
@@ -520,6 +517,7 @@
     <MESSAGE value="Mesnagem de saida ao apertar X alterada" />
     <MESSAGE value="README atualizado" />
     <MESSAGE value="Limpeza no repositório" />
-    <option name="LAST_COMMIT_MESSAGE" value="Limpeza no repositório" />
+    <MESSAGE value="Fonte revertida para Segoe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fonte revertida para Segoe" />
   </component>
 </project>

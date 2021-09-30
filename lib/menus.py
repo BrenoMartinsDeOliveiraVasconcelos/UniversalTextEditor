@@ -47,6 +47,7 @@ def opn(text, root):
             consoledb("Opn", codecs[index])
         except PermissionError:
             messagebox.showerror("Error", "Permission denied")
+            break
 
     text.delete("1.0", tk.END)
     text.insert("1.0", txt)
