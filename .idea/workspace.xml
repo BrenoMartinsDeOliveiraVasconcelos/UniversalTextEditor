@@ -136,13 +136,6 @@
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
     </task>
-    <task id="LOCAL-00048" summary="Nova organização do menu superior">
-      <created>1632400652243</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1632400652243</updated>
-    </task>
     <task id="LOCAL-00049" summary="Sistema de edição de macros parcialmente feito">
       <created>1632406380609</created>
       <option name="number" value="00049" />
@@ -479,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633029282156</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Adicionado macro TOS">
+      <created>1633033914838</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1633033914848</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instalador funcionando em Linux" />
     <MESSAGE value="Adaptação da UI do instalador para rodar no Windows" />
     <MESSAGE value="Instalador funcional no windows." />
     <MESSAGE value="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe" />
@@ -521,6 +520,7 @@
     <MESSAGE value="Limpeza no repositório" />
     <MESSAGE value="Fonte revertida para Segoe" />
     <MESSAGE value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
+    <MESSAGE value="Adicionado macro TOS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado macro TOS" />
   </component>
 </project>
