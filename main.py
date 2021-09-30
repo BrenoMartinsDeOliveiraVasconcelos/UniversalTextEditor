@@ -32,11 +32,11 @@ def main(args):
     if systema == "Linux":
         root.geometry("782x630")
     else:
-        root.geometry("686x595")
+        root.geometry("686x610")
     root.resizable(False, False)
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
-        root.iconbitmap(f"{scriptpath}i/stuffs/ute.png")
+        root.iconbitmap(f"{scriptpath}/stuffs/ute.ico")
 
     # Menu
     menu = tk.Menu(root, bg=menui["bg"], fg=menui["fg"],

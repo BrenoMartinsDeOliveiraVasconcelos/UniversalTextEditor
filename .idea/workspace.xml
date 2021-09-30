@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Fase de desenvolvimento: Beta para Stable">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Icone adicionado (windows)">
+      <change afterPath="$PROJECT_DIR$/stuffs/ute.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stuffs/ute.piskel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stuffs/ute.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Função que cria janelas">
-      <created>1632316156207</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1632316156207</updated>
     </task>
     <task id="LOCAL-00030" summary="Convertido janelas para a função windowmaker">
       <created>1632316925079</created>
@@ -480,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632954512305</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Icone adicionado (windows)">
+      <created>1632966451198</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1632966451198</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correção da UI&#10;No linux, a UI ficava com o tema bugado" />
     <MESSAGE value="Evento: CTR+0 sai do app forçadamente" />
     <MESSAGE value="Mudado fonte" />
     <MESSAGE value="Beta 6" />
@@ -522,6 +522,7 @@
     <MESSAGE value="jogo da velha funcional" />
     <MESSAGE value="Modo escuro oculto" />
     <MESSAGE value="Fase de desenvolvimento: Beta para Stable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fase de desenvolvimento: Beta para Stable" />
+    <MESSAGE value="Icone adicionado (windows)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Icone adicionado (windows)" />
   </component>
 </project>
