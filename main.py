@@ -37,6 +37,8 @@ def main(args):
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
         root.iconbitmap(f"{scriptpath}/stuffs/ute.ico")
+    elif systema == "Linux":
+        root.tk.call('wm', 'iconphoto', root._w, tk.PhotoImage(file='icone.png'))
 
     # Menu
     menu = tk.Menu(root, bg=menui["bg"], fg=menui["fg"],
