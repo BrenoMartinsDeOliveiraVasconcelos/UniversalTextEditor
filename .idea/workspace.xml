@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Fonte revertida para Segoe" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Corrigido loop de permissão negada ao abrir um texto com permissão negada">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,13 +135,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00047" summary="Removido releasebuild, limpeza no código&#10;Tirado alguns imports inúteis &#10;releasebuild não é mais existente">
-      <created>1632353037199</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1632353037199</updated>
     </task>
     <task id="LOCAL-00048" summary="Nova organização do menu superior">
       <created>1632400652243</created>
@@ -476,7 +472,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633028763397</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="Corrigido loop de permissão negada ao abrir um texto com permissão negada">
+      <created>1633029282156</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1633029282156</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -493,7 +496,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instalador" />
     <MESSAGE value="Instalador funcionando em Linux" />
     <MESSAGE value="Adaptação da UI do instalador para rodar no Windows" />
     <MESSAGE value="Instalador funcional no windows." />
@@ -518,6 +520,7 @@
     <MESSAGE value="README atualizado" />
     <MESSAGE value="Limpeza no repositório" />
     <MESSAGE value="Fonte revertida para Segoe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fonte revertida para Segoe" />
+    <MESSAGE value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
   </component>
 </project>
