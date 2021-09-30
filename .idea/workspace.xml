@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="--noconsole">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Mesnagem de saida ao apertar X alterada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00042" summary="Cor do fundo da janela principal alterado de #cccccc para #d6d6d6">
-      <created>1632341358874</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1632341358874</updated>
     </task>
     <task id="LOCAL-00043" summary="beta5">
       <created>1632350606886</created>
@@ -480,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633017252829</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="Mesnagem de saida ao apertar X alterada">
+      <created>1633018324431</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1633018324431</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correção do bug das linhas" />
     <MESSAGE value="Comandos" />
     <MESSAGE value="Tema escuro da tela principal pronta" />
     <MESSAGE value="Quase pronto" />
@@ -522,6 +519,7 @@
     <MESSAGE value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
     <MESSAGE value="sys.exit()" />
     <MESSAGE value="--noconsole" />
-    <option name="LAST_COMMIT_MESSAGE" value="--noconsole" />
+    <MESSAGE value="Mesnagem de saida ao apertar X alterada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mesnagem de saida ao apertar X alterada" />
   </component>
 </project>
