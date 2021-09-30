@@ -35,6 +35,8 @@ def main(args):
         root.geometry("686x595")
     root.resizable(False, False)
     root["bg"] = mainui["bg"]  # "#d6d6d6"
+    if systema == "Windows":
+        root.iconbitmap(f"{scriptpath}i/stuffs/ute.png")
 
     # Menu
     menu = tk.Menu(root, bg=menui["bg"], fg=menui["fg"],

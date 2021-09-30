@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="jogo da velha funcional">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Fase de desenvolvimento: Beta para Stable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/colorscheme.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/colorscheme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,13 +137,6 @@
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
     </task>
-    <task id="LOCAL-00028" summary="Removido label de frases">
-      <created>1632315652456</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1632315652456</updated>
-    </task>
     <task id="LOCAL-00029" summary="Função que cria janelas">
       <created>1632316156207</created>
       <option name="number" value="00029" />
@@ -163,13 +157,6 @@
       <option name="presentableId" value="LOCAL-00031" />
       <option name="project" value="LOCAL" />
       <updated>1632318679641</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Macro para GPLv2">
-      <created>1632315576173</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1632315576173</updated>
     </task>
     <task id="LOCAL-00036" summary="Correção de bugs e limpeza&#10;Removido alguns arquivos sem utilidade&#10;No linux, as vezes as entries poderiam passar o limite da janela">
       <created>1632319974426</created>
@@ -479,7 +466,21 @@
       <option name="project" value="LOCAL" />
       <updated>1632954125226</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Modo escuro oculto">
+      <created>1632954451147</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1632954451147</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Fase de desenvolvimento: Beta para Stable">
+      <created>1632954512305</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1632954512305</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,8 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Correções na UI&#10;Scrollbar no widget de texto do criador de macros" />
-    <MESSAGE value="Correção da UI" />
     <MESSAGE value="Correção da UI&#10;No linux, a UI ficava com o tema bugado" />
     <MESSAGE value="Evento: CTR+0 sai do app forçadamente" />
     <MESSAGE value="Mudado fonte" />
@@ -521,6 +520,8 @@
     <MESSAGE value="Círculos" />
     <MESSAGE value="jogo da velha" />
     <MESSAGE value="jogo da velha funcional" />
-    <option name="LAST_COMMIT_MESSAGE" value="jogo da velha funcional" />
+    <MESSAGE value="Modo escuro oculto" />
+    <MESSAGE value="Fase de desenvolvimento: Beta para Stable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fase de desenvolvimento: Beta para Stable" />
   </component>
 </project>
