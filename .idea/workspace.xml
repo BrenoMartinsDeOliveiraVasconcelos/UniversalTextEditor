@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Corrigido loop de permissão negada ao abrir um texto com permissão negada">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alterado nível de indentação do criador de macros de 2 para 4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="Z:\Códigos\Python\Projetos\ute\instlib" />
       <recent name="Z:\Códigos\Python\Projetos\ute" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/stuffs" />
@@ -135,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00049" summary="Sistema de edição de macros parcialmente feito">
-      <created>1632406380609</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1632406380609</updated>
     </task>
     <task id="LOCAL-00050" summary="Sistema de edição de macros parcialmente feito">
       <created>1632407882472</created>
@@ -479,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633033914848</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Alterado nível de indentação do criador de macros de 2 para 4">
+      <created>1633033954073</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1633033954073</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adaptação da UI do instalador para rodar no Windows" />
     <MESSAGE value="Instalador funcional no windows." />
     <MESSAGE value="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe" />
     <MESSAGE value="Melhoria no dialogo de saida pelo menu exit" />
@@ -521,6 +521,7 @@
     <MESSAGE value="Fonte revertida para Segoe" />
     <MESSAGE value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
     <MESSAGE value="Adicionado macro TOS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado macro TOS" />
+    <MESSAGE value="Alterado nível de indentação do criador de macros de 2 para 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alterado nível de indentação do criador de macros de 2 para 4" />
   </component>
 </project>

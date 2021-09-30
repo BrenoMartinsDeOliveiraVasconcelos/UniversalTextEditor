@@ -49,6 +49,7 @@ def macro(text):
 
     consoledb("Macro", macros)
 
+    mnum = 0
     for n in macros:
         index = -1
         if n.endswith(".json"):
@@ -68,6 +69,7 @@ def macro(text):
             for loop in txt:
                 index += 1
                 if loop.replace("\n", "") == minfo["shortcut"]:
+                    mnum += 1
                     if "\n" not in loop:
                         txt[index] = minfo["text"]
                     else:
@@ -86,6 +88,7 @@ def macro(text):
 
     text.delete("1.0", tk.END)
     text.insert("1.0", "\n".join(stxt))
+    messagebox.showinfo("Done", f"Applied {mnum} macro calls.")
 
 
 def opt(option, text, root):
@@ -126,7 +129,7 @@ def opt(option, text, root):
 
 def configmenu(menu, text, root):
     opts = ["Open", "Save as"]
-    mopts = ["Create a Macro", "Edit a Macro", "Macronize"]
+    mopts = ["Create a Macro", "Edit a Macro", "Apply macros"]
     spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["About", "Exit"]
 
@@ -177,6 +180,10 @@ def createmacro(entries, text):
         args.append(str(i.get()))
 
     args.append(text.get("1.0", tk.END))
+    if " " in args[0]:
+        messagebox.showerror("Error", "Shorcuts cannot cointain spaces!")
+        return
+
     consoledb("Createmacro", args)
 
     macrodict = {
@@ -218,6 +225,9 @@ def subs(text, entries):
     if wrep == "" or repwith == "":
         messagebox.showerror("Error", "Some entries are empty!")
         return
+    elif " " in wrep or " " in repwith:
+        messagebox.showerror("Error", "For now, you can only replace words!")
+        return
 
     index = -1
     occour = 0
@@ -251,6 +261,10 @@ def editmacro(entry, text, value):
     vedit = [entry.get(), text.get("1.0", tk.END)]
     madict["shortcut"] = vedit[0]
     madict["text"] = vedit[1]
+
+    if " " in madict["shortcut"]:
+        messagebox.showerror("Error", "Shortcuts cannot cointain spaces!")
+        return
 
     consoledb("Editmacro", madict)
     open(f"{path}/{value}.json", "w+").write(json.dumps(madict, indent=2))
