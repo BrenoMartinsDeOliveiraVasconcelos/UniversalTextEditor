@@ -1,3 +1,3 @@
-python3 -m pip install -r ./requeriments.txt
+py -m pip install -r ./requeriments.txt
 
-python3 -m PyInstaller ./main.py
+py -m PyInstaller ./main.py --icon=./stuffs/ute.ico
