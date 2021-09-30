@@ -82,7 +82,7 @@ def macro(text):
     stxt = txt.split("\n")
     for i in range(len(stxt)):
         if i > 0:
-            stxt[i] = stxt[i][1:]
+            stxt[i] = stxt[i][1:] if stxt[0] == " " else stxt[i][0:]
 
     text.delete("1.0", tk.END)
     text.insert("1.0", "\n".join(stxt))
