@@ -57,8 +57,7 @@ def about():
     cfg = scriptinfo.readconfig()
     abt = tk.Tk()
     utils.windowmaker(abt, "About")
-
-    ix = -1
+    ix = 0
 
     for i in [f"Universal Text Editor v{cfg['version']} {cfg['build']}",
               "Made by Breno Martins",
