@@ -273,9 +273,9 @@ def madit(root, var):
         tk.Label(root, text=i, bg=labelui["bg"], fg=labelui["fg"]).grid(row=index,
                                                                         column=0, sticky="nw")
 
-    sentry = tk.Entry(root, width=20, font=("TkDefaultFont", 10),
+    sentry = tk.Entry(root, width=20, font=("Segoe", 10),
                       bg=enui["bg"], fg=enui["fg"])
-    nentry = tk.Text(root, height=5, width=20, font=("TkDefaultFont", 10),
+    nentry = tk.Text(root, height=5, width=20, font=("Segoe", 10),
                      bg=textui["bg"], fg=textui["fg"], insertbackground=textui["ibg"], selectbackground=textui["sbg"])
 
     sentry.grid(row=2, column=1)

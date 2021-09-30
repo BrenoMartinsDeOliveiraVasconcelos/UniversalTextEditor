@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Mesnagem de saida ao apertar X alterada">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Limpeza no repositório">
+      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,8 +121,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.fastinstall" />
+        <item itemvalue="Python.main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -134,20 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00044" summary="Remoção completa do modo command line&#10;Ainda pretendo criar uma versão standalone.">
-      <created>1632352156834</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1632352156834</updated>
-    </task>
-    <task id="LOCAL-00045" summary="Entries vazias agora darão um erro na função subs()">
-      <created>1632352419865</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1632352419865</updated>
     </task>
     <task id="LOCAL-00046" summary="Entries vazias agora darão um erro na função createmacro()">
       <created>1632352789328</created>
@@ -478,7 +464,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633028035952</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="README atualizado">
+      <created>1633028317957</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1633028317957</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Limpeza no repositório">
+      <created>1633028454848</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1633028454848</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -495,8 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Comandos" />
-    <MESSAGE value="Tema escuro da tela principal pronta" />
     <MESSAGE value="Quase pronto" />
     <MESSAGE value="Instalador" />
     <MESSAGE value="Instalador funcionando em Linux" />
@@ -520,6 +518,8 @@
     <MESSAGE value="sys.exit()" />
     <MESSAGE value="--noconsole" />
     <MESSAGE value="Mesnagem de saida ao apertar X alterada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mesnagem de saida ao apertar X alterada" />
+    <MESSAGE value="README atualizado" />
+    <MESSAGE value="Limpeza no repositório" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limpeza no repositório" />
   </component>
 </project>

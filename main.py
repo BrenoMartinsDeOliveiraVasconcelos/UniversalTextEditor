@@ -49,7 +49,7 @@ def main(args):
 
     # Text
     text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
-                   font=("TkDefaultFont", 10), wrap="word", undo=True,
+                   font=("Segoe", 10), wrap="word", undo=True,
                    width=95, height=35, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
     text.grid(row=1, column=0, rowspan=1)
 

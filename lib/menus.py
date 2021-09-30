@@ -86,10 +86,10 @@ def macromaker():
                                                                       column=0, sticky="nw")
 
     nentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
-                      font=("TkDefaultFont", 10))
+                      font=("Segoe", 10))
     shentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
-                       font=("TkDefaultFont", 10))
-    tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("TkDefaultFont", 10),
+                       font=("Segoe", 10))
+    tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("Segoe", 10),
                      width=20, height=5, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
@@ -105,7 +105,7 @@ def macromaker():
     tk.Button(mk, text="Create",
               command=lambda: utils.createmacro([shentry, nentry], tentry),
               bg=buttonui["bg"], fg=buttonui["fg"], width=10,
-              font=("TkDefaultFont", 10)).grid(row=3, column=1, sticky="e")
+              font=("Segoe", 10)).grid(row=3, column=1, sticky="e")
 
     mk.mainloop()
 
@@ -120,7 +120,7 @@ def replacetxt(text):
     index = -1
     for i in labels:
         index += 1
-        tk.Label(rep, text=i, font=("TkDefaultFont", "10"),
+        tk.Label(rep, text=i, font=("Segoe", "10"),
                  bg=labelui["bg"], fg=labelui["fg"]).grid(row=index, column=0,
                                                           sticky="w")
 

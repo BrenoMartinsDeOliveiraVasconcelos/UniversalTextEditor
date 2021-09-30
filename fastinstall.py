@@ -17,7 +17,7 @@ def install():
     tk.Label(inst, font=("TKDefault", 10), bg="#ffffff",
              text="""Please read before continuing""").grid(row=0, column=0,
                                                             sticky="nsew", columnspan=2)
-    text = tk.Text(inst)
+    text = tk.Text(inst, font=("Segoe", 10))
     text.insert("1.0", ''.join(open("./__Installer__/tos.txt", "r").readlines()))
     text.grid(row=1, column=0, columnspan=2)
     tk.Button(inst, text="Agree and install", width=20,
