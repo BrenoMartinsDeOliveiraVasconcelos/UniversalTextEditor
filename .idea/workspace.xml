@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/install.bat" beforeDir="false" afterPath="$PROJECT_DIR$/install.bat" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller">
+      <change beforePath="$PROJECT_DIR$/lib/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/events.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +134,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Renomeado a opção &quot;Edit&quot; para &quot;Tools&quot;">
-      <created>1632331605169</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1632331605169</updated>
     </task>
     <task id="LOCAL-00040" summary="Colocado um Label que exibe a versão">
       <created>1632332639967</created>
@@ -479,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633010301753</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller">
+      <created>1633016631707</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1633016631707</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +495,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Release candidate 1" />
     <MESSAGE value="Ainda não" />
     <MESSAGE value="beta7" />
     <MESSAGE value="Correção do bug das linhas" />
@@ -521,6 +519,7 @@
     <MESSAGE value="Confirmação de saída ao apertar o botão de sair" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer" />
+    <MESSAGE value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
   </component>
 </project>

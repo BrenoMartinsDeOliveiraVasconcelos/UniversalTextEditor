@@ -1,7 +1,7 @@
-from lib.consoledb import consoledb
 import tkinter as tk
 from lib import menus
 from tkinter import  messagebox
+from sys import exit
 
 
 def close(root: tk.Tk, text: tk.Text):
