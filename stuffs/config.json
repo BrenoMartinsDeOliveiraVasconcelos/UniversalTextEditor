@@ -1,6 +1,6 @@
 {
-    "debug": true,
+    "debug": false,
     "version": "1.0.0",
-    "build": "pre-release 1",
+    "build": "full release",
     "dark": false
 }

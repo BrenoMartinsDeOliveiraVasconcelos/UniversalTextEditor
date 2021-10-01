@@ -37,8 +37,6 @@ def main(args):
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
         root.iconbitmap(f"{scriptpath}/stuffs/ute.ico")
-    elif systema == "Linux":
-        root.tk.call('wm', 'iconphoto', root._w, tk.PhotoImage(file='icone.png'))
 
     # Menu
     menu = tk.Menu(root, bg=menui["bg"], fg=menui["fg"],
@@ -68,7 +66,7 @@ def main(args):
                  f"{configs['build']}, Dt: {configs['dark']}, " \
                  f"OS: {platform.system()}, Python: {ver}"
     else:
-        string = f"v{configs['version']}"
+        string = f"v{configs['version']} {configs['build']} in {platform.system()}"
 
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
             row=2, column=0, sticky="w", columnspan=1, rowspan=1)

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alterado nível de indentação do criador de macros de 2 para 4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Removido icone para Linux temporariamente">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PyTacToe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -136,13 +136,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00050" summary="Sistema de edição de macros parcialmente feito">
-      <created>1632407882472</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1632407882473</updated>
     </task>
     <task id="LOCAL-00051" summary="Correções na UI e sistema de edição de macros quase pronto&#10;Botões agora estão corretamente alinhados">
       <created>1632411811096</created>
@@ -480,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633033954073</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Removido icone para Linux temporariamente">
+      <created>1633039368628</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1633039368630</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +497,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Instalador funcional no windows." />
     <MESSAGE value="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe" />
     <MESSAGE value="Melhoria no dialogo de saida pelo menu exit" />
     <MESSAGE value="commit message" />
@@ -522,6 +521,7 @@
     <MESSAGE value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
     <MESSAGE value="Adicionado macro TOS" />
     <MESSAGE value="Alterado nível de indentação do criador de macros de 2 para 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alterado nível de indentação do criador de macros de 2 para 4" />
+    <MESSAGE value="Removido icone para Linux temporariamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removido icone para Linux temporariamente" />
   </component>
 </project>
