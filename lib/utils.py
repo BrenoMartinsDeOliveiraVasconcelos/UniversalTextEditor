@@ -174,7 +174,7 @@ def clear(sistema):
 
 def createmacro(entries, text):
     args = []
-    path = scriptinfo.scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/stuffs]macros"
     for i in entries:
         consoledb("Createmacro", i.get())
         args.append(str(i.get()))
@@ -256,7 +256,7 @@ def subs(text, entries):
 
 
 def editmacro(entry, text, value):
-    path = scriptinfo.scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/stuffs/macros"
     madict = json.load(open(f"{path}/{value}.json"))
     vedit = [entry.get(), text.get("1.0", tk.END)]
     madict["shortcut"] = vedit[0]
@@ -274,7 +274,7 @@ def editmacro(entry, text, value):
 
 def madit(root, var):
     value = var.get()
-    path = scriptinfo.scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/stuffs/macros"
     minfo = json.load(open(f"{path}/{value}.json"))
     defaultvals = [
         minfo["shortcut"], minfo["text"]

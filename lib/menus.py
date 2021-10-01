@@ -1,5 +1,5 @@
 import os
-from lib import utils, events, colorscheme, scriptinfo
+from lib import utils, colorscheme, scriptinfo
 from lib.consoledb import consoledb
 import tkinter as tk
 from tkinter import filedialog
@@ -34,6 +34,7 @@ def opn(text, root):
     fn = filedialog.askopenfilename()
     consoledb("Opn", fn)
 
+    txt = ""
     index = -1
     while True:
         index += 1
@@ -142,7 +143,7 @@ def replacetxt(text):
 
 
 def editmacro():
-    path = scriptinfo.scriptpath() + "/macros"
+    path = scriptinfo.scriptpath() + "/stuffs/macros"
     macros = os.listdir(path)
     names = []
 
@@ -181,7 +182,5 @@ def secretmenu():
 
     utils.windowmaker(secret, "MENU SECRETO")
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
-
-    secret.bind("<Control-c>", events.q)
 
     secret.mainloop()
