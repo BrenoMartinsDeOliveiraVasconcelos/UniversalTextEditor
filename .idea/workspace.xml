@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Versão inicial do sistema de notas">
-      <change afterPath="$PROJECT_DIR$/stuffs/notes/0.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stuffs/notes/1.txt" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Preparando para migrar notas para outra janela pois é impossivel fazer isso funcionar na janela principal">
+      <change afterPath="$PROJECT_DIR$/lib/windows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -137,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00053" summary="Sistema de edição de macros finalizado">
-      <created>1632413523387</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1632413523387</updated>
     </task>
     <task id="LOCAL-00054" summary="Correções na UI&#10;Scrollbar no widget de texto do criador de macros">
       <created>1632421851833</created>
@@ -481,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633098310552</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="Preparando para migrar notas para outra janela pois é impossivel fazer isso funcionar na janela principal">
+      <created>1633098675571</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1633098675571</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit message" />
     <MESSAGE value="Círculos" />
     <MESSAGE value="jogo da velha" />
     <MESSAGE value="jogo da velha funcional" />
@@ -523,6 +522,7 @@
     <MESSAGE value="Removido icone para Linux temporariamente" />
     <MESSAGE value="v1.1.0, Pre-Alpha" />
     <MESSAGE value="Versão inicial do sistema de notas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Versão inicial do sistema de notas" />
+    <MESSAGE value="Preparando para migrar notas para outra janela pois é impossivel fazer isso funcionar na janela principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparando para migrar notas para outra janela pois é impossivel fazer isso funcionar na janela principal" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 import os
-
-from lib import utils, menus, colorscheme, scriptinfo, events
+from lib import utils, menus, colorscheme, scriptinfo, events, windows
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
@@ -33,10 +32,6 @@ def main(args):
     root.title("Universal Text Editor")
     # Por algum motivo, eu tenho que alterar o geometry de acordo com
     # o sistema...
-    if systema == "Linux":
-        root.geometry("992x630")
-    else:
-        root.geometry("896x610")
     root.resizable(False, False)
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
@@ -75,20 +70,10 @@ def main(args):
     tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
         row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
-    r = 0
-    # Entries de nota
-    for i in notes:
-        r += 1
-        note = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
-                       font=("Segoe", 10), wrap="word", undo=True,
-                       width=29, height=10, insertbackground=textui["ibg"],
-                       selectbackground=textui["sbg"])
-        note.grid(row=r, column=2,
-                  sticky="n")
-        note.insert("1.0", ''.join(open(f"{notepath}/{i}", "r").readlines()))
-
     utils.configmenu(menu, text, root)
     root.protocol("WM_DELETE_WINDOW", lambda: events.close(root, text))
+
+    windows.notemanager(notepath, notes)
     root.mainloop()
 
 
