@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Criado prototipo de layout do gerenciador de notas">
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alpha 1">
+      <change afterPath="$PROJECT_DIR$/stuffs/notes/0.note" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/windows.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,20 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Correção da UI&#10;No linux, a UI ficava com o tema bugado">
-      <created>1632423147872</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1632423147872</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Evento: CTR+0 sai do app forçadamente">
-      <created>1632432001217</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1632432001218</updated>
     </task>
     <task id="LOCAL-00058" summary="Mudado fonte">
       <created>1632432557829</created>
@@ -479,7 +467,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633123958939</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="Alpha 1">
+      <created>1633124059211</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1633124059211</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Alpha 1">
+      <created>1633124074617</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1633124074617</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,7 +498,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="jogo da velha funcional" />
     <MESSAGE value="Modo escuro oculto" />
     <MESSAGE value="Fase de desenvolvimento: Beta para Stable" />
     <MESSAGE value="Icone adicionado (windows)" />
@@ -521,6 +522,7 @@
     <MESSAGE value="Preparando para migrar notas para outra janela pois é impossivel fazer isso funcionar na janela principal" />
     <MESSAGE value="Separados por uma gui" />
     <MESSAGE value="Criado prototipo de layout do gerenciador de notas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criado prototipo de layout do gerenciador de notas" />
+    <MESSAGE value="Alpha 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alpha 1" />
   </component>
 </project>
