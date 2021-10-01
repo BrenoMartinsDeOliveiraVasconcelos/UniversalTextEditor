@@ -128,7 +128,7 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save as"]
+    opts = ["Open", "Save as (Standalone)"]
     mopts = ["Create a Macro", "Edit a Macro", "Apply macros"]
     spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["About", "Exit"]
