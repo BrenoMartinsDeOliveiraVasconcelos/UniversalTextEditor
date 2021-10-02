@@ -184,3 +184,9 @@ def secretmenu():
     consoledb("Shhh", "SEGREDO", tp=1, verifydebug=False)
 
     secret.mainloop()
+
+
+def savenote(text):
+    sv = tk.Tk()
+
+    sv.mainloop()

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alpha 1">
-      <change afterPath="$PROJECT_DIR$/stuffs/notes/0.note" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Sistema funcional">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/windows.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/windows.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Mudado fonte">
-      <created>1632432557829</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1632432557829</updated>
     </task>
     <task id="LOCAL-00059" summary="Beta 6">
       <created>1632432757872</created>
@@ -481,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633124074617</updated>
     </task>
-    <option name="localTasksCounter" value="107" />
+    <task id="LOCAL-00107" summary="Sistema funcional">
+      <created>1633125520643</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1633125520643</updated>
+    </task>
+    <option name="localTasksCounter" value="108" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +500,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Modo escuro oculto" />
     <MESSAGE value="Fase de desenvolvimento: Beta para Stable" />
     <MESSAGE value="Icone adicionado (windows)" />
     <MESSAGE value="Novo icone" />
@@ -523,6 +524,7 @@
     <MESSAGE value="Separados por uma gui" />
     <MESSAGE value="Criado prototipo de layout do gerenciador de notas" />
     <MESSAGE value="Alpha 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alpha 1" />
+    <MESSAGE value="Sistema funcional" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sistema funcional" />
   </component>
 </project>

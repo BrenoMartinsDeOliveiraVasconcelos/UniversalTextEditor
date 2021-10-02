@@ -21,7 +21,7 @@ def notemanager(path: str, nots: list):
 
         text = tk.Text(nm, bg=fileinfo[0], fg=fileinfo[1],
                        font=("Segoe", 10), wrap="word", undo=True,
-                       width=20, height=10, insertbackground=textui["ibg"],
+                       width=20, height=7, insertbackground=textui["ibg"],
                        selectbackground=textui["sbg"])
         text.grid(row=row, column=column, rowspan=1, columnspan=1)
         index = 0
