@@ -188,5 +188,23 @@ def secretmenu():
 
 def savenote(text):
     sv = tk.Tk()
+    utils.windowmaker(sv, "Save as note")
+
+    labels = ["Background: ", "Foreground: "]
+    r = -1
+    for i in labels:
+        r += 1
+        tk.Label(sv, text=i, bg=labelui["bg"], fg=labelui["fg"]).grid(row=r, column=0,
+                                                                      sticky="w")
+
+    bentry = tk.Entry(sv, bg=enui["bg"], fg=enui["fg"])
+    bentry.grid(row=0, column=1)
+    fentry = tk.Entry(sv, bg=enui["bg"], fg=enui["fg"])
+    fentry.grid(row=1, column=1)
+
+    tk.Button(sv, bg=buttonui["bg"], fg=buttonui["fg"], width=10,
+              font=("Segoe", 10), text="Create",
+              command=lambda: utils.saveasnote([bentry, fentry], text)).grid(
+        row=2, column=1, sticky="e")
 
     sv.mainloop()
