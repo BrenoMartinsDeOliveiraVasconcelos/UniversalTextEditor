@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Salvar como nota">
-      <change afterPath="$PROJECT_DIR$/stuffs/notes/943377323.note" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,20 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Limpeza de código">
-      <created>1632510051842</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1632510051843</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Release candidate 1">
-      <created>1632510119560</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1632510119560</updated>
     </task>
     <task id="LOCAL-00063" summary="Ainda não">
       <created>1632510208849</created>
@@ -505,7 +489,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633478661402</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto">
+      <created>1633559949889</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1633559949890</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto">
+      <created>1633560050109</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1633560050109</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -522,7 +520,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Novo icone" />
     <MESSAGE value="Limpeza de código" />
     <MESSAGE value="Confirmação de saída ao apertar o botão de sair" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize" />
@@ -547,6 +544,7 @@
     <MESSAGE value="Sistema funcional" />
     <MESSAGE value="Alpha&#10;Alterado tamanho das notas e adicionado opçaõ" />
     <MESSAGE value="Salvar como nota" />
-    <option name="LAST_COMMIT_MESSAGE" value="Salvar como nota" />
+    <MESSAGE value="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto" />
   </component>
 </project>

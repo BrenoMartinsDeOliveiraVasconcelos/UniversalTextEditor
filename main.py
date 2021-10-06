@@ -2,7 +2,6 @@ import os
 from lib import utils, menus, colorscheme, scriptinfo, events
 from lib.consoledb import consoledb
 from sys import argv
-from sys import version
 import platform
 import tkinter as tk
 import sys
@@ -32,7 +31,7 @@ def main(args):
     root.title("Universal Text Editor")
     # Por algum motivo, eu tenho que alterar o geometry de acordo com
     # o sistema...
-    root.resizable(False, False)
+    root.resizable(True, True)
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
         root.iconbitmap(f"{scriptpath}/stuffs/ute.ico")
@@ -46,29 +45,18 @@ def main(args):
 
     # Text
     text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
-                   font=("Segoe", 10), wrap="word", undo=True,
-                   width=95, height=35, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
-    text.grid(row=1, column=0, rowspan=1, columnspan=1)
+                   font="Segoe", wrap="word", undo=True,
+                   insertbackground=textui["ibg"], selectbackground=textui["sbg"])
+    text.pack(fill="both", expand=True, side=tk.LEFT)
 
     # Scrollbar
-    scrollbar = tk.Scrollbar(root, command=text.yview,
+    frame = tk.Frame(root)
+    frame.pack(side=tk.TOP, expand=True, fill="both")
+    scrollbar = tk.Scrollbar(frame, command=text.yview,
                              bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
                              activerelief="flat")
-    scrollbar.grid(row=1, column=1, sticky="nsew")
+    scrollbar.pack(fill="both", expand=True)
     text.config(yscrollcommand=scrollbar.set)
-
-    # Label
-    ver = version.split("\n")[0]
-    ver = "".join(ver).split(" ")[0]
-    if configs["debug"]:
-        string = f"DEBUG - v{configs['version']} " \
-                 f"{configs['build']}, Dt: {configs['dark']}, " \
-                 f"OS: {platform.system()}, Python: {ver}"
-    else:
-        string = f"v{configs['version']} {configs['build']} in {platform.system()}"
-
-    tk.Label(root, bg=labelui["bg"], text=string, fg=labelui["fg"]).grid(
-        row=2, column=0, sticky="w", columnspan=1, rowspan=1)
 
     utils.configmenu(menu, text, root)
     root.protocol("WM_DELETE_WINDOW", lambda: events.close(root, text))
