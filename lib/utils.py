@@ -6,7 +6,6 @@ import pyperclip
 import tkinter as tk
 from tkinter import messagebox
 import sys
-import random
 
 pc = True
 ui = colorscheme.loadui()
@@ -311,34 +310,3 @@ def madit(root, var):
               command=lambda: editmacro(sentry, nentry, value),
               bg=buttonui["bg"], fg=buttonui["fg"]).grid(row=4, column=1,
                                                          sticky="e")
-
-
-def isthishexacolor(colorhex: str):
-    if len(colorhex) == 7:
-        for i in colorhex[1:]:
-            if i.lower() not in "abcdef0123456789":
-                return False
-        return True
-    else:
-        return False
-
-
-def saveasnote(entries: list, text: tk.Text):
-    header = []
-    file = []
-    ftext = text.get("1.0", tk.END)
-    notepath = scriptinfo.scriptpath() + "/stuffs/notes"
-
-    for i in entries:
-        if isthishexacolor(i.get()):
-            header.append(i.get())
-        else:
-            messagebox.showerror("Error", f"{i.get()} is not a valid color!")
-            return
-
-    file.append(";".join(header))
-    file[0] = file[0] + ";\n"
-    file.append(ftext)
-    open(f"{notepath}/{random.randint(0, 999999999)}.note", "w+").write("".join(file))
-
-    consoledb("Saveasnote", file)

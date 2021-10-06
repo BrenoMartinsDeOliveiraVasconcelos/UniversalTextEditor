@@ -1,5 +1,5 @@
 import os
-from lib import utils, menus, colorscheme, scriptinfo, events, windows
+from lib import utils, menus, colorscheme, scriptinfo, events
 from lib.consoledb import consoledb
 from sys import argv
 from sys import version
