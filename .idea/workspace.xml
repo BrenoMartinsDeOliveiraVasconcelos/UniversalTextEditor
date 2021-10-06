@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alpha&#10;Alterado tamanho das notas e adicionado opçaõ">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Salvar como nota">
+      <change afterPath="$PROJECT_DIR$/stuffs/notes/943377323.note" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +102,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ErrorGiver" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ErrorGiver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../ErrorGiver/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UniversalTextEditor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -124,6 +147,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.fastinstall" />
         <item itemvalue="Python.main (1)" />
       </list>
@@ -137,13 +161,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00060" summary="UI.json">
-      <created>1632434368657</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1632434368657</updated>
     </task>
     <task id="LOCAL-00061" summary="Limpeza de código">
       <created>1632510051842</created>
@@ -481,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633178586528</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="Salvar como nota">
+      <created>1633478661401</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1633478661402</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -498,7 +522,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Icone adicionado (windows)" />
     <MESSAGE value="Novo icone" />
     <MESSAGE value="Limpeza de código" />
     <MESSAGE value="Confirmação de saída ao apertar o botão de sair" />
@@ -523,6 +546,7 @@
     <MESSAGE value="Alpha 1" />
     <MESSAGE value="Sistema funcional" />
     <MESSAGE value="Alpha&#10;Alterado tamanho das notas e adicionado opçaõ" />
-    <option name="LAST_COMMIT_MESSAGE" value="Alpha&#10;Alterado tamanho das notas e adicionado opçaõ" />
+    <MESSAGE value="Salvar como nota" />
+    <option name="LAST_COMMIT_MESSAGE" value="Salvar como nota" />
   </component>
 </project>

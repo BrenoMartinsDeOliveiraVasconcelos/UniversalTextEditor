@@ -6,6 +6,7 @@ import pyperclip
 import tkinter as tk
 from tkinter import messagebox
 import sys
+import random
 
 pc = True
 ui = colorscheme.loadui()
@@ -326,6 +327,7 @@ def saveasnote(entries: list, text: tk.Text):
     header = []
     file = []
     ftext = text.get("1.0", tk.END)
+    notepath = scriptinfo.scriptpath() + "/stuffs/notes"
 
     for i in entries:
         if isthishexacolor(i.get()):
@@ -335,5 +337,8 @@ def saveasnote(entries: list, text: tk.Text):
             return
 
     file.append(";".join(header))
-    file[0] = file[0] + ";"
+    file[0] = file[0] + ";\n"
+    file.append(ftext)
+    open(f"{notepath}/{random.randint(0, 999999999)}.note", "w+").write("".join(file))
+
     consoledb("Saveasnote", file)

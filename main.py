@@ -73,7 +73,6 @@ def main(args):
     utils.configmenu(menu, text, root)
     root.protocol("WM_DELETE_WINDOW", lambda: events.close(root, text))
 
-    windows.notemanager(notepath, notes)
     root.mainloop()
 
 
