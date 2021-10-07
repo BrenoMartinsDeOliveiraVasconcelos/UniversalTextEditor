@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="A tela principal agora é resizable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/notes/0.note" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/notes/943377323.note" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,13 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Ainda não">
-      <created>1632510208849</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1632510208849</updated>
     </task>
     <task id="LOCAL-00064" summary="beta7">
       <created>1632512669357</created>
@@ -503,7 +499,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633560050109</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="A tela principal agora é resizable">
+      <created>1633562162244</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1633562162244</updated>
+    </task>
+    <option name="localTasksCounter" value="113" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,7 +523,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Limpeza de código" />
     <MESSAGE value="Confirmação de saída ao apertar o botão de sair" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer" />
@@ -545,6 +547,7 @@
     <MESSAGE value="Alpha&#10;Alterado tamanho das notas e adicionado opçaõ" />
     <MESSAGE value="Salvar como nota" />
     <MESSAGE value="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto" />
+    <MESSAGE value="A tela principal agora é resizable" />
+    <option name="LAST_COMMIT_MESSAGE" value="A tela principal agora é resizable" />
   </component>
 </project>

@@ -1,4 +1,3 @@
-import os
 from lib import utils, menus, colorscheme, scriptinfo, events
 from lib.consoledb import consoledb
 from sys import argv
@@ -7,8 +6,6 @@ import tkinter as tk
 import sys
 
 scriptpath = scriptinfo.scriptpath()
-notes = os.listdir(f"{scriptpath}/stuffs/notes")
-notepath = f"{scriptpath}/stuffs/notes"
 argv.append('')
 systema = platform.system()
 configs = scriptinfo.readconfig()
@@ -28,9 +25,7 @@ def main(args):
         menus.secretmenu()
 
     root = tk.Tk()
-    root.title("Universal Text Editor")
-    # Por algum motivo, eu tenho que alterar o geometry de acordo com
-    # o sistema...
+    root.title(f"Universal Text Editor v{configs['version']}")
     root.resizable(True, True)
     root["bg"] = mainui["bg"]  # "#d6d6d6"
     if systema == "Windows":
@@ -45,7 +40,7 @@ def main(args):
 
     # Text
     text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
-                   font="Segoe", wrap="word", undo=True,
+                   font=("Calibri", 12), wrap="word", undo=True,
                    insertbackground=textui["ibg"], selectbackground=textui["sbg"])
     text.pack(fill="both", expand=True, side=tk.LEFT)
 

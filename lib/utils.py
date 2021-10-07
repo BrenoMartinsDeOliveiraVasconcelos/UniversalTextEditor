@@ -93,7 +93,7 @@ def macro(text):
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 11:
+    if option == 10:
         yn = messagebox.askyesnocancel("Do you want save?", "Do you want to "
                                                             "exit without saving?")
         consoledb("Opt", yn)
@@ -104,25 +104,23 @@ def opt(option, text, root):
             sys.exit()
         elif yn is None:
             consoledb("Opt", "Cancelado")
-    elif option == 10:
+    elif option == 9:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 9:
-        copypaste("p", text)
     elif option == 8:
-        copypaste("c", text)
+        copypaste("p", text)
     elif option == 7:
-        menus.replacetxt(text)
+        copypaste("c", text)
     elif option == 6:
-        text.delete("1.0", tk.END)
+        menus.replacetxt(text)
     elif option == 5:
-        macro(text)
+        text.delete("1.0", tk.END)
     elif option == 4:
-        menus.editmacro()
+        macro(text)
     elif option == 3:
-        menus.macromaker()
+        menus.editmacro()
     elif option == 2:
-        menus.savenote(text)
+        menus.macromaker()
     elif option == 1:
         menus.saveas(text, root=root)
     elif option == 0:
@@ -130,7 +128,7 @@ def opt(option, text, root):
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save", "Save as note"]
+    opts = ["Open", "Save"]
     mopts = ["Create a Macro", "Edit a Macro", "Apply macros"]
     spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["About", "Exit"]
