@@ -61,7 +61,7 @@ def about():
     utils.windowmaker(abt, "About")
     ix = 0
 
-    for i in [f"Universal Text Editor v{cfg['version']} {cfg['build']}",
+    for i in [f"Universal Text Editor v{cfg['version']}",
               "Made by Breno Martins",
               "This software is distribuited under the GPLv2 license."]:
         ix += 1

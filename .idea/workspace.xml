@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="A tela principal agora é resizable">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Alteração da fonte para calibri">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/notes/0.note" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/notes/943377323.note" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00064" summary="beta7">
-      <created>1632512669357</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1632512669360</updated>
     </task>
     <task id="LOCAL-00065" summary="Correção do bug das linhas">
       <created>1632513909481</created>
@@ -506,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633562162244</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Alteração da fonte para calibri">
+      <created>1633634978715</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1633634978716</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +520,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Confirmação de saída ao apertar o botão de sair" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize" />
     <MESSAGE value="Consertado bug que corta a primeira letra de cada linha no macronize eno replacer" />
     <MESSAGE value="Comando em install.bat alterado de python3 para py, adicionado icone ao pyinstaller" />
@@ -548,6 +544,7 @@
     <MESSAGE value="Salvar como nota" />
     <MESSAGE value="Removido sistemas de notas&#10;Não faz sentido ter isso em um editor de texto" />
     <MESSAGE value="A tela principal agora é resizable" />
-    <option name="LAST_COMMIT_MESSAGE" value="A tela principal agora é resizable" />
+    <MESSAGE value="Alteração da fonte para calibri" />
+    <option name="LAST_COMMIT_MESSAGE" value="Alteração da fonte para calibri" />
   </component>
 </project>

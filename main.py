@@ -1,5 +1,4 @@
 from lib import utils, menus, colorscheme, scriptinfo, events
-from lib.consoledb import consoledb
 from sys import argv
 import platform
 import tkinter as tk
@@ -25,9 +24,10 @@ def main(args):
         menus.secretmenu()
 
     root = tk.Tk()
-    root.title(f"Universal Text Editor v{configs['version']}")
+    root.title(f"Universal Text Editor v{configs['version']} "
+               f"{configs['build'] if configs['build'] != 'release' else ''}")
     root.resizable(True, True)
-    root["bg"] = mainui["bg"]  # "#d6d6d6"
+    root["bg"] = mainui["bg"]
     if systema == "Windows":
         root.iconbitmap(f"{scriptpath}/stuffs/ute.ico")
 
@@ -60,8 +60,4 @@ def main(args):
 
 
 if __name__ == "__main__":
-    try:
-        main(argv)
-        consoledb("Global/main.py", "Fechada inesperada!")
-    except KeyboardInterrupt:
-        consoledb("Global/main.py", "Abortado.", tp=3)
+    main(argv)
