@@ -40,7 +40,7 @@ def main(args):
 
     # Text
     text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
-                   font=("Calibri", 12), wrap="word", undo=True)
+                   font=(configs['font'], configs['fontsize']), wrap="word", undo=True)
     text.pack(fill="both", expand=True, side=tk.LEFT)
 
     # Scrollbar

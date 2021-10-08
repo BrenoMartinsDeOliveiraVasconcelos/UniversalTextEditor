@@ -2,5 +2,7 @@
     "debug": true,
     "version": "1.0.2",
     "build": "beta",
-    "dark": false
+    "dark": false,
+    "font": "Calibri",
+    "fontsize": 12
 }
