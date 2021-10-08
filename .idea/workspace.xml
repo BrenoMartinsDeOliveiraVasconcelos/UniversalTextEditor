@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Correções de bugs e tema escuro habilitado">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="runtime.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <recent name="$PROJECT_DIR$/stuffs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.fastinstall">
     <configuration name="fastinstall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UniversalTextEditor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.fastinstall" />
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
       </list>
@@ -159,20 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Adaptação da UI do instalador para rodar no Windows">
-      <created>1632618010572</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1632618010572</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Instalador funcional no windows.">
-      <created>1632622516079</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1632622516079</updated>
     </task>
     <task id="LOCAL-00072" summary="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe">
       <created>1632658705758</created>
@@ -503,7 +488,21 @@
       <option name="project" value="LOCAL" />
       <updated>1633735299665</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Fontes citadas no arquivo JSON">
+      <created>1633735700673</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1633735700673</updated>
+    </task>
+    <task id="LOCAL-00120" summary="runtime.py">
+      <created>1633735770599</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1633735770599</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,8 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sys.exit()" />
-    <MESSAGE value="--noconsole" />
     <MESSAGE value="Mesnagem de saida ao apertar X alterada" />
     <MESSAGE value="README atualizado" />
     <MESSAGE value="Limpeza no repositório" />
@@ -545,6 +542,8 @@
     <MESSAGE value="Alterações pequenas" />
     <MESSAGE value="Nova captura de tela" />
     <MESSAGE value="Correções de bugs e tema escuro habilitado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correções de bugs e tema escuro habilitado" />
+    <MESSAGE value="Fontes citadas no arquivo JSON" />
+    <MESSAGE value="runtime.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="runtime.py" />
   </component>
 </project>

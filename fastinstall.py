@@ -19,12 +19,16 @@ def install():
                                                             sticky="nsew", columnspan=2)
     text = tk.Text(inst, font=("Segoe", 10))
     text.insert("1.0", ''.join(open("./__Installer__/tos.txt", "r").readlines()))
+    text.config(state=tk.DISABLED)
     text.grid(row=1, column=0, columnspan=2)
     tk.Button(inst, text="Agree and install", width=20,
               command=lambda: helpers.installation(so, user, inst)).grid(row=2,
                                                                          column=0, sticky="w")
     tk.Button(inst, text="Exit", width=20, command=inst.destroy).grid(row=2,
-                                                                      column=1, sticky="e")
+                                                                      column=1, sticky="e", columnspan=2)
+    scrollbar = tk.Scrollbar(inst, command=text.yview)
+    scrollbar.grid(row=1, column=2, sticky="nsew")
+    text.config(yscrollcommand=scrollbar.set)
 
     inst.mainloop()
 
