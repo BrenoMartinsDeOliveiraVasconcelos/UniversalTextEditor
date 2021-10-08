@@ -1,12 +1,12 @@
 import json
-from lib import scriptinfo
+from lib import runtime
 
 
 def loadui():
-    dark = scriptinfo.readconfig()["dark"]
+    dark = runtime.readconfig()["dark"]
     if not dark:
         file = "colorscheme"
     else:
         file = "darkcolors"
 
-    return json.load(open(scriptinfo.scriptpath()+f"/stuffs/{file}.json"))
+    return json.load(open(runtime.scriptpath() + f"/stuffs/{file}.json"))

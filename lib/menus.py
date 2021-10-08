@@ -1,5 +1,5 @@
 import os
-from lib import utils, colorscheme, scriptinfo
+from lib import utils, colorscheme, runtime
 from lib.consoledb import consoledb
 import tkinter as tk
 from tkinter import filedialog
@@ -56,7 +56,7 @@ def opn(text, root):
 
 
 def about():
-    cfg = scriptinfo.readconfig()
+    cfg = runtime.readconfig()
     abt = tk.Tk()
     utils.windowmaker(abt, "About")
     ix = 0
@@ -143,7 +143,7 @@ def replacetxt(text):
 
 
 def editmacro():
-    path = scriptinfo.scriptpath() + "/stuffs/macros"
+    path = runtime.scriptpath() + "/stuffs/macros"
     macros = os.listdir(path)
     names = []
 

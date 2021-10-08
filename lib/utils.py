@@ -1,7 +1,7 @@
 import os
 import json
 from lib.consoledb import consoledb
-from lib import menus, scriptinfo, colorscheme
+from lib import menus, runtime, colorscheme
 import pyperclip
 import tkinter as tk
 from tkinter import messagebox
@@ -44,7 +44,7 @@ def copypaste(mode, text):
 
 
 def macro(text):
-    macrof = f"{scriptinfo.scriptpath()}/stuffs/macros"
+    macrof = f"{runtime.scriptpath()}/stuffs/macros"
     macros = os.listdir(macrof)
 
     consoledb("Macro", macros)
@@ -174,7 +174,7 @@ def clear(sistema):
 
 def createmacro(entries, text):
     args = []
-    path = scriptinfo.scriptpath() + "/stuffs]macros"
+    path = runtime.scriptpath() + "/stuffs]macros"
     for i in entries:
         consoledb("Createmacro", i.get())
         args.append(str(i.get()))
@@ -256,7 +256,7 @@ def subs(text, entries):
 
 
 def editmacro(entry, text, value):
-    path = scriptinfo.scriptpath() + "/stuffs/macros"
+    path = runtime.scriptpath() + "/stuffs/macros"
     madict = json.load(open(f"{path}/{value}.json"))
     vedit = [entry.get(), text.get("1.0", tk.END)]
     madict["shortcut"] = vedit[0]
@@ -274,7 +274,7 @@ def editmacro(entry, text, value):
 
 def madit(root, var):
     value = var.get()
-    path = scriptinfo.scriptpath() + "/stuffs/macros"
+    path = runtime.scriptpath() + "/stuffs/macros"
     minfo = json.load(open(f"{path}/{value}.json"))
     defaultvals = [
         minfo["shortcut"], minfo["text"]

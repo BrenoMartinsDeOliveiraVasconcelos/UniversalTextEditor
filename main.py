@@ -1,13 +1,13 @@
-from lib import utils, menus, colorscheme, scriptinfo, events
+from lib import utils, menus, colorscheme, runtime, events
 from sys import argv
 import platform
 import tkinter as tk
 import sys
 
-scriptpath = scriptinfo.scriptpath()
+scriptpath = runtime.scriptpath()
 argv.append('')
 systema = platform.system()
-configs = scriptinfo.readconfig()
+configs = runtime.readconfig()
 ui = colorscheme.loadui()
 mainui = ui["main"]
 menui = mainui["menu"]

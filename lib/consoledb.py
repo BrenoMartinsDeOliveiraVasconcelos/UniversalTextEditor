@@ -1,4 +1,4 @@
-from lib import scriptinfo
+from lib import runtime
 
 
 def consoledb(info, text, tp=0, verifydebug=True):
@@ -14,7 +14,7 @@ def consoledb(info, text, tp=0, verifydebug=True):
     else:
         symb = "?"
 
-    config = scriptinfo.readconfig()
+    config = runtime.readconfig()
 
     if config["debug"] or not verifydebug:
         print(f"{info} {symb} {text}")
