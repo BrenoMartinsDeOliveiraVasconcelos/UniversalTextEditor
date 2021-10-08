@@ -91,8 +91,8 @@ def macromaker():
                       font=("Segoe", 10))
     shentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
                        font=("Segoe", 10))
-    tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("Segoe", 10),
-                     width=20, height=5, insertbackground=textui["ibg"], selectbackground=textui["sbg"])
+    tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("Calibri", 12),
+                     width=20, height=5)
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
                              bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],

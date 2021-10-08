@@ -44,7 +44,7 @@ def copypaste(mode, text):
 
 
 def macro(text):
-    macrof = f"{scriptinfo.scriptpath()}/macros"
+    macrof = f"{scriptinfo.scriptpath()}/stuffs/macros"
     macros = os.listdir(macrof)
 
     consoledb("Macro", macros)
