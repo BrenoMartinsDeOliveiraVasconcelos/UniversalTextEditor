@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="runtime.py">
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/fastinstall.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="$PROJECT_DIR$/stuffs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fastinstall">
+  <component name="RunManager" selected="Python.main">
     <configuration name="fastinstall" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UniversalTextEditor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,8 +143,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.fastinstall" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.fastinstall" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main (1)" />
       </list>
@@ -158,13 +158,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Chamada de função exit() mudada para sys.exit() para rodar no arquivo .exe">
-      <created>1632658705758</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1632658705762</updated>
     </task>
     <task id="LOCAL-00073" summary="Melhoria no dialogo de saida pelo menu exit">
       <created>1632660064749</created>
@@ -502,7 +495,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633735770599</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada">
+      <created>1633737131374</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1633737131374</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,7 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Mesnagem de saida ao apertar X alterada" />
     <MESSAGE value="README atualizado" />
     <MESSAGE value="Limpeza no repositório" />
     <MESSAGE value="Fonte revertida para Segoe" />
@@ -544,6 +543,7 @@
     <MESSAGE value="Correções de bugs e tema escuro habilitado" />
     <MESSAGE value="Fontes citadas no arquivo JSON" />
     <MESSAGE value="runtime.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="runtime.py" />
+    <MESSAGE value="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada" />
   </component>
 </project>

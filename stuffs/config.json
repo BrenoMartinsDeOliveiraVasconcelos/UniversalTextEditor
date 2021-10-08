@@ -1,7 +1,7 @@
 {
     "debug": true,
     "version": "1.0.2",
-    "build": "beta",
+    "build": "release",
     "dark": false,
     "font": "Calibri",
     "fontsize": 12
