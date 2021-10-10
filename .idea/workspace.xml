@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stuffs/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/stuffs/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -158,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00073" summary="Melhoria no dialogo de saida pelo menu exit">
-      <created>1632660064749</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1632660064749</updated>
     </task>
     <task id="LOCAL-00074" summary="commit message">
       <created>1632694006709</created>
@@ -502,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633737131374</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada">
+      <created>1633737480944</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1633737480944</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

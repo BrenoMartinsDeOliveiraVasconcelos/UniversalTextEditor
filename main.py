@@ -39,9 +39,20 @@ def main(args):
     root.config(menu=menu)
 
     # Text
-    text = tk.Text(root, bg=textui["bg"], fg=textui["fg"],
+    labelstring = f"v{configs['version']}"
+    if configs['debug']:
+        labelstring += \
+            f" {configs['build']} - OS: {platform.system()} {platform.release()}, " \
+            f"Kernel: {platform.version()}, Python: {platform.python_version()}"
+
+    tframe = tk.Frame(root)
+    text = tk.Text(tframe, bg=textui["bg"], fg=textui["fg"],
                    font=(configs['font'], configs['fontsize']), wrap="word", undo=True)
-    text.pack(fill="both", expand=True, side=tk.LEFT)
+    text.pack(fill="both", expand=True)
+    tk.Label(tframe, text=labelstring, bg=mainui["bg"],
+             font=("Calibri", 10)).pack(side=tk.LEFT,
+                                        expand=True, fill="x")
+    tframe.pack(fill="both", expand=True, side=tk.LEFT)
 
     # Scrollbar
     frame = tk.Frame(root)
