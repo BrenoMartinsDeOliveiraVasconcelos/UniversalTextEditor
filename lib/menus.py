@@ -1,3 +1,4 @@
+import json
 import os
 from lib import utils, colorscheme, runtime
 from lib.consoledb import consoledb
@@ -13,6 +14,7 @@ enui = menui["entry"]
 textui = menui["text"]
 scrollbarui = menui["scrollbar"]
 opui = menui["optionmenu"]
+scriptpath = runtime.scriptpath()
 
 
 def saveas(text, root=None):
@@ -186,25 +188,21 @@ def secretmenu():
     secret.mainloop()
 
 
-def savenote(text):
-    sv = tk.Tk()
-    utils.windowmaker(sv, "Save as note")
+def settings():
+    s = tk.Tk()
+    utils.windowmaker(s, "Settings")
 
-    labels = ["Background: ", "Foreground: "]
-    r = -1
-    for i in labels:
+    sfile = json.load(open(f"{scriptpath}/stuffs/config.json"))
+    r = 0
+    for i in sfile:
         r += 1
-        tk.Label(sv, text=i, bg=labelui["bg"], fg=labelui["fg"]).grid(row=r, column=0,
-                                                                      sticky="w")
+        i = i.capitalize()
+        tk.Label(s, text=i, bg=labelui['bg'], fg=labelui['fg'], font=("Calibri", 12)).grid(
+            row=r, column=0, sticky="w")
+        entry = tk.Entry(s, bg=enui['bg'], fg=enui['fg'])
+        entry.insert("1", str(sfile[i.lower()]))
+        entry.grid(row=r, column=1, sticky="e")
+        tk.Button(s, text="Ok", bg=buttonui['bg'], fg=buttonui['fg'],
+                  width=10).grid(row=r, column=2, sticky="e")
 
-    bentry = tk.Entry(sv, bg=enui["bg"], fg=enui["fg"])
-    bentry.grid(row=0, column=1)
-    fentry = tk.Entry(sv, bg=enui["bg"], fg=enui["fg"])
-    fentry.grid(row=1, column=1)
-
-    tk.Button(sv, bg=buttonui["bg"], fg=buttonui["fg"], width=10,
-              font=("Segoe", 10), text="Create",
-              command=lambda: utils.saveasnote([bentry, fentry], text)).grid(
-        row=2, column=1, sticky="e")
-
-    sv.mainloop()
+    s.mainloop()

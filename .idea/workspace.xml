@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada">
-      <change beforePath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="21c61b4d-ca5b-422f-93d0-4289bcb685c4" name="Changes" comment="Espaçõ para a tela de configurações">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/__Installer__/scripts/apt.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__Installer__/scripts/pacman.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__Installer__/scripts/pyinstaller.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__Installer__/tos.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fastinstall.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/install.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/menus.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/menus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,13 +159,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632011878894</updated>
-    </task>
-    <task id="LOCAL-00074" summary="commit message">
-      <created>1632694006709</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1632694006710</updated>
     </task>
     <task id="LOCAL-00075" summary="Círculos">
       <created>1632694249693</created>
@@ -510,7 +496,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633737480944</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="Espaçõ para a tela de configurações">
+      <created>1633890838798</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1633890838799</updated>
+    </task>
+    <option name="localTasksCounter" value="124" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -527,7 +520,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="README atualizado" />
     <MESSAGE value="Limpeza no repositório" />
     <MESSAGE value="Fonte revertida para Segoe" />
     <MESSAGE value="Corrigido loop de permissão negada ao abrir um texto com permissão negada" />
@@ -552,6 +544,7 @@
     <MESSAGE value="Fontes citadas no arquivo JSON" />
     <MESSAGE value="runtime.py" />
     <MESSAGE value="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudanças no instalador&#10;Texto com o TOS agora é apenas leitura&#10;scrollbar adicionada" />
+    <MESSAGE value="Espaçõ para a tela de configurações" />
+    <option name="LAST_COMMIT_MESSAGE" value="Espaçõ para a tela de configurações" />
   </component>
 </project>

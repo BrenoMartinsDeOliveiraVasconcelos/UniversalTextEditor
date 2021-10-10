@@ -108,7 +108,7 @@ def opt(option, text, root):
         consoledb("Opt", "About")
         menus.about()
     elif option == 9:
-        messagebox.showinfo("Ok", "Ok")
+        menus.settings()
     elif option == 8:
         copypaste("p", text)
     elif option == 7:
