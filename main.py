@@ -23,7 +23,7 @@ def main(args):
     global defaulttext
 
     root = tk.Tk()
-    root.title("UTE_INIT")
+    root.title("UTEINIT")
 
     if args[1] == "-macromaker":
         menus.macromaker()
