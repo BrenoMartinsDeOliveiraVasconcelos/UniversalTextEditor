@@ -93,7 +93,7 @@ def macro(text):
 
 def opt(option, text, root):
     consoledb("Opt", option)
-    if option == 11:
+    if option == 12:
         yn = messagebox.askyesnocancel("Do you want save?", "Do you want to "
                                                             "exit without saving?")
         consoledb("Opt", yn)
@@ -104,33 +104,36 @@ def opt(option, text, root):
             sys.exit()
         elif yn is None:
             consoledb("Opt", "Cancelado")
-    elif option == 10:
+    elif option == 11:
         consoledb("Opt", "About")
         menus.about()
-    elif option == 9:
+    elif option == 10:
         menus.settings()
-    elif option == 8:
+    elif option == 9:
         copypaste("p", text)
-    elif option == 7:
+    elif option == 8:
         copypaste("c", text)
-    elif option == 6:
+    elif option == 7:
         menus.replacetxt(text)
-    elif option == 5:
+    elif option == 6:
         text.delete("1.0", tk.END)
-    elif option == 4:
+    elif option == 5:
         macro(text)
-    elif option == 3:
+    elif option == 4:
         menus.editmacro()
-    elif option == 2:
+    elif option == 3:
         menus.macromaker()
-    elif option == 1:
+    elif option == 2:
         menus.saveas(text, root=root)
-    elif option == 0:
+    elif option == 1:
         menus.opn(text, root)
+    elif option == 0:
+        text.delete("1.0", tk.END)
+        root.title("Universal Text Editor")
 
 
 def configmenu(menu, text, root):
-    opts = ["Open", "Save"]
+    opts = ["New", "Open", "Save"]
     mopts = ["Create a Macro", "Edit a Macro", "Apply macros"]
     spopt = ["Clear", "Replace", "Copy", "Paste"]
     topts = ["Settings", "About", "Exit"]
