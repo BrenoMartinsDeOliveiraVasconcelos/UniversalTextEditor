@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../PyTacToe/.idea/PyTacToe.iml" filepath="$PROJECT_DIR$/../PyTacToe/.idea/PyTacToe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Testbot/.idea/Testbot.iml" filepath="$PROJECT_DIR$/../Testbot/.idea/Testbot.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/UniversalTextEditor.iml" filepath="$PROJECT_DIR$/.idea/UniversalTextEditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../aoccopier2/.idea/aoccopier2.iml" filepath="$PROJECT_DIR$/../aoccopier2/.idea/aoccopier2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../clicalc/.idea/clicalc.iml" filepath="$PROJECT_DIR$/../clicalc/.idea/clicalc.iml" />
     </modules>
   </component>
 </project>

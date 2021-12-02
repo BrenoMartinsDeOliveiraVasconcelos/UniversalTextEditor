@@ -176,7 +176,7 @@ def clear(sistema):
 
 def createmacro(entries, text):
     args = []
-    path = runtime.scriptpath() + "/stuffs]macros"
+    path = runtime.scriptpath() + "/stuffs/macros"
     for i in entries:
         consoledb("Createmacro", i.get())
         args.append(str(i.get()))

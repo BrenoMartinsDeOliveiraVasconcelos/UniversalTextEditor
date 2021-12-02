@@ -1,4 +1,3 @@
-import json
 import os
 from lib import utils, colorscheme, runtime
 from lib.consoledb import consoledb
@@ -21,7 +20,13 @@ def saveas(text, root=None):
     text = text.get("1.0", tk.END)
     consoledb("SaveAs", text)
 
-    fn = filedialog.asksaveasfilename()
+    initpath = open(f"{scriptpath}/stuffs/saveas.txt", "r").read()
+    if initpath == "":
+        initpath = os.getcwd()
+
+    fn = filedialog.asksaveasfilename(initialdir=initpath,
+                                      title="Save as", filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
+    open(f"{scriptpath}/stuffs/saveas.txt", "w").write(fn)
     consoledb("SaveAs", fn)
 
     try:
@@ -33,7 +38,12 @@ def saveas(text, root=None):
 
 
 def opn(text, root):
-    fn = filedialog.askopenfilename()
+    initpath = open(f"{scriptpath}/stuffs/saveas.txt", "r").read()
+    if initpath == "":
+        initpath = os.getcwd()
+    fn = filedialog.askopenfilename(initialdir=initpath, title="Open",
+                                    filetypes=(("Text files", "*.txt"), ("All files", "*.*")))
+    open(f"{scriptpath}/stuffs/saveas.txt", "w").write(fn)
     consoledb("Opn", fn)
 
     txt = ""
@@ -94,7 +104,7 @@ def macromaker():
     shentry = tk.Entry(mk, bg=enui["bg"], fg=enui["fg"], width=20,
                        font=("Segoe", 10))
     tentry = tk.Text(mk, bg=textui["bg"], fg=textui["fg"], font=("Calibri", 12),
-                     width=20, height=5)
+                     width=18, height=5)
 
     scrollbar = tk.Scrollbar(mk, command=tentry.yview,
                              bg=scrollbarui["bg"], activebackground=scrollbarui["abg"],
@@ -189,20 +199,22 @@ def secretmenu():
 
 
 def settings():
-    s = tk.Tk()
-    utils.windowmaker(s, "Settings")
+    # s = tk.Tk()
+    # utils.windowmaker(s, "Settings")
 
-    sfile = json.load(open(f"{scriptpath}/stuffs/config.json"))
-    r = 0
-    for i in sfile:
-        r += 1
-        i = i.capitalize()
-        tk.Label(s, text=i, bg=labelui['bg'], fg=labelui['fg'], font=("Calibri", 12)).grid(
-            row=r, column=0, sticky="w")
-        entry = tk.Entry(s, bg=enui['bg'], fg=enui['fg'])
-        entry.insert("1", str(sfile[i.lower()]))
-        entry.grid(row=r, column=1, sticky="e")
-        tk.Button(s, text="Ok", bg=buttonui['bg'], fg=buttonui['fg'],
-                  width=10).grid(row=r, column=2, sticky="e")
+    # sfile = json.load(open(f"{scriptpath}/stuffs/config.json"))
+    # r = 0
+    # for i in sfile:
+    #    r += 1
+    #    i = i.capitalize()
+    #    tk.Label(s, text=i, bg=labelui['bg'], fg=labelui['fg'], font=("Calibri", 12)).grid(
+    #        row=r, column=0, sticky="w")
+    #    entry = tk.Entry(s, bg=enui['bg'], fg=enui['fg'])
+    #    entry.insert("1", str(sfile[i.lower()]))
+    #    entry.grid(row=r, column=1, sticky="e")
+    #    tk.Button(s, text="Ok", bg=buttonui['bg'], fg=buttonui['fg'],
+    #              width=10, command=lambda z=r: print(z)).grid(row=r, column=2, sticky="e")
 
-    s.mainloop()
+    # s.mainloop()
+
+    messagebox.showinfo("Settings", "This feature is not available yet.")
